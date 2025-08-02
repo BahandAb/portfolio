@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bahand Abdulrahman | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Bahand Abdulrahman</h1>
+        <p class="lead">Aspiring Robotics &amp; Computer Science Developer | Portfolio</p>
+
+        <section class="description">
+            <p>
+                I'm Bahand, a passionate developer focused on robotics and computer science.
+                I enjoy creating innovative projects that solve real-world problems and pushing
+                the boundaries of technology.
+            </p>
+        </section>
+
+        <section class="projects">
+            <article class="project-card" data-project="1">
+                <div class="project-media">
+                    <img src="assets/project1.jpg" alt="Project 1" />
+                </div>
+                <div class="project-info">
+                    <h3>Project One</h3>
+                    <p>This is a longer description preview of Project One. It gives a brief overview and cuts off after a few lines if necessary to stay compact.</p>
+                </div>
+            </article>
+
+            <article class="project-card" data-project="2">
+                <div class="project-media">
+                    <img src="assets/project2.jpg" alt="Project 2" />
+                </div>
+                <div class="project-info">
+                    <h3>Project Two</h3>
+                    <p>This is a longer description preview of Project Two. It gives a brief overview and cuts off after a few lines if necessary to stay compact.</p>
+                </div>
+            </article>
+
+            <!-- More projects go here -->
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Bahand Abdulrahman
+    </footer>
+
+    <!-- Modal container (will be hidden by default) -->
+    <div id="project-modal" class="modal hidden">
+    <div id="modal-content" class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div class="modal-media" id="modal-media"></div>
+        <div class="modal-text" id="modal-text"></div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,273 @@
+/* CSS RESET */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: transparent; /* particles.js background is visible */
+  pointer-events: none; /* allow pointer events to pass through body */
+  color: #eee;             /* light text for contrast */
+  line-height: 1.6;
+}
+
+/* HEADER + NAV */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #0e1c2f;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  color: white;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+}
+
+nav a {
+  color: #ddd;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+  background-color: transparent; /* remove dark bg hover if any */
+}
+
+nav a.active {
+  background-color: #27529a;
+  box-shadow: inset 0 -3px 0 0 rgba(255,255,255,0.3);
+}
+
+/* MAIN CONTENT */
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.2rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0,0,0,0.7);
+}
+
+h2, h3 {
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0,0,0,0.7);
+}
+
+p.lead {
+  font-size: 1.25rem;
+  color: #ddd;
+  text-shadow: 0 0 3px rgba(0,0,0,0.5);
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+/* PROJECT GRID */
+section.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  padding: 1rem 0;
+
+  /* Important: pointer-events none on the container disables clicks on cards,
+     so instead we keep pointer-events auto but make gaps clickable by CSS trick below */
+  position: relative;
+  z-index: 1;
+}
+
+/* Make sure each project card is clickable and above particles */
+section.projects > * {
+  pointer-events: auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* PROJECT CARD */
+article.project-card {
+  background: rgba(255,255,255,0.95);
+  color: #222;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 350px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+article.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+article.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+article.project-card:hover h3 {
+  color: #0e1c2f;
+}
+
+/* MEDIA SECTION INSIDE CARD */
+.project-media {
+  width: 100%;
+  height: 170px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.project-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+/* INFO SECTION */
+.project-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-info h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.project-info p {
+  margin: 0;
+  color: #555;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  color: #888;
+  font-size: 0.9rem;
+  border-top: 1px solid #ddd;
+  margin-top: 3rem;
+}
+
+/* MODAL (Popup) Styles */
+.modal.hidden {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 12px;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-media {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.modal-media img,
+.modal-media video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-text {
+  font-size: 1rem;
+  color: #333;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: #888;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+section.blurb {
+  max-width: 700px;
+  margin: 1rem auto 2rem;
+  font-size: 1.1rem;
+  color: #444;
+  text-align: center;
+  line-height: 1.5;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;       /* full viewport width */
+  height: 100vh;      /* full viewport height */
+  z-index: -1;        /* behind everything */
+  background-color: #0e1c2f; /* fallback bg color */
+  pointer-events: auto; /* allow interactivity for particles.js */
+}
+
+/* Optional: Make main, header, footer backgrounds transparent to avoid blocking particles */
+main, header, footer {
+  background: transparent;
+}
