@@ -1,3 +1,26 @@
+// Dynamic Grid Column Layout
+function updateProjectGridColumns() {
+  const grid = document.querySelector('.project-grid');
+  if (!grid) return;
+  
+  const width = window.innerWidth;
+  if (width >= 2400) {
+    grid.style.gridTemplateColumns = 'repeat(5, 1fr)';
+  } else if (width >= 1800) {
+    grid.style.gridTemplateColumns = 'repeat(4, 1fr)';
+  } else if (width >= 1200) {
+    grid.style.gridTemplateColumns = 'repeat(3, 1fr)';
+  } else if (width >= 800) {
+    grid.style.gridTemplateColumns = 'repeat(2, 1fr)';
+  } else {
+    grid.style.gridTemplateColumns = 'repeat(1, 1fr)';
+  }
+}
+
+// Add event listeners for window resize and initial load
+window.addEventListener('resize', updateProjectGridColumns);
+document.addEventListener('DOMContentLoaded', updateProjectGridColumns);
+
 // Prevent background scroll when modal is open
 document.addEventListener('DOMContentLoaded', function () {
   const modal = document.getElementById('project-modal');

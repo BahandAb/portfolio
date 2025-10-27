@@ -191,19 +191,19 @@ p.lead {
 }
 
 /* PROJECT GRID */
-section.projects {
+.project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
   justify-items: center;
   align-items: stretch;
   padding: 1rem 3vw;
   position: relative;
   z-index: 1;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
 }
 
 /* Make sure each project card is clickable and above particles */
-section.projects > * {
+.project-grid > * {
   pointer-events: auto;
   position: relative;
   z-index: 2;
@@ -346,7 +346,6 @@ footer {
 .project-card:hover .card-overlay .overlay-date {
   display: inline;
   color: #fff;
-}
 }
 .project-media {
   position: relative;
@@ -698,27 +697,7 @@ footer {
   background: #0e1c2f;
 }
 }
-.modal-gallery-main {
-  /* see media queries for layout */
-}
-.modal-gallery-main-img-wrap {
-  /* see media queries for layout */
-}
-.modal-gallery-main-img-wrap img,
-.modal-gallery-main-img-wrap video {
-  /* see media queries for layout */
-}
-.modal-gallery-thumbs {
-  /* see media queries for layout */
-}
-.modal-gallery-thumbs img,
-.modal-gallery-thumbs video {
-  /* see media queries for layout */
-}
-.modal-gallery-thumbs img.active,
-.modal-gallery-thumbs video.active {
-  /* see media queries for layout */
-}
+
 
 .modal-text {
   font-size: 1.1rem;

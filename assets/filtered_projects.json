@@ -1,0 +1,252 @@
+[
+  {
+    "title": "January - May 2022",
+    "description": "Short Description This project documents my first foundational steps in Python programming, covering a series of collaborative notebooks that introduced me to key concepts like variables, loops, and conditional logic. Long Description",
+    "pdf": ""
+  },
+  {
+    "title": "September 20-24, 2022",
+    "description": "Short Description A VEX robotics spider kit was repurposed into a custom remote-controlled tank with a custom drivetrain, controlled by a VEX controller, and a triggered nerf gun mechanism, controlled by an IR remote. Long Description",
+    "pdf": ""
+  },
+  {
+    "title": "Intro to Scratch Game & Animation Development",
+    "description": "Date Completed",
+    "pdf": ""
+  },
+  {
+    "title": "January - May 2023",
+    "description": "Short Description A series of games and animations created in Scratch to learn fundamental programming",
+    "pdf": ""
+  },
+  {
+    "title": "concepts, including loops, events, and simple game logic.",
+    "description": "Long Description As part of an Intro to Computer Programming course, I completed a unit on Scratch, where I learned visual programming concepts through the creation of several games and animations. Projects included a public service announcement (PSA) on snow safety, a comedic animation titled \"Halal Burger,\" and two arcade-style games: \"Donkey Feed\" and \"Snake Chase v.2.\"",
+    "pdf": ""
+  },
+  {
+    "title": "Digital Art and Photo Editing with Photopea",
+    "description": "Date Completed",
+    "pdf": ""
+  },
+  {
+    "title": "effects, image compositing, and object removal.",
+    "description": "Long Description This portfolio entry documents a unit on digital design and photo editing using Photopea, an in-browser image editor. The projects served as an introduction to key photo manipulation techniques. The first project involved using special font effects to display a word. I then created a composite image by combining two unrelated objects—a lion and a strawberry—into a single",
+    "pdf": ""
+  },
+  {
+    "title": "interface design and event-driven programming.",
+    "description": "Long Description This project documents my work in Code.org's App Lab environment during my Intro to Computer Programming course. The unit focused on building interactive web applications by utilizing a block-based coding interface. My projects included a collaborative app on world cuisines, a \"photo liker\" app where I had to replicate the code for a given example, and a",
+    "pdf": ""
+  },
+  {
+    "title": "Intro to Web Development: HTML & CSS Projects",
+    "description": "Date Completed",
+    "pdf": ""
+  },
+  {
+    "title": "demolition (and subsequent resurrection!).",
+    "description": "Long Description This project was less about coding and more about embracing the great outdoors... and a bit of accidental destruction. My dad and I teamed up to tackle two stubborn trees in the backyard. We were all about that teamwork and those trusty ratchet straps to guide the trees down. Things were going great until, oops, one of the trees decided to take out a section of our metal",
+    "pdf": ""
+  },
+  {
+    "title": "Arduino Leonardo Steering Wheel Dashboard",
+    "description": "Date Completed (Please provide the month and year you completed this project.) Short Description A custom dashboard attachment for a steering wheel, built with an Arduino Leonardo, that emulates keyboard strokes and features a parking brake status LED.",
+    "pdf": ""
+  },
+  {
+    "title": "Car Infotainment System Upgrade",
+    "description": "Date Completed (Please provide the month and year you completed this project.) Short Description Upgraded our 2006 Corolla's radio to a modern infotainment screen, involving removal of the old unit, installation of the new screen, and wire crimping.",
+    "pdf": ""
+  },
+  {
+    "title": "January 2023 - May 2024",
+    "description": "Short Description Developed and maintained the official MSA (Muslim Student Association) club website, initially",
+    "pdf": ""
+  },
+  {
+    "title": "in collaboration and later as a solo developer.",
+    "description": "Long Description This project involved the comprehensive development and ongoing maintenance of the official MSA (Muslim Student Association) club website for my school. The initiative began as a school project from January to May 2023, during which I collaborated with Arshya Maricar to establish the initial structure and content. Following this collaborative phase, I took over as the",
+    "pdf": ""
+  },
+  {
+    "title": "Windows 11 upgrade.",
+    "description": "Long Description This project involved a significant overhaul of my personal HP laptop to address severe performance degradation that occurred after upgrading from Windows 10 to Windows 11. This slowdown was identified as a widespread glitch associated with the in-place upgrade process. To improve hardware performance, I replaced the laptop's battery and upgraded the RAM,",
+    "pdf": ""
+  },
+  {
+    "title": "frothing milk and instant coffee for the base.",
+    "description": "Long Description This project was a delicious dive into the world of coffee! I taught myself how to make lattes using surprisingly simple methods. The key was mastering the milk frothing technique, which I achieved by using a mason jar as a shaker – no fancy espresso machine needed! For the coffee base, I experimented with instant coffee and cold water to create a dark, rich",
+    "pdf": ""
+  },
+  {
+    "title": "January 31, 2024",
+    "description": "Short Description A custom Arduino Leonardo-based button deck featuring a rotary encoder for cycling through four distinct keyboard command profiles, indicated by LEDs, and four programmable snap",
+    "pdf": ""
+  },
+  {
+    "title": "buttons for versatile input.",
+    "description": "Long Description This project involved the design and construction of a highly versatile Arduino Leonardo-based button deck, intended to serve as a custom input device for various applications, similar to a streaming or gaming macro pad. The core functionality revolves around its ability to emulate keyboard strokes directly, thanks to the Arduino Leonardo's native USB",
+    "pdf": ""
+  },
+  {
+    "title": "Logical Fallacies: The Game (AP Seminar Project)",
+    "description": "Date Completed May 2024 Short Description An interactive educational game developed for AP Seminar, designed to teach logical fallacies through multiple levels and an end boss, featuring a custom soundtrack.",
+    "pdf": ""
+  },
+  {
+    "title": "Kurdistan, using a mobile phone.",
+    "description": "Long Description During my time in Kurdistan in the summer of 2024, I embarked on a fascinating project: learning how to take astrophotographs using just my phone. In the clear, dark skies of the Slemani mountains, I focused on capturing the beauty of the night sky, especially the stars, while also incorporating the distant city lights. This project involved understanding basic",
+    "pdf": ""
+  },
+  {
+    "title": "October 3, 2024",
+    "description": "Short Description A basic electronics project where I assembled a buzzer circuit and used pre-made code to play musical tunes. Long Description This project was an introduction to simple electronics and microcontroller interaction. I",
+    "pdf": ""
+  },
+  {
+    "title": "FTC \"Rooky\" Robot Drivetrain (Team 6133)",
+    "description": "Date Completed",
+    "pdf": ""
+  },
+  {
+    "title": "October 10-19, 2024",
+    "description": "Short Description Developed the foundational drivable mecanum drivetrain for the first \"Rooky\" robot as part of FTC Team 6133 \"The NUTS!\", programmed in Java using Android Studio. Long Description As a rookie member of FTC Team 6133 \"The NUTS!\", my first major task was contributing to the",
+    "pdf": ""
+  },
+  {
+    "title": "FTC \"Rooky\" Bot: Claw & Turtle Mode (v1)",
+    "description": "Date Completed (Please provide the month and year you completed this project.) Short Description Designed and tested a 3D-printed claw to score colored targets and implemented a \"Turtle mode\" for the drivetrain, allowing speed toggling with haptic feedback.",
+    "pdf": ""
+  },
+  {
+    "title": "FTC \"Rooky\" Bot: Autonomous April Tag Cycler (v2)",
+    "description": "Date Completed Nov 2024 Short Description Integrated a USB webcam for April Tag detection and developed an autonomous program for the \"Rooky\" robot to detect, approach, and cycle through a sequence of April Tags (12, 13, 14,",
+    "pdf": ""
+  },
+  {
+    "title": "Custom 3D-Printed Car Dealership Name Plaque",
+    "description": "Date Completed November 2024 Short Description Designed and 3D-printed a custom name plaque for a car dealership owner, incorporating pen holders and a Dodge Challenger design, finished with metallic accents.",
+    "pdf": ""
+  },
+  {
+    "title": "\"Sample\" game pieces using color thresholding.",
+    "description": "Long Description This phase marked the beginning of our Limelight 3A journey, and it was a pivotal moment as we shifted our focus from the \"Rooky\" robot to developing for our actual competition robot, Leviathan. The \"Rooky\" bot became a crucial test vessel for this advanced vision system. The Limelight 3A is a specialized, easy-to-use vision processing camera commonly",
+    "pdf": ""
+  },
+  {
+    "title": "camera mount, solving a real-world hardware issue.",
+    "description": "Long Description This project was a significant milestone as it represented my first real-world application of 3D design and printing to solve a practical problem. The task was to replace the broken ball joint and clipping mechanism for our car's dash camera mount. This was the first time I designed and printed something entirely from scratch, and it marked my introduction to Onshape, a",
+    "pdf": ""
+  },
+  {
+    "title": "Custom 3D-Printed Webcam Mount & Repair",
+    "description": "Date Completed (Please provide the month and year you completed this project.) Short Description Designed and 3D-printed a custom, cage-like clamping mechanism with an adjustable ball joint for a USB webcam to mount on a large desk monitor, including an unexpected and creative",
+    "pdf": ""
+  },
+  {
+    "title": "Limelight 3A: Python SnapScript Vision (v1)",
+    "description": "Date Completed Feb 2025 Short Description Developed the first iteration of a Python SnapScript vision system for Leviathan, utilizing OpenCV for color and edge detection to identify single \"Sample\" game pieces.",
+    "pdf": ""
+  },
+  {
+    "title": "Limelight 3A: Python SnapScript Vision (v2)",
+    "description": "Date Completed Feb 2025 Short Description Advanced the Python SnapScript vision system to utilize aspect ratio for sample orientation, enabling autonomous detection and auto-rotation for all three sample colors (red, yellow, blue)",
+    "pdf": ""
+  },
+  {
+    "title": "for the competition robot.",
+    "description": "Long Description Building on our initial Python SnapScript work, this iteration represented a significant leap forward in our vision system for Leviathan. After extensive work and tinkering, we successfully utilized the aspect ratio of the detected bounding box to gain a general understanding of the \"Sample\" game piece's orientation – whether it was vertical, horizontal, or anywhere in between.",
+    "pdf": ""
+  },
+  {
+    "title": "Limelight 3A: Python SnapScript (v3) with minAreaRect",
+    "description": "Date Completed February 2025 Short Description Developed a third version of the Python SnapScript using minAreaRect to generate precise polygon bounding boxes from color thresholding and edge detection, with guidance from an",
+    "pdf": ""
+  },
+  {
+    "title": "reliable first-layer adhesion.",
+    "description": "Long Description As a newcomer to the world of 3D printing, I spent the first month of owning my printer unaware that the \"stringy, weak\" first layers I was getting were not a normal part of the process. This was a critical point in my learning journey, as I learned to identify and solve a fundamental issue with",
+    "pdf": ""
+  },
+  {
+    "title": "HP Pavilion SSD Upgrade and System Optimization",
+    "description": "Date Completed March 2025 Short Description Replaced a proprietary HDD/Intel Optane setup with a single NVMe SSD, successfully migrating the operating system and dramatically improving the laptop's performance and battery",
+    "pdf": ""
+  },
+  {
+    "title": "Limelight 3A: Wireless Proxy & Live Debugging (v5)",
+    "description": "Date Completed (Please provide the month and year you completed this project.) Short Description Successfully implemented a wireless Limelight proxy on Leviathan, enabling live neural detector testing and diagnosing a critical wire fault, significantly streamlining vision system debugging.",
+    "pdf": ""
+  },
+  {
+    "title": "DigiScope V1: Microscope Digitization Prototype",
+    "description": "Date Completed May 2025 Short Description Developed the first prototype of \"DigiScope,\" a system to digitize a microscope's view using a Raspberry Pi and Pi Camera, with a custom 3D-printed adapter and a Qt Creator app.",
+    "pdf": ""
+  },
+  {
+    "title": "DigiScope V2: Phone Camera & Android APK Prototype",
+    "description": "Date Completed May 2025 Short Description Developed the second prototype of \"DigiScope,\" shifting to use a phone's high-quality camera via an Android APK, with plans for a custom nosepiece mount to improve stability.",
+    "pdf": ""
+  },
+  {
+    "title": "Dell Precision 7520 Restoration & Upgrade",
+    "description": "Date Completed July 2025 Short Description Acquired, diagnosed, and upgraded a discarded Dell Precision 7520 laptop, transforming it into a powerful modern system by maximizing RAM and uncovering a hidden NVMe SSD.",
+    "pdf": ""
+  },
+  {
+    "title": "Lenovo E14 Laptop Acquisition & Deployment",
+    "description": "Date Completed July 2025 Short Description Secured, upgraded, and deployed 10 Lenovo E14 business-class laptops from Xavier University for educational initiatives and personal use, leveraging salvaged components.",
+    "pdf": ""
+  },
+  {
+    "title": "August 12, 2025",
+    "description": "Short Description An off-grid, long-range messaging system using LoRa. A laptop running a Python app messages a portable ESP32 \"hotspot\" that hosts a modern web UI for multiple devices to",
+    "pdf": ""
+  },
+  {
+    "title": "connect and reply.",
+    "description": "Long Description This project was a direct and significant evolution of my previous LoRa thermometer. I created a two-way, off-the-grid messaging system capable of operating with no Wi-Fi or cellular data,",
+    "pdf": ""
+  },
+  {
+    "title": "August 13, 2025",
+    "description": "Short Description A comprehensive, 7-minute video tutorial created for the FTC community, guiding beginners through the setup, documentation, and basic integration of the Limelight 3A vision camera. Long Description This project involved the creation, editing, and finalization of a detailed video tutorial aimed at",
+    "pdf": ""
+  },
+  {
+    "title": "EagleVision: Collaborative Microscope Platform",
+    "description": "Date Completed",
+    "pdf": ""
+  },
+  {
+    "title": "September 2025 - Present",
+    "description": "Short Description A collaborative web platform for the WHHS Programming Club (an INTERalliance chapter), allowing a teacher to stream a microscope's video feed from a phone to an entire class of",
+    "pdf": ""
+  },
+  {
+    "title": "students in real-time.",
+    "description": "Long Description This project is a massive continuation and scaling-up of my \"DigiScope\" prototype, now serving as the year-long competition project for the Walnut Hills High School Programming Club (an INTERalliance chapter) for the 2026 TechOlympics. To align with our school mascot (the Eagle) and the TechOlympics theme (\"Envision\"), the project was renamed EagleVision.",
+    "pdf": ""
+  },
+  {
+    "title": "Whiteboard Robot (Vertical Rail Concept)",
+    "description": "Date Completed",
+    "pdf": ""
+  },
+  {
+    "title": "September 2025 (Initial Concept Phase)",
+    "description": "Short Description The initial design concept for an advanced programming course project, detailing a whiteboard-drawing robot based on a vertical rail and wheel-driven system. Long Description This document outlines the initial brainstorming, design, and planning phase for our Quarter 1",
+    "pdf": ""
+  },
+  {
+    "title": "September - October 24, 2025",
+    "description": "Short Description A successful polargraph-style whiteboard drawing robot built from scratch for an advanced programming course. It receives drawings from a custom web UI hosted on an ESP32 and",
+    "pdf": ""
+  },
+  {
+    "title": "draws them on a 1m x 1m surface.",
+    "description": "Long Description This was our Quarter 1 project for a new, open-ended Advanced Computer Programming course. Working with my friend Edwin Tenney, our goal was to create a robot that could draw on a classroom whiteboard. This project was defined by rapid iteration and overcoming significant design failures.",
+    "pdf": ""
+  }
+]
