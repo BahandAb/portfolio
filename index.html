@@ -2,77 +2,71 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bahand Abdulrahman | Portfolio</title>
-    <link rel="stylesheet" href="CSS/style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bahand Abdulrahman | Portfolio</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 
 <body>
-    <div id="particles-js"></div>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div id="particles-js"></div>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <h1>Bahand Abdulrahman</h1>
-        <p class="lead">Aspiring Robotics &amp; Computer Science Developer | Portfolio</p>
+  <main>
+    <h1>Bahand Abdulrahman</h1>
+    <p class="lead">
+      Biomedical Engineering Aspirant | Robotics & Computer Vision Developer
+    </p>
 
+    <div class="home-content-wrapper">
+
+      <div class="home-text-content">
         <section class="description">
-            <p>
-                I'm Bahand, a passionate developer focused on robotics and computer science.
-                I enjoy creating innovative projects that solve real-world problems and pushing
-                the boundaries of technology.
-            </p>
+          <p>
+            I'm a senior at Walnut Hills High School with a passion for building the next generation of
+            <strong>scientific instruments and prosthetics</strong>.
+          </p>
+          <p>
+            Currently, I'm one of the <strong>Programming Leads</strong> for FTC Robotics Team 6133 The "NUTS!", where I
+            develop computer vision solutions. I'm also the <strong>President</strong> of my school's INTERalliance
+            chapter, where I launched the <strong>EagleVision project</strong> to digitize microscopes for low-income
+            schools and co-founded the first online <strong>Arduino course for students in Kurdistan</strong>.
+          </p>
         </section>
 
-        <!-- Project tiles removed as requested. Only hero/intro remains. -->
-    </main>
+        <section class="cta-section">
+          <a href="projects.html" class="cta-button primary">See My Projects</a>
 
-    <footer>
-        &copy; 2025 Bahand Abdulrahman
-    </footer>
-
-
-    <!-- Modal container (will be hidden by default) -->
-    <div id="project-modal" class="modal hidden">
-      <div id="modal-content" class="modal-content">
-        <button class="close-btn" id="close-modal-btn" aria-label="Close">&times;</button>
-        <div class="modal-header">Project Title</div>
-        <div class="modal-gallery">
-          <div class="modal-gallery-main-square">
-            <img src="assets/project1.jpg" alt="Gallery Main" id="modal-gallery-main-img">
-          </div>
-          <div class="modal-gallery-collage">
-            <img src="assets/project1.jpg" alt="Gallery Thumb 1" class="gallery-thumb">
-            <img src="assets/project1.jpg" alt="Gallery Thumb 2" class="gallery-thumb">
-            <div class="gallery-thumb video-thumb" data-video="assets/sample.mp4">
-              <img src="assets/project1.jpg" alt="Gallery Video Thumb">
-              <span class="play-icon">&#9658;</span>
-            </div>
-          </div>
-        </div>
-        <div class="lightbox-media" style="display:none; flex-direction:column; align-items:center; justify-content:center;">
-          <img class="lightbox-img" style="display:none;" />
-          <video class="lightbox-video" style="display:none;" controls></video>
-          <button class="lightbox-back">Back</button>
-        </div>
-        <div class="modal-text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur consectetur, nisl nisi consectetur nisi, eu consectetur nisl nisi euismod nisi.</p>
-          <p>Aliquam erat volutpat. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-        </div>
+          <a href="assets/Bahand-Abdulrahman-Resume.pdf" class="cta-button secondary" target="_blank"
+            rel="noopener noreferrer">
+            View Resume
+          </a>
+        </section>
       </div>
-    </div>
 
-    <script src="script.js"></script>
+      <div class="resume-embed-wrapper">
+        <iframe src="assets/Bahand-Abdulrahman-Resume.pdf#view=Fit&toolbar=1&scrollbar=0" width="100%" height="100%"
+          title="Bahand Abdulrahman's Resume">
+        </iframe>
+      </div>
+
+    </div>
+  </main>
+  <footer>
+    &copy; 2025 Bahand Abdulrahman
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>

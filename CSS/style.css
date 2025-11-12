@@ -267,8 +267,8 @@ article.project-card:hover h3 {
 }
 
 /* INFO SECTION */
+
 .project-info {
-  flex: 1;
   display: flex;
   flex-direction: column;
 }
@@ -284,10 +284,11 @@ article.project-card:hover h3 {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 4;
-  line-clamp: 4;
+  -webkit-line-clamp: 3;  /* CHANGE TO 3 */
+  line-clamp: 3;          /* CHANGE TO 3 */
   -webkit-box-orient: vertical;
   padding: 0.5em 1.5em 1em 1.5em;
+  max-height: 6.3em;      /* <-- ADD THIS LINE */
 }
 
 /* FOOTER */
@@ -546,13 +547,29 @@ footer {
     object-fit: contain;
     border-radius: 18px;
   }
+  /* This is inside your @media (min-width: 900px) block */
   .modal-gallery-thumbs {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Align to the top */
     margin-left: 0.5rem;
+    
+    /* --- NEW/UPDATED LINES --- */
+    max-height: 500px; /* Constrains the height */
+    overflow-y: auto;    /* Adds a scrollbar ONLY if needed */
+    padding-right: 8px;  /* Adds space for the scrollbar */
+  }
+  /* --- New scrollbar style for thumbnails --- */
+  .modal-gallery-thumbs::-webkit-scrollbar {
+    width: 7px;
+    background: #eee;
+    border-radius: 8px;
+  }
+  .modal-gallery-thumbs::-webkit-scrollbar-thumb {
+    background: #bbb;
+    border-radius: 8px;
   }
   .modal-gallery-thumbs img,
   .modal-gallery-thumbs video {
@@ -640,6 +657,7 @@ footer {
 /* Lightbox styles */
 .modal.lightbox-mode {
   background: rgba(10, 20, 40, 0.97);
+} /* <-- FIXED: Added missing brace */
 .modal-content.lightbox-mode {
   background: transparent;
   box-shadow: none;
@@ -696,7 +714,7 @@ footer {
 .modal-content.lightbox-mode .lightbox-back:hover {
   background: #0e1c2f;
 }
-}
+/* This was a duplicate rule block and has been removed */
 
 
 .modal-text {
@@ -756,4 +774,270 @@ main *,
 header *,
 footer * {
   pointer-events: auto;
+}
+
+/* ========================================================================
+   CALL TO ACTION (CTA) BUTTONS - NEW & UNIFIED
+   ======================================================================== */
+.cta-section {
+    text-align: center;
+    margin-top: 3rem;
+    /* Added flex properties for multi-button layouts */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap; 
+}
+
+/* --- Base styles for ALL CTA buttons --- */
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    cursor: pointer;
+    font-family: inherit;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* --- Primary Button (AND Secondary, all unified) --- */
+.cta-button.primary,
+.cta-button.secondary {
+    color: #0e1c2f; /* Dark text */
+    background-color: #ffcc00; /* Yellow background */
+    border: 2px solid #ffcc00; /* Matching border */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button.primary:hover,
+.cta-button.secondary:hover {
+    transform: translateY(-4px);
+    background-color: #ffe066; /* Lighter yellow */
+    border-color: #ffe066; /* Lighter border */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    color: #0e1c2f; /* Keep dark text on hover */
+}
+
+/* ========================================================================
+   HOME PAGE LAYOUTS
+   ======================================================================== */
+
+/* --- Default text content padding --- */
+main .description {
+    max-width: 800px;  /* Makes text more readable */
+    margin: 0 auto 2rem auto; /* Centers the container */
+    padding: 0 1.5rem; /* Adds side padding for mobile */
+}
+
+/* --- HOME PAGE 2-COLUMN LAYOUT --- */
+.resume-embed-wrapper {
+    display: none; /* Hidden by default */
+}
+
+/* --- ULTRAWIDE LAYOUT (1600px+) --- */
+@media (min-width: 1600px) {
+
+    .home-content-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 3rem;
+        max-width: 1800px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .home-text-content {
+        flex: 1;
+        max-width: 700px;
+    }
+
+    /* Override default centered styles for 2-col layout */
+    .home-content-wrapper main .description {
+        max-width: none;
+        margin: 0 0 2rem 0;
+        padding: 0;
+        text-align: left;
+    }
+
+    /* Align buttons to the left in 2-col layout */
+    .home-content-wrapper .cta-section {
+        justify-content: flex-start;
+    }
+
+    /* HIDE the "View Resume" button... */
+    .home-content-wrapper .cta-button.secondary {
+        display: none;
+    }
+
+    /* ...and SHOW the resume embed instead */
+    .resume-embed-wrapper {
+        display: block;
+        flex-basis: 600px;
+        flex-shrink: 0;
+        height: 770px; /* Adjust as needed for your PDF */
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* ========================================================================
+   ABOUT & CONTACT PAGE STYLES
+   ======================================================================== */
+
+.page-content-wrapper {
+    max-width: 900px;
+    margin: 2rem auto 0 auto;
+    padding: 0 1.5rem;
+    background: rgba(70, 87, 109, 0.7); /* Subtle dark bg */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    
+    /* Increased blur for a better frosted effect */
+    backdrop-filter: blur(2px);
+}
+
+.about-section {
+    padding: 1.5rem 1rem;
+    color: #eee; /* Light text */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-section:last-child {
+    border-bottom: none;
+}
+
+.page-content-wrapper h2 {
+    font-size: 1.75rem;
+    color: #ffcc00; /* Yellow accent for headers */
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.page-content-wrapper p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #ddd;
+}
+
+/* --- Skills Grid --- */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    padding-top: 1rem;
+}
+
+.skill-category {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skill-category h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-category li {
+    font-size: 1rem;
+    color: #ddd;
+    line-height: 1.6;
+    padding: 0.25rem 0;
+}
+
+/* --- Contact Form Styles --- */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #eee;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    border: 1px solid #555;
+    background: #222;
+    color: #fff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #ffcc00;
+    box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.3);
+}
+
+.contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Re-use the home page button styles for the submit */
+.contact-form .cta-button {
+    font-size: 1.1rem;
+    padding: 0.75rem 1.5rem;
+    width: fit-content;
+    cursor: pointer;
+    border: none; /* Make sure submit button has no border */
+}
+/* --- Modal Skills Tags --- */
+.modal-skills h3 {
+    font-size: 1.5rem;
+    color: #222;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skills-tags span {
+    display: inline-block;
+    background: #eee;
+    color: #333;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="CSS/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
+
 <body>
     <div id="particles-js"></div>
     <header>
@@ -19,10 +21,63 @@
             </ul>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <h1>Get In Touch</h1>
+
+        <div class="page-content-wrapper" style="max-width: 800px;">
+
+            <section class="about-section">
+                <h2>Direct Links</h2>
+                <p>The fastest way to reach me is by email or LinkedIn. I'm always open to connecting and discussing new
+                    opportunities.</p>
+
+                <div class="cta-section" style="justify-content: flex-start; margin-top: 2rem;">
+
+                    <button id="copy-email-btn" class="cta-button secondary" data-email="bahandab08@gmail.com">
+                        Copy Email Address
+                        <span id="copy-success-msg"
+                            style="display: none; margin-left: 10px; color: #ffcc00; font-weight: bold;">Copied!</span>
+                    </button>
+
+                    <a href="https://www.linkedin.com/in/bahandab/" class="cta-button secondary" target="_blank"
+                        rel="noopener noreferrer">
+                        Connect on LinkedIn
+                    </a>
+                </div>
+            </section>
+
+            <section class="about-section">
+                <h2>Send a Message</h2>
+                <p>You can also send me a message directly using the form below. I'll get back to you as soon as
+                    possible.</p>
+
+                <form id="contact-form" class="contact-form" action="https://formspree.io/f/xanaypbz"
+                    method="POST">
+
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="cta-button primary">Send Message</button>
+                </form>
+            </section>
+        </div>
+    </main>
     <footer>
         &copy; 2025 Bahand Abdulrahman
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
