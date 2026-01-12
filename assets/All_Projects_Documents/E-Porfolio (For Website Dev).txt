@@ -1,0 +1,1889 @@
+﻿Beginner Python
+Project Title
+Beginner Python
+Date Completed
+January - May 2022
+Short Description
+This project documents my first foundational steps in Python programming, covering a series of collaborative notebooks that introduced me to key concepts like variables, loops, and conditional logic.
+Long Description
+This portfolio entry details my work in a foundational Python programming course with Dr. Hawzhin, focusing on several key collaborative notebooks. The Grade Compiler project taught me how to use loops and lists to handle and organize user-provided data, simulating a basic teacher's tool. The Guess My Number game was an exercise in building interactive applications, utilizing conditional statements and random number generation to create a fun, two-player game with clear game logic. The Clock Angler challenged my mathematical and logical reasoning by calculating the angle between a clock's hands at a user-defined or random time. The Cash Register project simulated a virtual market, using loops and conditional statements to create a running total and receipt. Finally, The MultiCalculator was a demonstration of code reusability and organization, combining several individual calculator functions into a single, user-friendly application. This entire course provided a solid base for future programming endeavors.
+Skills Utilized
+Python, Variables, Data Types, Lists, User Input, Loops (while), Conditional Logic (if/elif/else), Random Number Generation, Problem-Solving, Mathematical Calculations, Collaboration
+Project Role
+Student/Learner
+Difficulty Level
+Beginner
+Collaborators
+Dr. Hawzhin
+
+
+
+
+Custom Nerf Arduino/VEX Rover
+Project Documentation Template
+Project Title
+Custom Nerf Arduino/VEX Rover
+Date Completed
+September 20-24, 2022
+Short Description
+A VEX robotics spider kit was repurposed into a custom remote-controlled tank with a custom drivetrain, controlled by a VEX controller, and a triggered nerf gun mechanism, controlled by an IR remote.
+Long Description
+This project involved a significant re-engineering of a standard VEX robotics spider kit. Instead of building the default model, I designed and constructed a custom rover/tank chassis, which was driven using the original VEX controller. The most unique aspect of the project was the addition of a one-shot Nerf gun. I integrated an Arduino and an IR remote to create a separate control system for the gun's trigger mechanism. This allowed for the independent control of the vehicle's movement and its payload. My testing process included a video showing the servo reacting to the IR remote, followed by a successful demonstration of the gun firing. This project was an excellent exercise in mechanical design, electrical wiring, and programming for multiple systems.
+Skills Utilized
+Robotics, Arduino, Electronics, C++ (for Arduino), Mechanical Design, Problem-Solving
+Project Role
+Sole Designer & Developer
+Difficulty Level
+Intermediate
+Collaborators
+N/A
+Link to Media Folder
+https://drive.google.com/drive/u/0/folders/1f4tex-TEHatauHJ8mKs_NbU71GJODFIn
+
+
+Intro to Scratch Game & Animation Development
+Project Documentation Template
+Project Title
+Intro to Scratch Game & Animation Development
+Date Completed
+January - May 2023
+Short Description
+A series of games and animations created in Scratch to learn fundamental programming concepts, including loops, events, and simple game logic.
+Long Description
+As part of an Intro to Computer Programming course, I completed a unit on Scratch, where I learned visual programming concepts through the creation of several games and animations. Projects included a public service announcement (PSA) on snow safety, a comedic animation titled "Halal Burger," and two arcade-style games: "Donkey Feed" and "Snake Chase v.2." These projects were instrumental in understanding core programming principles like event handling, conditionals, and game state management in a fun and accessible way.
+Skills Utilized
+Scratch, Game Development, Animation, Storytelling, Problem-Solving
+Project Role
+Student/Developer
+Difficulty Level
+Beginner
+Collaborators
+Arshya Maricar (on "Halal Burger Animation")
+Link to Media Folder
+(Since the projects are embedded in the HTML, you may not need a separate folder for this one, but you can add a link here if you have extra media.)
+HTML Code from Old E-Portfolio
+<!DOCTYPE html>
+<html>
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>The Grand Project</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!--The following div is the links for the navigation bar-->
+    <div class="Navigation-Bar">
+      <center>
+        <br>
+        <nav>
+          <a href="./index.html"><button class="button-57" role="button"><span class="text">HomePage</span><span>Click to Jump!</span></button></a>
+          <a href="./Scratch.html"><button class="button-57" role="button"><span class="text">Scratch Projects</span><span>Click to Jump!</span></button></a>
+          <a href="./khanAcademy.html"><button class="button-57" role="button"><span class="text">Khan Academy</span><span>Click to Jump!</span></button></a>
+          <a href="./photoPea.html"><button class="button-57" role="button"><span class="text">Photo Pea</span><span>Click to Jump!</span></button></a>
+          <a href="./codeOrg.html"><button class="button-57" role="button"><span class="text">Code.org</span><span>Click to Jump!</span></button></a>
+          <a href="./AboutMe.html"><button class="button-57" role="button"><span class="text">About me</span><span>Click to Jump!</span></button></a>
+          <a href="./Tools.html"><button class="button-57" role="button"><span class="text">Tool/Sources</span><span>Click to Jump!</span></button></a>
+          <div class='Dropdown' style="display:inline-block">
+          <button class="button-57" role="button"><span class="text">Repl</span><span></span></button>
+          <div class='DropdownContent'>
+            <a href="./htmlcss.html">HTML/CSS</a>
+            <a href="./js.html">JavaScript</a>
+          </div>
+        </nav>
+          <br>
+      </center>
+    </div>
+    <br><br><br><br>
+    <!--The following div is all the scratch game embeds, Scratch generates them automatically for you-->
+    <div id="ScratchEmbed">
+      <center>
+        <figure>
+          <iframe src="https://scratch.mit.edu/projects/799396363/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen style="float: left;"></iframe>
+          <figcaption style="float: left;">Snow pt.4<br>This is was my final scratch project. It is part 4 of the snow safety PSA, the other parts cannot be accessed from this website.</figcaption>
+        </figure>
+        <figure>
+          <iframe src="https://scratch.mit.edu/projects/790045086/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen style="float: right;"></iframe>
+          <figcaption style="float: right;">Halal Burger Animation<br>This was an animation I made in partnership with Arshya Maricar, it is the story of a poor cow who got turned into a halal burger.</figcaption>
+        </figure>
+        <figure>
+          <iframe src="https://scratch.mit.edu/projects/787880697/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen style="float: left;"></iframe>
+          <figcaption style="float: left;">Donkey Feed<br>This game is based on what I witnessed while in Kurdistan, there is a little purple spiky plant which my Grandma's donkey loved to eat, so you must guide the purple plant away from the duplicating donkeys using the WASD keys. There is a glitch with the level up screen not going away, but the game still functions.</figcaption>
+        </figure>
+        <figure>
+          <iframe src="https://scratch.mit.edu/projects/783717601/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen style="float: right;"></iframe>
+          <figcaption style="float: right;">Snake Chase v.2<br>My first ever game was this, it is a simple yet challenging arcade style game.</figcaption>
+        </figure>
+          <br><br>
+      </center>
+    </div>
+  </body>
+</html>
+
+
+
+
+Intro to JavaScript with Khan Academy
+Project Documentation Template
+Project Title
+Intro to JavaScript with Khan Academy
+Date Completed
+January - May 2023
+Short Description
+A series of introductory programming projects created in the Khan Academy environment, focused on learning JavaScript fundamentals through drawing and animation.
+Long Description
+As a part of my Intro to Computer Programming course, I completed a unit on Khan Academy to learn the basics of JavaScript. This involved using a visual, drawing-based environment to create a variety of small projects. These included a simple animation of a waving snowman, an assignment to design my own food creation, a shooting star animation, and a character-based animation of a penguin. These projects were a valuable introduction to programming syntax, variables, and functions within a creative context.
+Skills Utilized
+JavaScript, Drawing, Animation, Problem-Solving, Creativity
+Project Role
+Student/Developer
+Difficulty Level
+Beginner
+Collaborators
+N/A
+Link to Media Folder
+(Please provide the link to your Google Drive folder with the project images here.)
+HTML Code from Old E-Portfolio
+<!DOCTYPE html>
+<html>
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>The Grand Project</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <!--The following div is the links for the navigation bar-->
+    <div class="Navigation-Bar">
+      <center>
+          <br>
+        <nav>
+          <a href="./index.html"><button class="button-57" role="button"><span class="text">HomePage</span><span>Click to Jump!</span></button></a>
+          <a href="./Scratch.html"><button class="button-57" role="button"><span class="text">Scratch Projects</span><span>Click to Jump!</span></button></a>
+          <a href="./khanAcademy.html"><button class="button-57" role="button"><span class="text">Khan Academy</span><span>Click to Jump!</span></button></a>
+          <a href="./photoPea.html"><button class="button-57" role="button"><span class="text">Photo Pea</span><span>Click to Jump!</span></button></a>
+          <a href="./codeOrg.html"><button class="button-57" role="button"><span class="text">Code.org</span><span>Click to Jump!</span></button></a>
+          <a href="./AboutMe.html"><button class="button-57" role="button"><span class="text">About me</span><span>Click to Jump!</span></button></a>
+          <a href="./Tools.html"><button class="button-57" role="button"><span class="text">Tool/Sources</span><span>Click to Jump!</span></button></a>
+          <div class='Dropdown' style="display:inline-block">
+          <button class="button-57" role="button"><span class="text">Repl</span><span></span></button>
+          <div class='DropdownContent'>
+            <a href="./htmlcss.html">HTML/CSS</a>
+            <a href="./js.html">JavaScript</a>
+          </div>
+        </nav>
+          <br>
+      </center>
+    </div>
+    <br><br><br><br>
+      <div id="ReplEmbed">
+      <center>
+        <figure>
+          <img src="Images/khanacedemny.PNG" height="500" width="1000" style="float: left;padding-bottom:20px;">
+          <figcaption style="float: right;">This is my first Khan Academy project, it was made usinng javascript and it is a waving snowman.</figcaption>
+        </figure>
+        <br>
+        <figure>
+          <img src="Images/FoodKhan.PNG" height="500" width="1000" style="float: right;padding-bottom:20px;">
+          <figcaption style="float: left;">This was one of my better Khan creations, which was part of an assignment to make up your own food.</figcaption>
+        </figure>
+        <figure>
+          <img src="Images/JSSHOOTINGSTAR.PNG" height="500" width="1000" style="float: left;padding-bottom:20px;">
+          <figcaption style="float: right;">This was a little shooting star animation. The stars fly as one big group.</figcaption>
+        </figure>
+        <figure>
+          <img src="Images/Pengu.PNG" height="500" width="1000" style="float: right;padding-bottom:20px;">
+          <figcaption style="float: left;">This is my animal animation, based on pengu the penguin.</figcaption>
+        </figure>
+      </center>
+    </div>
+  </body>
+</html>
+
+
+
+
+Digital Art and Photo Editing with Photopea
+Project Documentation Template
+Project Title
+Digital Art and Photo Editing with Photopea
+Date Completed
+January - May 2023
+Short Description
+A series of digital art and photo manipulation projects created in Photopea, focusing on text effects, image compositing, and object removal.
+Long Description
+This portfolio entry documents a unit on digital design and photo editing using Photopea, an in-browser image editor. The projects served as an introduction to key photo manipulation techniques. The first project involved using special font effects to display a word. I then created a composite image by combining two unrelated objects—a lion and a strawberry—into a single photo. The final assignments focused on advanced photo manipulation and object removal, where I successfully removed an umbrella from a beach scene, a potted plant from a desk, and a person from a photo of a pyramid, which required reconstructing the background.
+Skills Utilized
+Photopea, Digital Art, Photo Manipulation, Image Editing, ``Problem-Solving`
+Project Role
+Student/Developer
+Difficulty Level
+Beginner
+Collaborators
+N/A
+HTML Code from Old E-Portfolio
+<!DOCTYPE html>
+<html>
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>The Grand Project</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <!--The following div is the links for the navigation bar-->
+    <div class="Navigation-Bar">
+      <center>
+          <br>
+        <nav>
+          <a href="./index.html"><button class="button-57" role="button"><span class="text">HomePage</span><span>Click to Jump!</span></button></a>
+          <a href="./Scratch.html"><button class="button-57" role="button"><span class="text">Scratch Projects</span><span>Click to Jump!</span></button></a>
+          <a href="./khanAcademy.html"><button class="button-57" role="button"><span class="text">Khan Academy</span><span>Click to Jump!</span></button></a>
+          <a href="./photoPea.html"><button class="button-57" role="button"><span class="text">Photo Pea</span><span>Click to Jump!</span></button></a>
+          <a href="./codeOrg.html"><button class="button-57" role="button"><span class="text">Code.org</span><span>Click to Jump!</span></button></a>
+          <a href="./AboutMe.html"><button class="button-57" role="button"><span class="text">About me</span><span>Click to Jump!</span></button></a>
+          <a href="./Tools.html"><button class="button-57" role="button"><span class="text">Tool/Sources</span><span>Click to Jump!</span></button></a>
+          <div class='Dropdown' style="display:inline-block">
+          <button class="button-57" role="button"><span class="text">Repl</span><span></span></button>
+          <div class='DropdownContent'>
+            <a href="./htmlcss.html">HTML/CSS</a>
+            <a href="./js.html">JavaScript</a>
+          </div>
+        </nav>
+          <br>
+      </center>
+    </div>
+    <br><br><br><br>
+      <div id="ReplEmbed">
+      <center>
+        
+        <figure>
+          <img src="Images/Hello World.PNG" height="500" width="1000" style="float: left;padding-bottom:20px;">
+          <figcaption style="float: right;">This was my first photopea project. It involved displaying a word with special font effects.</figcaption>
+        </figure>
+          <img src="Images/LionStawberryPhotoPea.PNG" height="500" width="1000" style="float: right;padding-bottom:20px;">
+          <figcaption style="float: left;">This is my second project, in which we had to combine 2 random objects into one photo, and one of them had to be furry, so I used a lion.</figcaption>
+        </figure>
+        <figure>
+          <img src="Images/BeackAfter.PNG" height="500" width="1000" style="float: left;padding-bottom:20px;">
+          <figcaption style="float: right;">For this photo I had to remove an umbrella from the beach, this is the result after I removed it.</figcaption>
+        </figure>
+        <figure>
+          <img src="Images/deskafter.PNG" height="500" width="1000" style="float: right;padding-bottom:20px;">
+          <figcaption style="float: left;">This is a photo where I had to remove a potted plant from the desk. The green glow seemed to have appeared after I removed the plant, it is unkown why that glowing effect occured.</figcaption>
+        </figure>
+        <figure>
+          <img src="Images/ll.PNG" height="500" width="1000" style="float: left;padding-bottom:20px;">
+          <figcaption style="float: right;">This was a assignment where you had to erase a person from the photo,I removed someone right in the center and had to reconstruct the cornere of the pyramid. The little dot on the shadow is my cursor, not a mess-up.</figcaption>
+        </figure>
+      </center>
+    </div>
+  </body>
+</html>
+
+
+
+
+Web App Development with Code.org
+Project Documentation Template
+Project Title
+Web App Development with Code.org
+Date Completed
+January - May 2023
+Short Description
+A series of introductory web applications built on Code.org's App Lab platform, focusing on user interface design and event-driven programming.
+Long Description
+This project documents my work in Code.org's App Lab environment during my Intro to Computer Programming course. The unit focused on building interactive web applications by utilizing a block-based coding interface. My projects included a collaborative app on world cuisines, a "photo liker" app where I had to replicate the code for a given example, and a museum ticket generator based on user input. These assignments provided hands-on experience with concepts such as button events, user input, and data handling, laying the groundwork for more complex front-end development.
+Skills Utilized
+Code.org App Lab, JavaScript , UI/UX Design, Event Handling, Collaboration, Problem-Solving
+Project Role
+Student/Developer
+Difficulty Level
+Beginner
+Collaborators
+Arshya Maricar (on "Cuisines of the World" app)
+HTML Code from Old E-Portfolio
+<!DOCTYPE html>
+<html>
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>The Grand Project</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <!--The following div is the links for the navigation bar-->
+    <div class="Navigation-Bar">
+      <center>
+          <br>
+        <nav>
+          <a href="./index.html"><button class="button-57" role="button"><span class="text">HomePage</span><span>Click to Jump!</span></button></a>
+          <a href="./Scratch.html"><button class="button-57" role="button"><span class="text">Scratch Projects</span><span>Click to Jump!</span></button></a>
+          <a href="./khanAcademy.html"><button class="button-57" role="button"><span class="text">Khan Academy</span><span>Click to Jump!</span></button></a>
+          <a href="./photoPea.html"><button class="button-57" role="button"><span class="text">Photo Pea</span><span>Click to Jump!</span></button></a>
+          <a href="./codeOrg.html"><button class="button-57" role="button"><span class="text">Code.org</span><span>Click to Jump!</span></button></a>
+          <a href="./AboutMe.html"><button class="button-57" role="button"><span class="text">About me</span><span>Click to Jump!</span></button></a>
+          <a href="./Tools.html"><button class="button-57" role="button"><span class="text">Tool/Sources</span><span>Click to Jump!</span></button></a>
+          <div class='Dropdown' style="display:inline-block">
+          <button class="button-57" role="button"><span class="text">Repl</span><span></span></button>
+          <div class='DropdownContent'>
+            <a href="./htmlcss.html">HTML/CSS</a>
+            <a href="./js.html">JavaScript</a>
+          </div>
+        </nav>
+          <br>
+      </center>
+    </div>
+    <br><br><br><br>
+      <div id="ReplEmbed">
+      <center>
+        <figure>
+          <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/HF3PZNgoK2W3w2RWueVzM-QZzCgzn7PdHNYEMBm8RmQ/embed" style="float: left;"></iframe>
+          <figcaption style="float: right;">This is the first Code.org project I worked on, I made it with Arshya Maricar, it is about the cuisines of the world.</figcaption>
+        </figure>
+        <figure>
+          <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/NCRdBwBFsYHWwc-9CsIt_dZAt6Zo0uaakZh3evXQ_gk/embed"style="float: right;"></iframe>
+          <figcaption style="float: left;">This is the photo liker app. I was given a working example without the code and had to type the code myself.</figcaption>
+        </figure>
+        <figure>
+          <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/oIMekBtr81jCn2XlcNx5A81eQ6EKy4oZ7BLrACzyEU8/embed"style="float: left;"></iframe>
+          <figcaption style="float: right;">This is an app that generates a meuseum ticket based on what the user inputs.</figcaption>
+        </figure>
+        <figure>
+          <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/4NC_8_EB9j-UE0BCtRzx7Vxq208HgzW6k4JF8qUbOOg/embed"style="float: right;"></iframe>
+          <figcaption style="float: left;">This is the photo liker app. I was given a working example without the code and had to type the code myself.</figcaption>
+        </figure>
+      </center>
+    </div>
+  </body>
+</html>
+
+
+
+
+Intro to Web Development: HTML & CSS Projects
+Project Documentation Template
+Project Title
+Intro to Web Development: HTML & CSS Projects
+Date Completed
+January - May 2023
+Short Description
+A collection of my first web development projects, built using only HTML for structure and CSS for styling.
+Long Description
+This project documents my initial steps into web development. I focused on building web pages using HTML to create the structure and CSS to add visual styles. My work includes two versions of a school project about Mark Zuckerberg: an early version using only HTML, and a later one where I added CSS to make it look better with buttons and colored text. I also made a project for the WHHS Programming club where I learned to make animated buttons. These projects were important for learning how to build and style web pages without using JavaScript.
+Skills Utilized
+HTML, CSS, Front-End Development, UI/UX Design, Problem-Solving
+Project Role
+Student/Developer
+Difficulty Level
+Beginner
+Collaborators
+N/A
+HTML Code from Old E-Portfolio
+<!DOCTYPE html>
+<html>
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>The Grand Project</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <!--The following div is the links for the navigation bar-->
+    <div class="Navigation-Bar">
+      <center>
+          <br>
+        <nav>
+          <a href="./index.html"><button class="button-57" role="button"><span class="text">HomePage</span><span>Click to Jump!</span></button></a>
+          <a href="./Scratch.html"><button class="button-57" role="button"><span class="text">Scratch Projects</span><span>Click to Jump!</span></button></a>
+          <a href="./khanAcademy.html"><button class="button-57" role="button"><span class="text">Khan Academy</span><span>Click to Jump!</span></button></a>
+          <a href="./photoPea.html"><button class="button-57" role="button"><span class="text">Photo Pea</span><span>Click to Jump!</span></button></a>
+          <a href="./codeOrg.html"><button class="button-57" role="button"><span class="text">Code.org</span><span>Click to Jump!</span></button></a>
+          <a href="./AboutMe.html"><button class="button-57" role="button"><span class="text">About me</span><span>Click to Jump!</span></button></a>
+          <a href="./Tools.html"><button class="button-57" role="button"><span class="text">Tool/Sources</span><span>Click to Jump!</span></button></a>
+          <div class='Dropdown' style="display:inline-block">
+          <button class="button-57" role="button"><span class="text">Repl</span><span></span></button>
+          <div class='DropdownContent'>
+            <a href="./htmlcss.html">HTML/CSS</a>
+            <a href="./js.html">JavaScript</a>
+          </div>
+        </nav>
+          <br>
+      </center>
+    </div>
+    <br><br><br><br>
+      <div id="ReplEmbed">
+      <center>
+        <figure>
+          <iframe src="https://mark-zuckburg-icmp-project.bahandabdulrah1.repl.co/?embed=true" height="500" width="1000" style="float: left;"></iframe>
+          <figcaption style="float: right;">This is my first repl project. It is about Mark Zuckerberg. This was part of a school project. It did not use CSS</figcaption>
+        </figure>
+        <figure>
+          <iframe src="https://program.bahandabdulrah1.repl.co/?embed=true" 
+height="500" width="1000" style="float: right;"></iframe>
+          <figcaption style="float: left;">This is a project I am working on in the WHHS Programming club. It is not a class assignment. And this was when I found out how to make animated buttons</figcaption>
+        </figure>
+        <figure>
+          <iframe src="https://mark-zuckburg-icmp-project-with-css.bahandabdulrah1.repl.co/?embed=true" height="500" width="1000" style="float: left;"></iframe>
+          <figcaption style="float: right;">This is my original Mark Zuckerberg project but with CSS. I added buttons and text coloring.</figcaption>
+        </figure>
+      </center>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+Interactive Web Apps with JavaScript
+Project Documentation Template
+Project Title
+Interactive Web Apps with JavaScript
+Date Completed
+January - May 2023
+Short Description
+A set of web apps I built using HTML, CSS, and JavaScript, including a Magic 8 Ball, a Rock Paper Scissors game, and a website for a school club.
+Long Description
+This collection of projects showcases my initial work in building interactive websites using JavaScript, alongside HTML and CSS. The projects include a Magic 8 Ball web application that takes user input for a name and question, then provides a random response. I also developed a Rock, Paper, Scissors game where users can play against the computer, demonstrating basic game logic and user interaction. Furthermore, I collaborated with Arshya Maricar to create the official MSA club website for my school, which features multiple menus and sections, highlighting teamwork and more complex site structure. These projects were crucial for understanding how to handle user input, implement dynamic behaviors, and build more engaging web experiences.
+Skills Utilized
+HTML, CSS, JavaScript, UI/UX Design, Game Development, Collaboration
+Project Role
+Student/Developer
+Difficulty Level
+Beginner
+Collaborators
+Arshya Maricar (on the MSA club website)
+HTML Code from Old E-Portfolio
+<!DOCTYPE html>
+<html>
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>The Grand Project</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <!--The following div is the links for the navigation bar-->
+    <div class="Navigation-Bar">
+      <center>
+          <br>
+        <nav>
+          <a href="./index.html"><button class="button-57" role="button"><span class="text">HomePage</span><span>Click to Jump!</span></button></a>
+          <a href="./Scratch.html"><button class="button-57" role="button"><span class="text">Scratch Projects</span><span>Click to Jump!</span></button></a>
+          <a href="./khanAcademy.html"><button class="button-57" role="button"><span class="text">Khan Academy</span><span>Click to Jump!</span></button></a>
+          <a href="./photoPea.html"><button class="button-57" role="button"><span class="text">Photo Pea</span><span>Click to Jump!</span></button></a>
+          <a href="./codeOrg.html"><button class="button-57" role="button"><span class="text">Code.org</span><span>Click to Jump!</span></button></a>
+          <a href="./AboutMe.html"><button class="button-57" role="button"><span class="text">About me</span><span>Click to Jump!</span></button></a>
+          <a href="./Tools.html"><button class="button-57" role="button"><span class="text">Tool/Sources</span><span>Click to Jump!</span></button></a>
+          <div class='Dropdown' style="display:inline-block">
+          <button class="button-57" role="button"><span class="text">Repl</span><span></span></button>
+          <div class='DropdownContent'>
+            <a href="./htmlcss.html">HTML/CSS</a>
+            <a href="./js.html">JavaScript</a>
+          </div>
+        </nav>
+          <br>
+      </center>
+    </div>
+    <br><br><br><br>
+      <div id="ReplEmbed">
+      <center>
+        <figure>
+          <iframe src="https://magic-8-ball-the-website.bahandabdulrah1.repl.co/?embed=true" height="500" width="1000" style="float: left;"></iframe>
+          <figcaption style="float: right;">This is my Magic 8 ball website edition, once you click "Click to begin" the website will request your username and question, then the magic 8 ball will reply.</figcaption>
+        </figure>
+        <figure>
+          <iframe src="https://rock-paper-scissors.bahandabdulrah1.repl.co/?embed=true" height="500" width="1000" style="float: left;"></iframe>
+          <figcaption style="float: right;">This is my Rock Paper Scissor website, once the user click the begin button, they will be prompted to pick Rock, Paper, or Scissor. Then the Computer picks an option and the end winner is declared.</figcaption>
+        </figure>
+        <figure>
+          <iframe src="https://msa-website.bahandabdulrah1.repl.co/?embed=true" height="500" width="1000" style="float: left;"></iframe>
+          <figcaption style="float: right;">This is the official MSA website! Me and Arshya Maricar made it to as a school project, but also made it our official club website, you can go through all the menus and find many things!</figcaption>
+        </figure>
+      </center>
+    </div>
+  </body>
+</html>
+
+
+
+
+Tree Removal & Fence Reconstruction
+Project Documentation Template
+Project Title
+Tree Removal & Fence Reconstruction
+Date Completed
+(Please provide the month and year you completed this project.)
+Short Description
+A wild adventure in the backyard involving tree-chopping, teamwork, and an unexpected fence demolition (and subsequent resurrection!).
+Long Description
+This project was less about coding and more about embracing the great outdoors... and a bit of accidental destruction. My dad and I teamed up to tackle two stubborn trees in the backyard. We were all about that teamwork and those trusty ratchet straps to guide the trees down. Things were going great until, oops, one of the trees decided to take out a section of our metal fence on its way down. So, what started as a tree-cutting mission quickly turned into an impromptu fence reconstruction project! It was a real crash course in problem-solving, using tools (and maybe a bit of duct tape, metaphorically speaking), and learning that sometimes, projects come with unexpected, hilarious detours. Definitely a memorable bonding experience!
+Skills Utilized
+Teamwork, Problem-Solving, Tool Usage (e.g., chainsaws, ratchet straps, construction tools), Fence Construction, Accident Response, Physical Labor
+Project Role
+Team Member / Accidental Demolition & Reconstruction Specialist
+Difficulty Level
+Intermediate (mostly because of the unplanned "bonus" round of fence repair!)
+Collaborators
+My Dad
+Link to Media Folder
+(Please paste the link to your Google Drive folder with the project photos here.)
+
+
+Arduino Leonardo Steering Wheel Dashboard
+Project Documentation Template
+Project Title
+Arduino Leonardo Steering Wheel Dashboard
+Date Completed
+(Please provide the month and year you completed this project.)
+Short Description
+A custom dashboard attachment for a steering wheel, built with an Arduino Leonardo, that emulates keyboard strokes and features a parking brake status LED.
+Long Description
+This project involved creating a practical dashboard attachment for a steering wheel, designed to replace the need for a physical keyboard during certain activities by emulating keyboard strokes. The core of the system was an Arduino Leonardo, chosen for its native USB HID (Human Interface Device) capabilities, allowing it to act directly as a keyboard. The dashboard included various buttons or inputs mapped to specific keyboard commands, making common actions more accessible from the steering wheel. A key feature was a red LED indicator for the parking brake status, providing immediate visual feedback.
+A memorable (and slightly terrifying) debugging experience occurred during the initial testing phase. My first attempt at a simple one-wire keyboard setup kept failing. After many tries, when it finally did work, it launched into an unstoppable loop, relentlessly typing "I AM ALIVE" at lightning speed every time it was plugged into a computer (after a 2-second delay!). This made uploading code fixes incredibly difficult as the board would type over the IDE. After several frustrated attempts, I managed to use the board's physical reboot button to buy just enough time to initiate the upload and open a new notepad file to capture the "I AM ALIVE" manifesto. That file, AMALIVE.txt, still exists as a testament to the debugging struggle!
+Skills Utilized
+Arduino, C++ (for Arduino programming), Electronics, USB HID Emulation, Problem-Solving, Debugging, Circuit Design
+Project Role
+Sole Designer & Developer
+Difficulty Level
+Intermediate (especially with the unexpected debugging challenge!)
+Collaborators
+Leonardo (It’s like the arduino had a life of its own! Saying “I AM ALIVE” is pretty good evidence of it)
+Link to Media Folder
+(Please paste the link to your Google Drive folder with the project photos/videos here, especially the AMALIVE.txt file!)
+
+
+Corolla Screen
+Project Documentation Template
+Project Title
+Car Infotainment System Upgrade
+Date Completed
+(Please provide the month and year you completed this project.)
+Short Description
+Upgraded our 2006 Corolla's radio to a modern infotainment screen, involving removal of the old unit, installation of the new screen, and wire crimping.
+Long Description
+This project was a hands-on automotive upgrade where my dad and I replaced the outdated radio in our 2006 Corolla with a modern infotainment screen. The process involved carefully removing the old radio unit, which required understanding the car's dashboard assembly. We then proceeded with the installation of the new infotainment screen, ensuring a secure fit. A critical part of the project was wire crimping to correctly connect the new system to the car's electrical wiring, ensuring all functions (power, speakers, etc.) operated correctly. The successful completion of this project resulted in a significant upgrade to the car's interior, providing modern navigation and entertainment capabilities.
+Skills Utilized
+Automotive Repair, Electrical Wiring, Wire Crimping, Tool Usage, Problem-Solving, Teamwork
+Project Role
+Team Member / Installer
+Difficulty Level
+Intermediate
+Collaborators
+My Dad
+Link to Media Folder
+(Please paste the link to your Google Drive folder with the project photos here.)
+
+
+MSA Club Website Development
+Project Documentation Template
+Project Title
+MSA Club Website Development
+Date Completed
+January 2023 - May 2024
+Short Description
+Developed and maintained the official MSA (Muslim Student Association) club website, initially in collaboration and later as a solo developer.
+Long Description
+This project involved the comprehensive development and ongoing maintenance of the official MSA (Muslim Student Association) club website for my school. The initiative began as a school project from January to May 2023, during which I collaborated with Arshya Maricar to establish the initial structure and content. Following this collaborative phase, I took over as the solo developer from May 2023 until May 2024, continuously expanding its features, managing content, and ensuring its functionality. The website was designed with multiple menus and sections to serve as a central hub for club information, events, and resources. This long-term project demonstrated my ability to manage a web development project independently, adapt to evolving needs, and maintain a live application over an extended period. Please note that the original live link for this Repl.it project is no longer operational as Repl.it discontinued its free deployment plan.
+Skills Utilized
+HTML, CSS, JavaScript, UI/UX Design, Web Development, Collaboration, Independent Development, Project Management, Content Management
+Project Role
+Student/Developer, Solo Developer (after May 2023)
+Difficulty Level
+Intermediate
+Collaborators
+Arshya Maricar (January - May 2023)
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+HP Laptop Upgrade & OS Reimage
+Project Documentation Template
+Project Title
+HP Laptop Upgrade & OS Reimage
+Date Completed
+Dec 2023
+Short Description
+Upgraded a personal HP laptop by replacing the battery and upgrading the RAM, and resolved performance issues by reimaging the operating system back to Windows 10 after a problematic Windows 11 upgrade.
+Long Description
+This project involved a significant overhaul of my personal HP laptop to address severe performance degradation that occurred after upgrading from Windows 10 to Windows 11. This slowdown was identified as a widespread glitch associated with the in-place upgrade process. To improve hardware performance, I replaced the laptop's battery and upgraded the RAM, which are common hardware enhancements for speed and longevity. However, the core issue persisted due to the Windows 11 upgrade glitch. Since the deadline to officially downgrade back to Windows 10 had passed, the solution required a full reimage of the operating system back to Windows 10. This process involved backing up data, performing a clean installation, and reinstalling necessary drivers and software. After these combined hardware and software interventions, the laptop's speed and performance were fully restored. This project honed my skills in hardware maintenance, operating system troubleshooting, and data management.]
+(I updated this description Aug 2025, after figuring out at my Xavier IT Internship that the problem was widespread and even the university had issues and chase to reimage to 11 instead of inplace upgrade.)
+Skills Utilized
+Hardware Installation, RAM Upgrade, Battery Replacement, Operating System Reimaging, Windows Troubleshooting, Data Backup & Recovery, Problem-Solving
+Project Role
+Sole Technician / Administrator
+Difficulty Level
+Intermediate
+Collaborators
+N/A
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+Home Barista
+Project Documentation Template
+Project Title
+Home Barista
+Date Completed
+Dec 2023
+Short Description
+Learned the art of making lattes from scratch, using simple household items like a mason jar for frothing milk and instant coffee for the base.
+Long Description
+This project was a delicious dive into the world of coffee! I taught myself how to make lattes using surprisingly simple methods. The key was mastering the milk frothing technique, which I achieved by using a mason jar as a shaker – no fancy espresso machine needed! For the coffee base, I experimented with instant coffee and cold water to create a dark, rich foundation. This project was all about trial and error, learning the right ratios, and getting that perfect frothy texture. It's a fun skill that combines a bit of chemistry, a dash of creativity, and a whole lot of deliciousness!
+Skills Utilized
+Culinary Skills, Beverage Preparation, Experimentation, Problem-Solving, Creativity, Resourcefulness
+Project Role
+Sole Barista / Experimenter
+Difficulty Level
+Beginner
+Collaborators
+N/A
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here, especially if you have latte art!)
+
+
+Arduino Leonardo Button Deck
+Project Documentation Template
+Project Title
+Arduino Leonardo Button Deck
+Date Completed
+January 31, 2024
+Short Description
+A custom Arduino Leonardo-based button deck featuring a rotary encoder for cycling through four distinct keyboard command profiles, indicated by LEDs, and four programmable snap buttons for versatile input.
+Long Description
+This project involved the design and construction of a highly versatile Arduino Leonardo-based button deck, intended to serve as a custom input device for various applications, similar to a streaming or gaming macro pad. The core functionality revolves around its ability to emulate keyboard strokes directly, thanks to the Arduino Leonardo's native USB HID capabilities.
+The device features a rotary encoder that allows the user to cycle through four distinct profiles of keyboard keybinds. Each profile is visually indicated by one of four dedicated LEDs, providing clear feedback on the active mode. In addition to the rotary encoder's push-button, there are four tactile snap buttons that act as programmable "keys." The specific keyboard command sent by each of these buttons changes depending on the currently selected profile. For instance, one profile might map the buttons to WASD movement and Spacebar, while another could map them to arrow keys or numerical inputs (1, 2, 3, 4, Enter), or even special functions like Backspace and Delete. This project was an excellent exercise in microcontroller programming (C++), custom hardware design, electronics assembly, and creating a highly customizable human-computer interface.
+Skills Utilized
+Arduino, C++ (for Arduino programming), Electronics, USB HID Emulation, Custom Hardware Design, Circuit Design, Microcontroller Programming, Problem-Solving, Input Device Design
+Project Role
+Sole Designer & Developer
+Difficulty Level
+Intermediate
+Collaborators
+N/A
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+Arduino C++ Code
+/*The Rotary encoder has 5 pins, if holding the encoder with the knob facing you ad the pins to the right, from top to bottom, the 5 pins are:
+1st pin, CLK, is the Output A, which is a sensor slightly above Output B, meaning it senses clockwise rotation just before B does, reads high
+when
+  triggerred, low otherwise
+2nd pin, DT, is the Output B, which is a sensor slightly below Output A, meaning it senses counter clockwise rotation just before A does
+  reads high when triggered, low otherwise
+3rd pin, SW, is button pin, it goes high when the button is clicked, and low when not
+4th pin is positive pin(+)
+5th pin is ground pin(-)*/
+#include <Keyboard.h>  //keyboard library
+
+
+#define btn1 1  //four buttons connected at pins 1-4 inclusive
+#define btn2 2
+#define btn3 3
+#define btn4 4
+#define led1 5  //four LEDs connected at pins 5-8 inclusive
+#define led2 6
+#define led3 7
+#define led4 8
+#define CLK 10  //defining where the encoder is plugged in and setting the pins, it is currently plugged in with the first 3 pins at 10-12
+#define DT 11
+#define SW 12
+
+
+int counter = 1;
+int currentCLK;   //current reading of output A
+int previousCLK;  //last reading of output A
+bool clockwise;   //Will be set to true if shaft is spinning clockwise, otherwise false (? is for looks, it isn't secret syntax)
+/*unsigned long lastButtonPress = 0;  //used to store the value of the button press to be used later to calculate button click time
+unsigned long lastBtn1Press = 0;
+unsigned long lastBtn2Press = 0;
+unsigned long lastBtn3Press = 0;
+unsigned long lastBtn4Press = 0;*/
+
+
+int updateDevice(int currentCounter) {  //This function turns on the led that corresponds to the counter, and turns off the others.
+  if (currentCounter == 1) {
+    digitalWrite(led4, LOW);
+    digitalWrite(led2, LOW);
+    digitalWrite(led1, HIGH);
+  } else if (currentCounter == 2) {
+    digitalWrite(led1, LOW);
+    digitalWrite(led3, LOW);
+    digitalWrite(led2, HIGH);
+  } else if (currentCounter == 3) {
+    digitalWrite(led2, LOW);
+    digitalWrite(led4, LOW);
+    digitalWrite(led3, HIGH);
+  } else if (currentCounter == 4) {
+    digitalWrite(led3, LOW);
+    digitalWrite(led1, LOW);
+    digitalWrite(led4, HIGH);
+  }
+}
+
+
+//This function takes in the current dial Index and returns the corresponding set of keybinds, after each return statement, the key is commented
+int keyboardProfiles(int currentIndex, int currentButton) {
+  if (currentIndex == 1) {
+    switch (currentButton) {
+      case 1:
+        return 'a';
+      case 2:
+        return 's';
+        break;
+      case 3:
+        return 'w';
+        break;
+      case 4:
+        return 'd';
+        break;
+      case 5:
+        return 32;  // Spacebar
+        break;
+    }
+  } else if (currentIndex == 2) {
+    switch (currentButton) {
+      case 1:
+        return 216;  // Left Arrow
+        break;
+      case 2:
+        return 217;  // Down Arrow
+        break;
+
+
+      case 3:
+        return 218;  // Up Arrow
+        break;
+      case 4:
+        return 215;  // Right Arrow
+        break;
+      case 5:
+        return 32;  // Spacebar
+        break;
+    }
+  } else if (currentIndex == 3) {
+    switch (currentButton) {
+      case 1:
+        return 49;  // 1
+        break;
+      case 2:
+        return 50;  // 2
+        break;
+      case 3:
+        return 51;  // 3
+        break;
+      case 4:
+        return 52;  // 4
+        break;
+      case 5:
+        return 176;  // Enter
+        break;
+    }
+  } else if (currentIndex == 4) {
+    switch (currentButton) {
+      case 1:
+        return 178;  // Backspace
+        break;
+      case 2:
+        return 212;  // Delete
+        break;
+      case 3:
+        return 216;  // Left Arrow
+        break;
+      case 4:
+        return 215;  // Right Arrow
+        break;
+      case 5:
+        return 32;  // Spacebar
+        break;
+    }
+  }
+}
+
+
+void setup() {
+  pinMode(CLK, INPUT);   //Output A from RE is input
+  pinMode(DT, INPUT);    //Output B is also input
+  pinMode(btn1, INPUT);  //Buttons  1-4 installed on the board
+  pinMode(btn2, INPUT);
+  pinMode(btn3, INPUT);
+  pinMode(btn4, INPUT);
+  pinMode(led1, OUTPUT);  // LEDs 1-4 installed on the board, used for indicating counter variable
+  pinMode(led2, OUTPUT);
+  pinMode(led3, OUTPUT);
+  pinMode(led4, OUTPUT);
+  pinMode(SW, INPUT_PULLUP);       //the button is going to be set to high continuously unless clicked
+  previousCLK = digitalRead(CLK);  //updating output A for a reference value
+  Serial.begin(9600);
+}
+
+
+void loop() {
+  currentCLK = digitalRead(CLK);                       //updating Output A everytime the loop runs to garuntee "fresh" data
+  if (currentCLK != previousCLK && currentCLK == 1) {  //checking if the current output A is different from before, and on HIGH (aka = 1)
+    if (digitalRead(DT) != currentCLK) {
+      counter--;
+      if (counter == 0) {  //cycling through 1-4
+        counter = 4;
+      }
+      clockwise = false;
+    } else {
+      counter++;
+      if (counter == 5) {
+        counter = 1;
+      }
+      clockwise = true;
+    }
+  }
+  updateDevice(counter);
+  previousCLK = currentCLK;  //updating the previous output A to the most recent data
+
+
+  if (digitalRead(SW) == LOW) {
+    while (digitalRead(SW) == LOW) {
+      Keyboard.press(keyboardProfiles(counter, 5));
+      delay(200);
+    }
+  } else if (digitalRead(SW) == HIGH) {
+    Keyboard.release(keyboardProfiles(counter, 5));
+  }
+  if (digitalRead(btn1) == LOW) {
+    while (digitalRead(btn1) == LOW) {
+      Keyboard.press(keyboardProfiles(counter, 1));
+      delay(200);
+    }
+  } else if (digitalRead(btn1) == HIGH) {
+    Keyboard.release(keyboardProfiles(counter, 1));
+  }
+  if (digitalRead(btn2) == LOW) {
+    while (digitalRead(btn2) == LOW) {
+      Keyboard.press(keyboardProfiles(counter, 2));
+      delay(200);
+    }
+  } else if (digitalRead(btn2) == HIGH) {
+    Keyboard.release(keyboardProfiles(counter, 2));
+  }
+  if (digitalRead(btn3) == LOW) {
+    while (digitalRead(btn3) == LOW) {
+      Keyboard.press(keyboardProfiles(counter, 3));
+      delay(200);
+    }
+  } else if (digitalRead(btn3) == HIGH) {
+    Keyboard.release(keyboardProfiles(counter, 3));
+  }
+  if (digitalRead(btn4) == LOW) {
+    while (digitalRead(btn4) == LOW) {
+      Keyboard.press(keyboardProfiles(counter, 4));
+      delay(200);
+    }
+  } else if (digitalRead(btn4) == HIGH) {
+    Keyboard.release(keyboardProfiles(counter, 4));
+  }
+}
+
+
+
+
+
+
+Logical Fallacies: The Game (AP Seminar Project)
+Project Documentation Template
+Project Title
+Logical Fallacies: The Game (AP Seminar Project)
+Date Completed
+May 2024
+Short Description
+An interactive educational game developed for AP Seminar, designed to teach logical fallacies through multiple levels and an end boss, featuring a custom soundtrack.
+Long Description
+For our AP Seminar end-of-year project, my team and I developed "Logical Fallacies: The Game," an educational game aimed at making complex logical concepts engaging and understandable. The game was built on Code.org's App Lab platform, utilizing its written code interface (not block-based) to create a multi-level experience. Players navigated through various scenarios designed to highlight different logical fallacies, culminating in an end boss challenge that tested their understanding. A unique aspect of the project was its custom soundtrack, composed by Wyatt Childress, which enhanced the immersive experience. My role, alongside Karna Gajjar, involved both the programming and design of the game. Unfortunately, due to an update on Code.org, the game's animations broke, and the platform no longer permits access to the project. Despite this, the project was a significant learning experience in game design, collaborative development, and applying academic concepts in a creative digital format.
+Skills Utilized
+Game Design, JavaScript (Code.org App Lab), UI/UX Design, Logical Reasoning, Critical Thinking, Collaboration, Project Management, Creative Problem-Solving
+Project Role
+Co-Developer / Designer
+Difficulty Level
+Advanced
+Collaborators
+Karna Gajjar (Programming & Design), Wyatt Childress (Custom Soundtrack)
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+Astrophotography in Kurdistan
+Project Documentation Template
+Project Title
+Astrophotography in Kurdistan
+Date Completed
+Summer 2024
+Short Description
+Captured stunning astrophotographs of stars and cityscapes in the mountains of Slemani, Kurdistan, using a mobile phone.
+Long Description
+During my time in Kurdistan in the summer of 2024, I embarked on a fascinating project: learning how to take astrophotographs using just my phone. In the clear, dark skies of the Slemani mountains, I focused on capturing the beauty of the night sky, especially the stars, while also incorporating the distant city lights. This project involved understanding basic principles of mobile photography, adjusting settings for low-light conditions, and finding optimal vantage points. It was a blend of technical learning and appreciating the natural beauty of the environment.
+Skills Utilized
+Mobile Photography, Astrophotography, Low-Light Photography, Composition, Observation, Problem-Solving
+Project Role
+Sole Photographer / Experimenter
+Difficulty Level
+Beginner to Intermediate
+Collaborators
+N/A
+
+
+Simple Buzzer Music Player
+Project Documentation Template
+Project Title
+Simple Buzzer Music Player
+Date Completed
+October 3, 2024
+Short Description
+A basic electronics project where I assembled a buzzer circuit and used pre-made code to play musical tunes.
+Long Description
+This project was an introduction to simple electronics and microcontroller interaction. I assembled a basic circuit involving a buzzer, which is an output device that produces sound. The core of the project involved using pre-made code files sourced from a GitHub repository (https://github.com/hibit-dev/buzzer) to program a microcontroller (likely an Arduino or similar board) to play various musical sequences through the buzzer. This project focused on following circuit diagrams, connecting components correctly, and understanding how external code can control hardware, providing a tangible output in the form of sound.
+Skills Utilized
+Electronics Assembly, Circuit Building, Following Instructions, Basic Microcontroller Concepts, Hardware Implementation
+Project Role
+Sole Assembler / Implementer
+Difficulty Level
+Beginner
+Collaborators
+N/A
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+FTC "Rooky" Robot Drivetrain (Team 6133)
+Project Documentation Template
+Project Title
+FTC "Rooky" Robot Drivetrain (Team 6133)
+Date Completed
+October 10-19, 2024
+Short Description
+Developed the foundational drivable mecanum drivetrain for the first "Rooky" robot as part of FTC Team 6133 "The NUTS!", programmed in Java using Android Studio.
+Long Description
+As a rookie member of FTC Team 6133 "The NUTS!", my first major task was contributing to the development of the "Rooky" robot's drivetrain. This initial iteration focused on creating a fully functional and drivable mecanum drivetrain. The programming was done in Java using Android Studio, which was a significant learning experience for applying software concepts to control physical hardware. My role, alongside Aditya Singh and Edwin Tenney, was in the programming aspect, bringing the robot to life. Owen Wasson and Mario Ynga Orellana handled the build and CAD (Computer-Aided Design) for the physical structure. This project was crucial for understanding fundamental robotics principles, collaborative team dynamics, and the practical application of programming in a competitive robotics environment.
+Skills Utilized
+Java, Android Studio, Robotics, Mecanum Drivetrain, Teamwork, Collaborative Programming, Basic Robotics Concepts
+Project Role
+Programmer (FTC Rookie Team Member)
+Difficulty Level
+Intermediate
+Collaborators
+Aditya Singh (Programmer), Edwin Tenney (Programmer), Owen Wasson (Build/CAD), Mario Ynga Orellana (Build/CAD)
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+FTC "Rooky" Bot: Claw & Turtle Mode (v1)
+Project Documentation Template
+Project Title
+FTC "Rooky" Bot: Claw & Turtle Mode (v1)
+Date Completed
+(Please provide the month and year you completed this project.)
+Short Description
+Designed and tested a 3D-printed claw to score colored targets and implemented a "Turtle mode" for the drivetrain, allowing speed toggling with haptic feedback.
+Long Description
+Building upon the foundational drivetrain, this phase of the 'Rooky' robot project focused on enhancing its scoring capabilities and driver control. We designed and fabricated a small claw mechanism from gold silk PLA (a type of 3D printer filament). However, this initial claw often broke easily and scraped on the floor, which was a real pain. It also made it tough to maneuver the robot to pick up blocks because the claw would collide with them. Concurrently, we developed and programmed a 'Turtle mode' for the robot's drivetrain. This feature allows the driver to toggle between fast and slow driving speeds, providing greater precision for intricate maneuvers. To enhance the driver's experience, the system was programmed to provide vibration feedback on the controller, clearly indicating the active speed setting. This project demonstrated our ability to integrate new hardware (the claw) with existing systems and implement advanced control features for improved robot performance.
+Skills Utilized
+Robotics, Java, Android Studio, 3D Design (CAD), 3D Printing (PLA), Mechanism Design, Haptic Feedback Programming, Teamwork, Problem-Solving
+Project Role
+Programmer / Designer
+Difficulty Level
+Intermediate
+Collaborators
+Aditya Singh (Programmer), Edwin Tenney (Programmer), Owen Wasson (Build/CAD), Mario Ynga Orellana (Build/CAD)
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+FTC "Rooky" Bot: Autonomous April Tag Cycler (v2)
+Project Documentation Template
+Project Title
+FTC "Rooky" Bot: Autonomous April Tag Cycler (v2)
+Date Completed
+Nov 2024
+Short Description
+Integrated a USB webcam for April Tag detection and developed an autonomous program for the "Rooky" robot to detect, approach, and cycle through a sequence of April Tags (12, 13, 14, 15).
+Long Description
+Building significantly on the "Rooky" robot's capabilities, this phase introduced computer vision for autonomous operation. We integrated a USB Logitech webcam onto the robot and began programming its ability to detect and approach specific April Tags. The development involved multiple iterations, starting with a simpler program to approach any visible April Tag (which, as documented by a cool compilation video, initially had some amusing failures!). By the end of this weekend-long effort, we achieved a functional autonomous cycler.
+The final program allowed the robot to:
+1. Detect April Tag 12 and approach it, stopping approximately 20cm in front and aligning itself straight.
+2. Turn right until it detected the next April Tag in the sequence.
+3. Approach the newly detected tag, utilizing the advantages of the mecanum drivetrain to correct its heading on the way.
+4. Repeat the turning and approaching process. This sequence created an infinite loop, cycling through April Tags 12, 13, 14, and 15, then restarting at 12. This project was a major step in implementing advanced autonomous navigation and sensor integration in a competitive robotics context.
+Skills Utilized
+Robotics, Java, Android Studio, Computer Vision, April Tag Detection, Autonomous Robotics, Sensor Integration, Iterative Development, Debugging, Teamwork, Problem-Solving
+Project Role
+Programmer
+Difficulty Level
+Advanced
+Collaborators
+Aditya Singh (Programmer), Edwin Tenney (Programmer), Owen Wasson (Build/CAD), Mario Ynga Orellana (Build/CAD)
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+Cooky bot v3
+Project Documentation Template
+Project Title
+FTC "Rooky" Bot: Autonomous April Tag Cycler with Collision Avoidance (v3)
+Date Completed
+Nov 2024
+Short Description
+Enhanced the "Rooky" robot's autonomous April Tag cycling by integrating a physical distance sensor for collision avoidance, enabling robust navigation and recovery from interference.
+Long Description
+This phase marked a significant advancement in the "Rooky" robot's autonomous capabilities by introducing a physical distance sensor. This sensor was integrated with the existing April Tag cycling program to enable collision avoidance, making the robot more robust in dynamic environments. The videos demonstrate the robot's improved resilience; it was able to continue its cycling routine even while being "bullied" or interfered with, proving to be quite stubborn and capable of staying on track. A key improvement was its ability to recover autonomously: if the robot temporarily lost sight of the next April Tag in its sequence, it would simply spin in place (a maneuver facilitated by the mecanum drivetrain) until it re-acquired the correct tag ID, then resume its approach. This project deepened our understanding of sensor fusion, reactive autonomous behaviors, and creating highly reliable navigation systems for competitive robotics.
+Skills Utilized
+Robotics, Java, Android Studio, Computer Vision, April Tag Detection, Autonomous Robotics, Sensor Integration, Distance Sensing, Collision Avoidance, Robust Autonomous Navigation, Iterative Development, Debugging, Teamwork, Problem-Solving
+Project Role
+Programmer
+Difficulty Level
+Advanced
+Collaborators
+Aditya Singh (Programmer), Edwin Tenney (Programmer), Owen Wasson (Build/CAD), Mario Ynga Orellana (Build/CAD)
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+FTC "Rooky" Bot: Claw Redesign (v4)
+Project Documentation Template
+Project Title
+FTC "Rooky" Bot: Claw Redesign (v4)
+Date Completed
+Nov 2024
+Short Description
+A redesigned and improved robot claw, 3D-printed in Navy PLA, featuring enhanced ground clearance, a stable U-channel mount, and improved block acquisition for two-driver operation.
+Long Description
+This project focused on a critical redesign of the "Rooky" robot's claw mechanism, addressing significant issues encountered with the initial version. The first claw often broke and scraped against the ground, hindering the robot's performance. The new iteration, 3D-printed in durable Navy PLA, was engineered to resolve these problems.
+Key improvements in this Claw Redesign (v2) include:
+* Enhanced Ground Clearance: The new design ensured the claw no longer came into contact with the ground, preventing damage and improving maneuverability.
+* Stable U-Channel Mount: A special U-channel was integrated into the design, providing a firm and consistent mounting point that held the claw at the optimal height.
+* Improved Block Acquisition: When the claw was open, its redesigned geometry allowed it to pass over blocks without collision, making it significantly easier and more reliable to pick up targets. This iteration was also optimized for two-driver operation, with one driver controlling the robot's movement and the other dedicated to operating the claw's open/close functions. This project was a practical lesson in iterative design, mechanical problem-solving, and improving robot functionality based on field testing and feedback.
+Skills Utilized
+Robotics, 3D Design (CAD), 3D Printing (PLA), Mechanism Design, Iterative Design, Mechanical Engineering, Teamwork, Problem-Solving, Java (for control integration)
+Project Role
+Programmer / Designer
+Difficulty Level
+Intermediate
+Collaborators
+Aditya Singh (Programmer), Edwin Tenney (Programmer), Owen Wasson (Build/CAD), Mario Ynga Orellana (Build/CAD)
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+Custom 3D-Printed Car Dealership Name Plaque
+Project Documentation Template
+Project Title
+Custom 3D-Printed Car Dealership Name Plaque
+Date Completed
+November 2024
+Short Description
+Designed and 3D-printed a custom name plaque for a car dealership owner, incorporating pen holders and a Dodge Challenger design, finished with metallic accents.
+Long Description
+This project involved the design and fabrication of a personalized name plaque for my mom's cousin, Hardy Nalasw, who owns a car dealership. The design was carefully crafted to reflect his business, featuring integrated pen holders and a prominent Dodge Challenger model to match the automotive theme. To give it a high-quality, metallic look, I used a metallic marker to highlight his name and the car details.
+The design process was conducted using Tinkercad for initial modeling and OrcaSlicer for preparing the print, as I had not yet learned Onshape. This project was particularly significant as it was one of my very first endeavors with my new 3D printer, which I had acquired only a week prior. Despite being new to both 3D design and printing, I successfully brought the concept to life, showcasing early skills in digital fabrication and creative problem-solving.
+Skills Utilized
+3D Design (Tinkercad, OrcaSlicer), 3D Printing, Custom Fabrication, Creative Design, Prototyping, Attention to Detail
+Project Role
+Sole Designer & Fabricator
+Difficulty Level
+Beginner to Intermediate
+Collaborators
+N/A
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+Limelight 3A: Color Thresholding
+Project Documentation Template
+Project Title
+Limelight 3A: Color Thresholding
+Date Completed
+December 2024
+Short Description
+Integrated a Limelight 3A camera for autonomous detection and slow approach of yellow "Sample" game pieces using color thresholding.
+Long Description
+This phase marked the beginning of our Limelight 3A journey, and it was a pivotal moment as we shifted our focus from the "Rooky" robot to developing for our actual competition robot, Leviathan. The "Rooky" bot became a crucial test vessel for this advanced vision system. The Limelight 3A is a specialized, easy-to-use vision processing camera commonly used in competitive robotics, particularly in FIRST Tech Challenge (FTC) and FIRST Robotics Competition (FRC). It's designed to quickly and accurately identify and track targets, such as April Tags, game pieces, or other objects, using built-in image processing features. This allows robots to "see" and react to their environment autonomously. Beyond basic color thresholding, the Limelight 3A also supports more advanced applications like Python SnapScripts and neural networks for more sophisticated object recognition and analysis.
+Our primary goal was to enable the robot to autonomously detect and pick up target blocks, specifically the yellow "Sample" game pieces from the 2024-2025 FTC season, "Into The Deep." We developed programming that utilized color thresholding with the Limelight as our starting point for object detection. While we achieved a somewhat reliable system where the robot would very slowly approach a detected yellow Sample, we had plans to continue exploring and implementing other methods to find the most robust and accurate detection solution. This entire effort was aimed at making the camera system good enough to be used on our actual competition robot, Leviathan, with the Rooky Bot serving as a crucial test vessel for development and refinement. This project was a crucial step in advancing the robot's ability to interact autonomously with game elements, laying the groundwork for more sophisticated object manipulation and scoring routines. Throughout this, our existing drivetrain served as the foundational mobile platform, or "carrier," for this advanced vision system.
+Skills Utilized
+Robotics, Java, Android Studio, Computer Vision, Limelight 3A, Color Thresholding, Autonomous Robotics, Sensor Integration, Object Detection, Iterative Development, Debugging, Teamwork, Problem-Solving
+Project Role
+Programmer
+Difficulty Level
+Advanced
+Collaborators
+Aditya Singh (Programmer), Edwin Tenney (Programmer)
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+
+
+Custom 3D-Printed Dash Cam Mount
+Project Documentation Template
+Project Title
+Custom 3D-Printed Dash Cam Mount
+Date Completed
+Dec 2024
+Short Description
+Designed and 3D-printed a replacement ball joint and clipping mechanism for a car's dash camera mount, solving a real-world hardware issue.
+Long Description
+This project was a significant milestone as it represented my first real-world application of 3D design and printing to solve a practical problem. The task was to replace the broken ball joint and clipping mechanism for our car's dash camera mount. This was the first time I designed and printed something entirely from scratch, and it marked my introduction to Onshape, a professional CAD software.
+The process involved meticulously taking measurements using calipers to ensure precision. I then used Onshape to redesign both the clipping mechanism for secure attachment and an accurately sized ball joint for flexible positioning. After designing, I 3D-printed the part. The successful outcome is evident as the custom mount worked perfectly and is still in use in our car today, demonstrating the durability and functionality of the redesigned component. This project greatly enhanced my skills in precision measurement, CAD software, and practical engineering.
+Skills Utilized
+3D Design (Onshape), 3D Printing, Calipers, Mechanical Design, Problem-Solving, Custom Fabrication, Precision Measurement
+Project Role
+Sole Designer & Fabricator
+Difficulty Level
+Intermediate
+Collaborators
+N/A
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+Custom 3D-Printed Webcam Mount & Repair
+Project Documentation Template
+Project Title
+Custom 3D-Printed Webcam Mount & Repair
+Date Completed
+(Please provide the month and year you completed this project.)
+Short Description
+Designed and 3D-printed a custom, cage-like clamping mechanism with an adjustable ball joint for a USB webcam to mount on a large desk monitor, including an unexpected and creative repair process.
+Long Description
+This project involved creating a new mount for our USB webcam after its original mechanism broke beyond repair. This was a completely separate task from the dashcam project and was specifically for my dad's desk. I started with an existing online design for an M6 screw-on camera, but our webcam no longer had the M6 threading since it had broken off with the original clamp. This required me to redesign the M6 mount into a custom, cage-like contraption that securely clasped the webcam. The design also included an adjustable angle using a ball joint for flexible positioning, crucial for a larger-than-usual monitor clamp.
+However, during the redesign, I accidentally made it incompatible with the original ball joint, forcing me to use glue. In a classic "measure twice, cut once" moment, I then realized I had glued the camera holder base upside down! To fix this, I had to cut off the entire camera holder base and ball joint using heated X-Acto knives, and then reattach it the right way up using my 3D pen. It was surprisingly fun to mend a 3D print with a 3D pen, even if it left some hidden soot marks and gold filament. Luckily, my dad only needed it to work, not look perfect, and it's still in use on his desk monitor to this day, proving its functionality despite the mishaps! This project was a great lesson in iterative design, real-world problem-solving, and creative repair techniques.
+Skills Utilized
+3D Design (Onshape), 3D Printing, Mechanical Design, Problem-Solving, Custom Fabrication, Precision Measurement, Hardware Repair, Iterative Design, Post-Processing (cutting, 3D pen mending)
+Project Role
+Sole Designer & Fabricator / Repair Technician
+Difficulty Level
+Intermediate to Advanced (due to redesign, complex repair, and unique mending)
+Collaborators
+N/A
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+Raspberry Pi 4 Custom Fan Adapter
+Project Documentation Template
+Project Title
+Raspberry Pi 4 Custom Fan Adapter
+Date Completed
+Dec 24
+Short Description
+Designed and 3D-printed a custom adapter to mount a large, upcycled fan from an air hockey game onto a Raspberry Pi 4 case for powerful cooling, involving creative 3D pen repairs.
+Long Description
+This project involved creating an unconventional yet highly effective cooling solution for my Raspberry Pi 4. I began by harvesting a large, oversized fan from an old desktop air hockey game. Having already 3D-printed a case for my Raspberry Pi 4 (which I was just learning to use), the challenge was to integrate this powerful fan.
+Using Onshape, along with precise measurements and reference photos, I designed a custom adapter that would allow the large fan to slot directly into an opening on the RPi case. While the design perfectly attached to the fan, the adapter unfortunately warped during printing, preventing it from fitting correctly into the RPi case's slot. This led to some 3D pen magic: I used my 3D pen to directly attach the mouth of the fan adapter to the opening on the top of the RPi case. It was an extremely inefficient method, but the result was a very powerful cooling system. The fan required an external battery/power source to operate, which luckily I had salvaged from the air hockey game, complete with its original power switch. This project is a testament to creative problem-solving and functionality over aesthetics!
+Skills Utilized
+3D Design (Onshape), 3D Printing, Upcycling, Raspberry Pi, Electronics, Hardware Integration, Problem-Solving, Post-Processing (3D pen mending), Measurement
+Project Role
+Sole Designer & Fabricator / Innovator
+Difficulty Level
+Intermediate to Advanced (due to design, warping, and creative repair)
+Collaborators
+N/A
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+ESP32 RC Car
+Project Documentation Template
+Project Title
+ESP32 RC Car 
+Date Completed
+Jan 2025
+Short Description
+An ambitious attempt to control an RC car drivetrain via Bluetooth using an ESP32 and a Dualshock 4 controller, integrated with a Raspberry Pi 4 for live FPV camera feedback.
+Long Description
+This project was my first foray into using an ESP32 board, with the goal of achieving Bluetooth control over an RC car's drivetrain using a Dualshock 4 controller. The vision was to pair this with a Raspberry Pi 4-based camera/FPV system to provide live video feedback during driving.
+The project presented significant challenges, primarily due to the RC car's cheap, off-brand nature. Its steering mechanism wasn't a standard servo but a 5-wire motor hooked up to a potentiometer, making it extremely unstable and difficult to program. Despite extensive programming tweaks, debugging, and the implementation of PID control and smoothening algorithms, the car remained very jittery. A major roadblock was discovered when my H-bridge motor driver proved unable to handle the current required by the motor, causing the project to ultimately fail due to insufficient power delivery. I even attempted a second time using a VEX Robotics drivetrain, but those motors also drew too much current for the H-bridge. Given the demanding schoolwork and new robotics tasks that arose, I decided to conclude the project. While not fully successful in its operational goals, I gained valuable insight and skills in complex electronics, wireless control, and advanced debugging, making it a worthwhile learning experience.
+Skills Utilized
+ESP32, Bluetooth, Dualshock 4 Controller Integration, RC Car Mechanics, Motor Control, PID Control, Debugging, Raspberry Pi 4, FPV Systems, Electronics, Problem-Solving, C++ (for ESP32 programming)
+Project Role
+Sole Developer / Integrator
+Difficulty Level
+Advanced (due to complex integration, unusual hardware, and significant debugging)
+Collaborators
+N/A
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+Making a Dataset
+Project Documentation Template
+Project Title
+Making a Dataset
+Date Completed
+January 2025
+Short Description
+The first attempt at training a neural network for Leviathan using a Limelight-provided Google Colab notebook and a tflite model, aimed at improving autonomous "Sample" detection.
+Long Description
+Following the extensive work on creating our custom dataset, this project marked the crucial next step: training the Neural Network for our competition robot, Leviathan. We utilized a Google Colab notebook specifically provided by Limelight, which streamlined the training process. This notebook leveraged a pre-existing model in the tflite format, a unique and optimized format for Limelight's vision processing capabilities.
+Our process involved feeding our meticulously annotated dataset into this setup to begin training the model. Once trained, we were able to successfully deploy and test the model on the Limelight 3A camera. However, the initial results revealed that the model's accuracy and consistency were pretty bad, making it clear that a significant rework was needed.
+Crucially, after this attempt, we collectively decided to pivot away from neural networks for the time being. We realized that we had skipped too far ahead in our vision development. According to Limelight's documentation and the success of other teams, the recommended approach is to start small and simple, then gradually work your way up to more complex methods like neural networks. Therefore, our next step became focusing on trying to implement a custom Python SnapScript for object detection. This project, while not achieving its initial goal, was invaluable in highlighting the iterative nature of machine learning development and the importance of following best practices in robotics vision. The Rooky Bot continued to serve as our crucial test vessel for all these Limelight experiments.
+Skills Utilized
+Neural Network Training, Machine Learning, Google Colab, Limelight 3A, Model Deployment, Data Analysis, Debugging, Iterative Development, Robotics, Java (for integration), Teamwork
+Project Role
+Programmer / ML Engineer
+Difficulty Level
+Advanced
+Collaborators
+Aditya Singh, Edwin Tenney
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+
+
+Limelight 3A: Python SnapScript Vision (v1)
+Project Documentation Template
+Project Title
+Limelight 3A: Python SnapScript Vision (v1)
+Date Completed
+Feb 2025
+Short Description
+Developed the first iteration of a Python SnapScript vision system for Leviathan, utilizing OpenCV for color and edge detection to identify single "Sample" game pieces.
+Long Description
+Following our initial attempt with neural networks, we pivoted our vision strategy for Leviathan to Python SnapScripts on the Limelight 3A, recognizing the importance of starting with simpler, foundational methods as recommended by Limelight documentation. This project marked the beginning of our long journey to perfect this vision system.
+For this first version, we focused on using basic OpenCV functionalities. We implemented edge detection and color detection to accurately capture the target "Sample" game pieces. In this iteration, we were still using a bounding box for detection, which was accurately placed on the bottom-left and top-right corners of the sample. However, this bounding box approach meant we did not have rotation data, as it doesn't inherently provide information about the object's orientation. The goal for this iteration was to reliably identify a single, lone Sample in the field. During this time, while Aditya already had some experience, Edwin and I both dedicated ourselves to learning OpenCV more deeply. We enrolled in and completed the OpenCV University Bootcamp, where we both earned Honors Certificates and became certified in OpenCV. This foundational work, despite its initial limitation to single object detection and the challenge of extracting rotation data, was crucial for building our expertise in computer vision for robotics.
+Skills Utilized
+Python, OpenCV, Limelight 3A, Python SnapScripts, Computer Vision, Edge Detection, Color Detection, Autonomous Robotics, Debugging, Teamwork, Certification
+Project Role
+Programmer / Vision Engineer
+Difficulty Level
+Advanced
+Collaborators
+Aditya Singh, Edwin Tenney
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+
+
+Limelight 3A: Python SnapScript Vision (v2)
+Project Documentation Template
+Project Title
+Limelight 3A: Python SnapScript Vision (v2)
+Date Completed
+Feb 2025
+Short Description
+Advanced the Python SnapScript vision system to utilize aspect ratio for sample orientation, enabling autonomous detection and auto-rotation for all three sample colors (red, yellow, blue) for the competition robot.
+Long Description
+Building on our initial Python SnapScript work, this iteration represented a significant leap forward in our vision system for Leviathan. After extensive work and tinkering, we successfully utilized the aspect ratio of the detected bounding box to gain a general understanding of the "Sample" game piece's orientation – whether it was vertical, horizontal, or anywhere in between. This breakthrough was crucial, as our claw was capable of picking up a sample even if it was up to 45 degrees off in terms of rotation.
+A memorable part of this development occurred during a late-night programming and debugging session in our hotel lobby at a competition (the camera wasn't in use yet, we just had a burst of inspiration!). During this intense, hot chocolate-fueled night, we managed to integrate the vision system with the robot's hardware. While we didn't have the full physical robot, we used the control hub (the brain of the bot) and an iteration of our claw, which was simply handheld but had wrist rotation.
+The highlight of this version was successfully developing a SnapScript that could handle all three sample colors (red, yellow, blue) and autonomously auto-rotate the robot to pick up the samples with precision. We recorded a multitude of clips throughout the night, documenting our progress. To cap off the effort, I even edited an excessively cinematic short movie detailing the full timeline of going from an unoperational system to achieving robust, three-color detection. This project truly showcased our dedication to perfecting autonomous vision for competition.
+Skills Utilized
+Python, OpenCV, Limelight 3A, Python SnapScripts, Computer Vision, Aspect Ratio Analysis, Autonomous Robotics, Advanced Debugging, Hardware Integration, Video Editing, Teamwork, Problem-Solving
+Project Role
+Programmer / Vision Engineer
+Difficulty Level
+Advanced
+Collaborators
+Aditya Singh, Edwin Tenney
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here, especially that cinematic short movie!)
+
+
+FTC Sponsorship Video Short
+Project Documentation Template
+Project Title
+FTC Sponsorship Video Short
+Date Completed
+Feb 2025
+Short Description
+A 30-second promotional video created to showcase the team's technical projects, including computer vision development, for potential sponsors at the 2025 INTERalliance TechOlympics.
+Long Description
+This short project focused on creating a high-impact, 30-second promotional video to serve as a key tool for our sponsorship outreach efforts. The goal was to quickly and effectively communicate the technical capabilities and dedication of our FTC team to potential sponsors. The video included a clip detailing our SnapScript computer vision development, which was a core project for the team. This visual proof of concept was a powerful way to demonstrate our advanced programming and problem-solving skills. The video was specifically intended for use at the 2025 INTERalliance of Greater Cincinnati TechOlympics, where we planned to present it as we talked to companies such as GE Aerospace and P&G, at their respective booths. This project highlighted our ability to not only develop complex robotic systems but also to communicate our value and attract support from the community.
+Skills Utilized
+Video Editing, Media Production, Sponsorship Outreach, Public Speaking, Communication, Marketing
+Project Role
+Media Producer
+Difficulty Level
+Beginner
+Collaborators
+Your FTC team
+Link to Media Folder
+(Please paste the link to your Google Drive folder with the project video here.)
+
+
+Budget PC Build
+Project Documentation Template
+Project Title
+Budget PC Build
+Date Completed
+(Please provide the month and year you completed this project.)
+Short Description
+Successfully built a custom PC for under $600 by strategically sourcing parts, which resulted in a machine that outperformed pre-built computers costing over $1000.
+Long Description
+This project was my first venture into building a custom PC from the ground up. My goal was to create a powerful yet affordable machine by meticulously researching and finding the best deals on components. With valuable assistance from my friend Owen Wasson, I was able to navigate the process of selecting hardware and assembling the computer. We found a lot of the parts from a local Micro Center, which was key to staying under budget. The final build was a huge success, as the PC's performance exceeded that of many commercially available systems priced at over $1000. This project was a fantastic hands-on lesson in hardware selection, budget management, and computer assembly.
+Skills Utilized
+PC Building, Hardware Selection, Research, Budgeting, Troubleshooting, Teamwork, Problem-Solving, Computer Assembly
+Project Role
+PC Builder
+Difficulty Level
+Intermediate
+Collaborators
+Owen Wasson
+Link to Media Folder
+(Please paste the link to your Google Drive folder with photos or videos of the PC build here.)
+
+
+Limelight 3A: Python SnapScript (v3)
+Project Documentation Template
+Project Title
+Limelight 3A: Python SnapScript (v3) with minAreaRect
+Date Completed
+February 2025
+Short Description
+Developed a third version of the Python SnapScript using minAreaRect to generate precise polygon bounding boxes from color thresholding and edge detection, with guidance from an Oracle mentor.
+Long Description
+This project represented a significant evolution of our Python SnapScript, moving from a simple aspect ratio analysis to a more sophisticated, geometric approach. With invaluable guidance from Will Reed, a Principal Machine Learning Engineer at Oracle, our team was able to leverage a key computer vision function: minAreaRect(). This new approach allowed us to use color thresholding and edge detection to generate an actual polygon around the detected "Sample" game piece.
+This method gave us a much more precise bounding box, which was a huge step up from simply analyzing aspect ratios. The polygons provided a more accurate representation of the object's shape and orientation on the field. The knowledge gained from this project, combined with our newly acquired OpenCV certifications, allowed us to write more robust and effective vision scripts. While this version was a major improvement, we recognized that the issue of distinguishing between samples that were positioned very close to one another was still present enough that it needed further attention. This project solidified our foundation in advanced computer vision techniques and demonstrated the power of real-world mentorship.
+Skills Utilized
+Python, OpenCV, Computer Vision, Color Thresholding, Edge Detection, minAreaRect(), Polygon Bounding Boxes, Robotics, Teamwork, Mentorship, Problem-Solving
+Project Role
+Programmer
+Difficulty Level
+Advanced
+Collaborators
+Aditya Singh, Edwin Tenney, Will Reed (Mentor)
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+Leviathan: Neural Network Training (v2)
+Project Documentation Template
+Project Title
+Leviathan: Neural Network Training (v2)
+Date Completed
+February 2025
+Short Description
+Successfully retrained a neural network model for the Limelight camera, creating a driver-assist feature that autonomously aligns the drivetrain for specific "Sample" game pieces.
+Long Description
+This project was a pivotal return to our neural network approach after encountering a roadblock with our previous computer vision methods. While Aditya, Edwin, and I had been struggling to find a way to reliably separate two touching "Samples," our team member Alex Montello took the initiative to revisit our initial neural network training attempt. We had previously abandoned this path when the Google Colab notebook provided by Limelight stopped working and subsequent training attempts failed.
+A major breakthrough came when we identified the root cause of the failures: the limited GPU credits provided by the free version of Google Colab. To overcome this, Alex made a crucial decision to spend approximately $20 for enough GPU credits to complete the training. This investment paid off, allowing us to successfully train and deploy a functional neural network detector model.
+The new model was a proof of concept that worked for a specific, yet crucial, scenario. The system was designed as a driver-assist feature: a driver would get the robot close to a target, then hold a button on the controller to enable the Limelight to take control of the drivetrain, making precise maneuvers to align the claw with the detected sample. The driver was still responsible for triggering the intake and rotating the wrist to complete the pickup. This project was a powerful lesson in resourcefulness, perseverance, and the importance of dedicated teamwork in overcoming complex technical challenges.
+Skills Utilized
+Neural Network Training, Machine Learning, Google Colab, Limelight 3A, Computer Vision, Model Deployment, Debugging, Iterative Development, Robotics, Teamwork, Budgeting, Problem-Solving
+Project Role
+Programmer / ML Engineer
+Difficulty Level
+Advanced
+Collaborators
+Aditya Singh, Edwin Tenney, Alex Montello
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+
+
+3D Printer First-Layer Tuning
+Project Documentation Template
+Project Title
+3D Printer First-Layer Tuning
+Date Completed
+March 2025
+Short Description
+Successfully tuned and leveled a 3D printer's print bed to achieve strong, consistent, and reliable first-layer adhesion.
+Long Description
+As a newcomer to the world of 3D printing, I spent the first month of owning my printer unaware that the "stringy, weak" first layers I was getting were not a normal part of the process. This was a critical point in my learning journey, as I learned to identify and solve a fundamental issue with the help of a friend, Owen Wasson.
+Through a process of trial and error, I learned how to properly level the print bed and adjust the nozzle height (often called "Z-offset"). This process involved making minute adjustments and testing them with small prints, repeating the cycle until the results were consistent. The final outcome was a dramatic improvement. The first layers went from being a fragile, inconsistent mess that could be easily ripped apart to a solid, well-adhered layer that I could not break even with all my strength. This project was a crucial lesson in the importance of proper machine calibration and the impact that small, precise adjustments can have on the quality and reliability of a final product.
+Skills Utilized
+3D Printing, Machine Calibration, Problem-Solving, Troubleshooting, Iterative Process, Attention to Detail
+Project Role
+Average Beginner 3d Printer Owner :)
+Difficulty Level
+Beginner
+Collaborators
+Owen Wasson
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+HP Pavilion SSD Upgrade
+Project Documentation Template
+Project Title
+HP Pavilion SSD Upgrade and System Optimization
+Date Completed
+March 2025
+Short Description
+Replaced a proprietary HDD/Intel Optane setup with a single NVMe SSD, successfully migrating the operating system and dramatically improving the laptop's performance and battery efficiency.
+Long Description
+My HP Pavilion laptop, despite having a relatively new battery, was plagued with inconsistent performance and poor battery life. Boot times were often frustratingly slow, occasionally taking up to 40 minutes, which was especially problematic during robotics team meetings. The root of the issue appeared to be the original proprietary hard disk drive (HDD), which was consistently running at over 80% disk usage, causing overheating and power inefficiency. The system used an NVMe M.2 Intel Optane memory module to "accelerate" the HDD.
+Recognizing an opportunity for a significant upgrade, I decided to disable the Intel Optane module and replace it with a new NVMe M.2 solid-state drive (SSD). While the process seemed straightforward in theory, the practical application was anything but. It required a full week of dedicated troubleshooting, BIOS configuration, and repeated restarts to get the computer to successfully boot from the new SSD.
+The payoff, however, was monumental. The upgrade completely transformed the laptop. It became so fast and efficient that it outperformed its original factory state, even in low-power "power saver" mode. The disk usage dropped from a constant 80%+ to a stable sub-10% range. Additionally, the laptop's battery life improved dramatically, going from a mere 30 minutes to lasting for days of regular usage, eliminating my dependence on a constant power source.
+Skills Utilized
+Hardware Upgrades, BIOS Configuration, Advanced Troubleshooting, System Optimization, Operating System Migration, Problem-Solving, Computer Architecture
+Project Role
+Hardware & Software Technician
+Difficulty Level
+Intermediate to Advanced
+Collaborators
+N/A
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+Custom Soldering Fume Extractor
+Project Documentation Template
+Project Title
+Custom Soldering Fume Extractor
+Date Completed
+March 2025
+Short Description
+Designed and fabricated a custom fume extractor for soldering by repurposing a salvaged fan, designing a 3D-printable mount, and building a power circuit with a rechargeable battery.
+Long Description
+As my interest in soldering grew, I quickly realized the importance of proper ventilation to safely deal with the resulting fumes. Instead of purchasing a pre-made unit, I opted to design a custom solution. The project centered around a powerful fan that I had salvaged from a tabletop air hockey game.
+Using CAD software, I designed a specialized mount for the fan. This mount not only housed the fan securely but was also engineered to be held by my existing "helping hands" tool, allowing for versatile positioning and hands-free operation. The design was then brought to life using a 3D printer.
+The project also involved electronics and soldering. I designed and assembled a custom circuit with a rechargeable battery and a power switch to make the fan a self-contained, portable unit. The final product was incredibly powerful and has dramatically improved my soldering workspace by efficiently redirecting and dispersing the air of harmful fumes. This project was a great exercise in combining mechanical design, fabrication, and basic electronics to create a highly functional and practical tool.
+Skills Utilized
+CAD, 3D Printing, Soldering, Electronics, Circuitry, Problem-Solving, Tool Making, Repurposing
+Project Role
+Designer, Fabricator, and Electronics Engineer
+Difficulty Level
+Intermediate
+Collaborators
+N/A
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+
+
+Cooky V2
+Project Documentation Template
+Project Title
+Cooky V2
+Date Completed
+April 2025
+Short Description
+A ground-up redesign of the FTC robot, Cooky V2, featuring an entirely new drivetrain, custom extendo slides, and a pivoting intake, all controlled by a completely reworked, modular Java codebase.
+Long Description
+This project marked a complete departure and total redesign from the original "Rooky" bot. Cooky V2 was built from the ground up, with no similar design choices to its predecessor. It featured an entirely different drivetrain design and a new type of mecanum wheel. The primary purpose of this rendition was for Edwin and me to gain comprehensive experience in constructing, designing, and coding complex linear slides. We successfully integrated a set of extendo slides as well as a pivoting intake mechanism onto Cooky V2. We did the initial designs with help from our mentor Itzha Lopez who was a mechanical engineer at P&G and a former FIRST Robotics Competition Member in Texas.
+In stark contrast to the first Rooky bot, which started with an already assembled drivetrain, we meticulously designed Cooky V2 fully in Onshape first, before proceeding with the physical build. The robot's code was also completely reworked to embrace a more scalable and organized structure. Instead of having a single, monolithic Java file that included all of the hardware declarations, controls, and everything in one long 600+ line file, I split the codebase into two distinct folders: OpModes (containing the code that would be run) and Subsystems. This created a truly modular coding environment, allowing me to easily mix and match different Java classes, such as a dedicated Claw class or a Mecanum drivetrain class. This modularity streamlined development and debugging, transforming the coding process from verbose, repetitive commands to cleaner, more abstract calls.
+For example, instead of:
+int closedPosition = 50;
+Servo intakeClaw;
+intakeClaw = hardwareMap.get(Servo.class, "intakeClaw");
+intakeClaw.setPostion(closedPosition);
+
+
+We could simply write:
+Claw.close();
+
+
+This project was a monumental step in our team's engineering maturity, showcasing advanced mechanical design, robust coding practices, and effective teamwork.
+Skills Utilized
+Robotics, Onshape, 3D Design, Mechanical Design, Java, Android Studio, Modular Programming, Object-Oriented Programming, Linear Slide Systems, Intake Mechanism Design, Teamwork, Problem-Solving, Iterative Design
+Project Role
+Programmer / Designer / Builder
+Difficulty Level
+Advanced
+Collaborators
+Edwin Tenney, Aditya Singh, Mario Ynga Orellana, Owen Wasson, Itzha Lopez (Mentor)
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+Protein Pedestal
+Project Documentation Template
+Project Title
+Protein Pedestal
+Date Completed
+(Please provide the month and year you completed this project.)
+Short Description
+Designed and 3D-printed an intricate nameplate for an AP Biology teacher, featuring a unique protein model behind each letter of her name, reflecting her passion for biology.
+Long Description
+This project was an intricate and highly personalized gift designed for my AP Biology teacher, Dr. Harsh, upon her retirement. My goal was to create a custom nameplate where each letter of her name was accompanied by a 3D-printed protein model whose name began with the same letter, placed on a pedestal behind it. This required extensive research to find suitable protein models that were both scientifically accurate and visually appealing.
+I used Onshape to CAD the baseplate and pedestals, ensuring a sturdy and aesthetically pleasing foundation. The protein models themselves presented a unique challenge. Initially, I attempted to use molecularly accurate models, but these proved far too complex for my 3D printer, as evidenced by a complete failure when trying to print a histone. This led to many redesigns and a pivot to using community-designed protein models that had been specifically optimized for printability. I utilized Blender to smooth and simplify these models for successful fabrication. For fun, before printing, I even managed to render a model with accurate color in Blender. The final piece was printed using pearl white plastic for the base and pedestals, with black PLA for the letters of her name, making them truly pop. This project was a deeply rewarding experience, combining my love for STEM and biology with my growing expertise in 3D design and printing.
+Skills Utilized
+3D Design (Onshape, Blender), 3D Printing, Research, Biology, Protein Structure, Iterative Design, Problem-Solving, CAD, Digital Rendering
+Project Role
+Sole Designer & Fabricator
+Difficulty Level
+Advanced
+Collaborators
+N/A
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+Arduino Score Tracker for FTC
+Project Documentation Template
+Project Title
+Arduino Score Tracker for FTC
+Date Completed
+May 2025
+Short Description
+Developed a prototype score tracker for the FTC "Into The Deep" season using an Arduino Leonardo and a 128x64 pixel OLED display, featuring a navigable UI with a rotary encoder and buttons.
+Long Description
+This project was my first attempt at using an Arduino Leonardo to create a practical tool for our FTC team during the "Into The Deep" season. My goal was to develop a prototype score tracker that could be used at competitions. The core of the project involved displaying game data and scores on a small 128x64 pixel OLED display.
+The user interface was designed to be interactive and navigable using a rotary encoder and a couple of physical buttons. This allowed users to scroll through menus, view saved data pages, and access basic data management options. While I successfully built and programmed this functional prototype, I never proceeded to create a full, enclosed version with a custom case. This decision was largely influenced by the availability of other app-based solutions that proved simpler to integrate into our workflow. Despite remaining a prototype, this project was invaluable for gaining hands-on experience with microcontroller programming, UI/UX design for embedded systems, and hardware interaction.
+Skills Utilized
+Arduino, C++ (for Arduino programming), Electronics, OLED Display Interfacing, Rotary Encoder, Button Interfacing, UI/UX Design (for embedded systems), Prototyping, Problem-Solving, Debugging
+Project Role
+Sole Developer / Prototyper
+Difficulty Level
+Intermediate
+Collaborators
+N/A
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+Microscope Exploration: Insect Samples
+Project Documentation Template
+Project Title
+Microscope Exploration: Insect Samples
+Date Completed
+May 2025
+Short Description
+Conducted microscopic examination of insect samples, discovering intricate details like the scales on butterfly wings and even observing their cellular structure using an oil immersion lens.
+Long Description
+This project was a captivating dive into the microscopic world of insects. Using my microscope, I examined various insect samples, uncovering a wealth of cool details that aren't visible to the naked eye. One of the most fascinating discoveries was observing that butterfly wings are made up of tiny scales. What was even more incredible was that I was able to use the oil immersion lens to achieve such high magnification that the individual cells of these scales became visible! This mini-project was a wonderful exercise in scientific observation, precision microscopy, and satisfying my natural curiosity about the intricate structures of the natural world.
+Skills Utilized
+Microscopy, Scientific Observation, Biology, Attention to Detail, Patience, Problem-Solving (e.g., using oil immersion)
+Project Role
+Sole Observer / Researcher
+Difficulty Level
+Intermediate
+Collaborators
+N/A
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here, especially those amazing close-ups!)
+
+
+Limelight 3A: Wireless Proxy & Live Debugging (v5)
+Project Documentation Template
+Project Title
+Limelight 3A: Wireless Proxy & Live Debugging (v5)
+Date Completed
+(Please provide the month and year you completed this project.)
+Short Description
+Successfully implemented a wireless Limelight proxy on Leviathan, enabling live neural detector testing and diagnosing a critical wire fault, significantly streamlining vision system debugging.
+Long Description
+This mini-project was a crucial step in refining Leviathan's vision system, especially as the robot had been handed off to the rookies for preparation for the Michiana Premier Event, the last competition of the season. After a challenging week of debugging, we successfully got a wireless Limelight proxy working on the robot.
+This wireless proxy was the first step in addressing persistent issues with the Limelight randomly disconnecting. Its implementation immediately clarified the problem: a faulty wire that would disconnect every time the robot moved, something incredibly difficult to diagnose without live feedback. With the proxy in place, we were able to see our neural detector in action live on the field. Previously, to view Limelight's output or make changes, we had to physically unplug it from the robot, connect it to a laptop, wait 30 seconds for it to boot, access the values, make a change, and then hope it worked after rewiring. The wireless proxy completely transformed this workflow, making debugging significantly faster and more efficient.
+The Limelight proxy was part of a new, in-development dashboard being built by other FTC teams. Integrating it with our existing codebase required extensive Gradle debugging until it finally worked seamlessly. This project not only solved a critical hardware issue but also provided invaluable real-time insights into our vision system's performance.
+Skills Utilized
+Wireless Communication, Limelight 3A, Network Debugging, Gradle, Problem-Solving, Troubleshooting, Teamwork, Autonomous Robotics, Software Integration
+Project Role
+Programmer / Debugging Specialist
+Difficulty Level
+Advanced
+Collaborators
+Aditya Singh, Edwin Tenney
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+DigiScope V1: Microscope Digitization Prototype
+Project Documentation Template
+Project Title
+DigiScope V1: Microscope Digitization Prototype
+Date Completed
+May 2025
+Short Description
+Developed the prototype of "DigiScope," a system to digitize a microscope's view using a Raspberry Pi and Pi Camera, with a custom 3D-printed adapter and a Qt Creator app.
+Long Description
+This project marks the initial phase of "DigiScope," an ambitious long-term endeavor aimed at digitizing the microscope experience, with the ultimate vision of creating "ClassScope." The ClassScope concept envisions a system where a single teacher-operated microscope transmits its live video feed to a website, accessible by all students. Each student could then individually pan, zoom, and take screenshots from their own device. This innovative approach promises to make microscope usage in K-12 environments easier, cheaper, and safer, allowing schools with limited resources to maximize their equipment and enabling the introduction of microscopy at earlier ages by reducing direct student interaction with delicate instruments.
+This first rendition of DigiScope focused on establishing the core functionality. We utilized a Raspberry Pi as the processing unit and a Raspberry Pi Camera to capture the microscope's view. A crucial component was a custom adapter that I designed and 3D-printed, allowing the Pi Camera to securely attach to the microscope's eyepiece. This adapter was a significant design, and at the time of its creation, it was the first item to pop up on MakerWorld when searching for "microscope picam adapter." You can find the functional design here: https://makerworld.com/en/models/1457935-aruducam-to-28mm-microscope-eyepiece-adapter?from=search. The software interface for this prototype was developed as a Qt Creator app, which facilitated the initial video feedback and control. This project laid the foundational groundwork for a potentially transformative educational tool.
+Skills Utilized
+Raspberry Pi, Raspberry Pi Camera, Qt Creator, C++ (for Qt), Python (potential for camera interface), CAD (for adapter design), 3D Printing, Microscopy, System Integration, Prototyping, Educational Technology
+Project Role
+Sole Developer / Designer
+Difficulty Level
+Advanced
+Collaborators
+N/A
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+DigiScope V2: Phone Camera & Android APK Prototype
+Project Documentation Template
+Project Title
+DigiScope V2: Phone Camera & Android APK Prototype
+Date Completed
+May 2025
+Short Description
+Developed the second prototype of "DigiScope," shifting to use a phone's high-quality camera via an Android APK, with plans for a custom nosepiece mount to improve stability.
+Long Description
+This project marks the second significant iteration of "DigiScope," an ambitious long-term endeavor aimed at digitizing the microscope experience, with the ultimate vision of creating "ClassScope." The ClassScope concept envisions a system where a single teacher-operated microscope transmits its live video feed to a website, accessible by all students. Each student could then individually pan, zoom, and take screenshots from their own device. This innovative approach promises to make microscope usage in K-12 environments easier, cheaper, and safer, allowing schools with limited resources to maximize their equipment and enabling the introduction of microscopy at earlier ages by reducing direct student interaction with delicate instruments.
+This rendition of DigiScope, Version 2, pivoted entirely after realizing the Pi Camera's limitations for a high-quality view in the previous version. I decided to switch approaches, designing an Android APK to leverage my phone's superior camera quality and have the phone serve as both the image capture device and the data transmitter. This was a completely new turn, but my extensive Java experience from APCSA and Robotics (especially using Android Studio) proved incredibly useful in designing and deploying the app. It was so efficient that when I pressed run on my desktop, my phone automatically opened the APK file and ran it—enabling seamless wireless debugging!
+Initially, I used an open-source 3D-printed design to mount my phone to the microscope eyepiece. However, this proved problematic: my phone was too large and heavy for the design (which was intended for smaller, lighter phones like an iPhone 6), and the microscope's eyepiece itself was not stable, causing wobbling. The prototype's simple UI is functional, but it has yet to achieve website connectivity. The next crucial step is to redesign the mounting arm so that it attaches directly to the nosepiece of the microscope instead. This will ensure the phone is held firmly in place and will be specifically designed for my phone's dimensions, providing the stability needed for further development and the ultimate goal of ClassScope.
+Skills Utilized
+Android Development, Java, Android Studio, Mobile App Development, Wireless Debugging, CAD (for adapter design), 3D Printing, Microscopy, System Integration, Prototyping, Educational Technology, UI/UX Design
+Project Role
+Sole Developer / Designer
+Difficulty Level
+Advanced
+Collaborators
+N/A
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+Laptop Mass Imaging & Deployment
+Project Documentation Template
+Project Title
+Laptop Mass Imaging & Deployment
+Date Completed
+(Please provide the month and year you completed this project.)
+Short Description
+Participated in a summer internship at Xavier University's IT Department, responsible for unboxing, imaging, and deploying 25% of all university computers.
+Long Description
+This project was a core component of my summer internship through the INTERalliance of Greater Cincinnati, specifically within the IT Department at Xavier University. My primary responsibility, as part of a dedicated team, was the mass imaging and deployment of a significant portion of the university's computer fleet. This involved a comprehensive process: unpackaging brand new computers, performing system imaging to load the university's standardized operating system and software configurations, and finally, deploying these machines across various departments and offices. Our team was tasked with handling approximately 25% of all university computers, making it a large-scale and critical operation. This internship provided invaluable hands-on experience in IT operations, large-scale system deployment, and working within a professional IT environment.
+Skills Utilized
+IT Support, System Administration, Computer Imaging, Software Deployment, Hardware Setup, Troubleshooting, Logistics, Teamwork, Attention to Detail, Time Management
+Project Role
+IT Intern / Deployment Specialist
+Difficulty Level
+Intermediate
+Collaborators
+Mike Marshall (Manager of Desktop Deployment), Doug Hanson (Manager of Public Technologies), Jonas Moore (Intern), Dylan Kuez (Intern)
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+Dell Precision 7520 Restoration & Upgrade
+Project Documentation Template
+Project Title
+Dell Precision 7520 Restoration & Upgrade
+Date Completed
+July 2025
+Short Description
+Acquired, diagnosed, and upgraded a discarded Dell Precision 7520 laptop, transforming it into a powerful modern system by maximizing RAM and uncovering a hidden NVMe SSD.
+Long Description
+This project began with a surprising discovery during cleanup at our Xavier IT workbench. We came across a bulky Dell laptop, seemingly from 2010, and initially relegated it to the e-waste pile. However, a closer look in the warehouse revealed a USB-C Thunderbolt port and an Intel i7 7th Gen processor—unusual for its apparent age. Further investigation of its serial number confirmed it was a Dell Precision 7520 from 2016, once touted as the "Most Powerful Laptop in the World." This machine boasted four SODIMM RAM slots, an NVMe M.2 SSD slot, Thunderbolt 3, and an NVIDIA Quadro M1200 GPU, indicating immense upgrade potential.
+After receiving permission to upgrade it with available parts and keep it, I immediately imaged it to Windows 11 at work. Upon setting it up at home, I was astonished by its inherent speed and modern feel. A peculiar mystery arose: the system reported two NVMe M.2 SSDs despite only one visible port and no apparent HDD, even though I'd seen a SATA drive shell.
+Upon returning to work, I proceeded with a RAM upgrade to 32GB. This wasn't entirely smooth; one SODIMM stick was faulty, requiring debugging assistance from Doug Hanson to identify and replace it. The ultimate solution to the SSD mystery was revealed during further disassembly to access the additional RAM slots under the keyboard. The "SATA drive" I'd seen was surprisingly light; flipping it over, I discovered it was actually an NVMe SSD adapter, with the HDD shell merely an empty case concealing a second NVMe SSD! This was a stock feature from Dell, a "hot-swappable" slot designed to accommodate both SATA drives and NVMe SSDs via an adapter during a transitional period in 2016.
+This Dell Precision 7520, with its robust build and powerful features, has since replaced my 2019 Windows 10 HP Pavilion laptop. The Thunderbolt 3 port, absent on my HP, was a particularly welcome addition. It was hardly a fair fight, comparing a top-of-the-line workstation from 2016 to a budget office laptop from 2019, but the Dell's remarkable performance after its restoration truly showcased the value of smart upgrades and thorough diagnostics.
+Skills Utilized
+Hardware Diagnostics, Laptop Disassembly & Assembly, RAM Upgrade, SSD Installation, Operating System Imaging, Windows 11 Setup, BIOS Configuration, Advanced Troubleshooting, Problem-Solving, Research, Resourcefulness, Teamwork (for debugging)
+Project Role
+Hardware Technician / System Administrator / Diagnostician
+Difficulty Level
+Advanced
+Collaborators
+Doug Hanson (for debugging assistance)
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+Lenovo E14 Laptop Acquisition & Deployment
+Project Documentation Template
+Project Title
+Lenovo E14 Laptop Acquisition & Deployment
+Date Completed
+July 2025
+Short Description
+Secured, upgraded, and deployed 10 Lenovo E14 business-class laptops from Xavier University for educational initiatives and personal use, leveraging salvaged components.
+Long Description
+This project involved a significant effort in resource acquisition and deployment of computing resources. Through my summer internship at Xavier University's IT Department, I was able to secure 10 Lenovo E14 business-class laptops from 2021 as a one off agreement. These machines were earmarked for various impactful uses: the majority will support the beginner teaching program of the Walnut Hills High School Programming Club (of which I am president), while others were provided to my siblings who lacked personal computers. A particularly meaningful deployment is for my cousin in Kurdistan, who shares my passion for STEM and Arduino but has limited access to technology and opportunities. I plan to equip him with one of these laptops, along with Arduino kits and tools, to kickstart his STEM journey.
+During the setup of the E14s for transport, I discovered that each laptop had an empty second NVMe SSD slot. Recognizing this upgrade potential, I received permission from my supervisors at Xavier University to harvest RAM and 256GB SSDs from old, unusable desktops previously used in the university's diner/sandwich shops. Despite being covered in a mix of grease and dust externally, the internal components of these discarded desktops were clean. I successfully salvaged 8 SSDs and 8 RAM sticks. The RAM was harvested to prevent it from being discarded, and the SSDs will be utilized to upgrade the E14 laptops from 256GB to 512GB storage, significantly enhancing their utility for their new users. This project highlights skills in asset management, hardware diagnostics, and leveraging available resources for community and personal benefit.
+Skills Utilized
+IT Asset Management, Hardware Diagnostics, Component Salvage, Laptop Upgrades, System Deployment, Community Outreach, Resourcefulness, Problem-Solving, Teamwork
+Project Role
+Project Lead / IT Asset Manager
+Difficulty Level
+Intermediate
+Collaborators
+Xavier IT Employees: Doug Hanson, Mike Marshall
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+LoRa Digital Thermometer & Receiver
+Project Documentation Template
+Project Title
+LoRa Digital Thermometer & Receiver
+Date Completed
+August 2025
+Short Description
+Developed a digital thermometer system using ESP32 and LoRa to transmit environmental data wirelessly to an Arduino-based receiver with an OLED display and custom 3D-printed case.
+Long Description
+This project marked my first venture into the world of LoRa (Long Range) Modules, a low-power wide-area network technology. My goal was to create a digital thermometer that transmitted its data wirelessly over LoRa. On the sending end, I used an ESP32 microcontroller integrated with a LoRa Module and a DHT11 temperature and humidity sensor. This setup collected environmental data and prepared it for transmission.
+For the receiving end, I built a display unit using an Arduino Leonardo, another LoRa Module (connected via a level shifter to ensure compatibility), and a small 128x64 pixel OLED screen to display the received temperature data. I also designed and 3D-printed a custom case for the receiver, making it a self-contained and portable unit.
+I was able to successfully range test the system to the very end of my street, although I had to stop the test there as I lost visual contact with my little brother who was helping me. LoRa modules are advertised to be capable of transmitting data up to 15km in ideal conditions, which opens up many exciting possibilities for future projects as I continue to explore this technology.
+Skills Utilized
+LoRa, ESP32, Arduino Leonardo, DHT11 Sensor, OLED Display, Electronics, Wireless Communication, 3D Design (CAD), 3D Printing, Microcontroller Programming, Range Testing, Debugging, System Integration
+Project Role
+Sole Developer / Designer
+Difficulty Level
+Intermediate
+Collaborators
+My little brother (for testing)
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+LoRa Off-the-Grid Messaging System
+Project Documentation Template
+Project Title
+LoRa Off-the-Grid Messaging System
+Date Completed
+August 12, 2025
+Short Description
+An off-grid, long-range messaging system using LoRa. A laptop running a Python app messages a portable ESP32 "hotspot" that hosts a modern web UI for multiple devices to connect and reply.
+Long Description
+This project was a direct and significant evolution of my previous LoRa thermometer. I created a two-way, off-the-grid messaging system capable of operating with no Wi-Fi or cellular data, leveraging the long-range capabilities of LoRa.
+The system had two main components:
+1. Base Station: This end utilized the Arduino Leonardo and LoRa receiver from my previous project, which was plugged into a laptop. Instead of just using the serial monitor, I developed a Python application that ran on the computer to interpret the serial data from the Arduino, providing a user-friendly interface for sending and receiving messages.
+2. Portable Node: This end used the ESP32 and LoRa module. I programmed the ESP32 to operate in Access Point (AP) mode, effectively creating its own local Wi-Fi network. This network hosted a nice, modern-style web UI for messaging.
+This setup allowed multiple devices (like phones or other laptops) to connect to the ESP32's Wi-Fi, access the web UI, and send messages back to the base station computer, and vice versa. This created a truly independent communication network. Under ideal conditions, this system has a potential range of up to 10km, making it a powerful tool for communication in remote areas.
+Skills Utilized
+LoRa, ESP32, Arduino Leonardo, Python, Web UI Design, Wireless Communication, Networking (Access Point Mode), Serial Communication, Systems Integration, Embedded Systems, Problem-Solving
+Project Role
+Sole Developer
+Difficulty Level
+Advanced
+Collaborators
+N/A
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+FTC Limelight 3A Guide Video Tutorial
+Project Documentation Template
+Project Title
+FTC Limelight 3A Guide Video Tutorial
+Date Completed
+August 13, 2025
+Short Description
+A comprehensive, 7-minute video tutorial created for the FTC community, guiding beginners through the setup, documentation, and basic integration of the Limelight 3A vision camera.
+Long Description
+This project involved the creation, editing, and finalization of a detailed video tutorial aimed at teaching new robotics teams and programmers how to effectively use the Limelight 3A vision camera. The tutorial was produced by Team 6133, "The NUTS!", and hosted on YouTube, serving as an educational resource for the wider FIRST Tech Challenge (FTC) community.
+The video is structured to cover key topics:
+* Limelight Overview: Explaining the camera's features, including its neural network capabilities, AprilTag localization, and Python integration.
+* Documentation Focus: Emphasizing the critical role of the official Limelight documentation, noting that "almost 90% of our problems were because we didn’t read the documentation." The video guides viewers on how to navigate the documentation for setup, software installation, SnapScripts, and FTC-specific Java/Blockly integration.
+* Setup and Configuration: Walking viewers through software installation and accessing the Limelight dashboard to configure settings like exposure and pipeline selection.
+* Pipelines & Integration: Discussing the concept of vision pipelines and how to retrieve crucial data (X/Y coordinates, area, etc.) using FTC-specific Java packages for applications like robot alignment during autonomous mode.
+This project showcased skills not only in computer vision development but also in technical communication, video production, and collaborative content creation.
+Skills Utilized
+Video Editing (Final Cut, Adobe Premiere, etc.), Technical Writing, Public Speaking/Voiceover, Limelight 3A, Computer Vision, Java, Content Creation, Sponsorship Outreach, Teamwork
+Project Role
+Editor, Scriptwriter, Voiceover/Speaker
+Difficulty Level
+Intermediate
+Collaborators
+Aditya Singh, Edwin Tenney (Contributors to the script and content)
+Link to Media Folder
+https://youtu.be/h9EJRkVej-0?si=4Eu8bJ0Pyk5O6Nwz
+
+
+EagleVision: Collaborative Microscope Platform
+Project Documentation Template
+Project Title
+EagleVision: Collaborative Microscope Platform
+Date Completed
+September 2025 - Present
+Short Description
+A collaborative web platform for the WHHS Programming Club (an INTERalliance chapter), allowing a teacher to stream a microscope's video feed from a phone to an entire class of students in real-time.
+Long Description
+This project is a massive continuation and scaling-up of my "DigiScope" prototype, now serving as the year-long competition project for the Walnut Hills High School Programming Club (an INTERalliance chapter) for the 2026 TechOlympics. To align with our school mascot (the Eagle) and the TechOlympics theme ("Envision"), the project was renamed EagleVision.
+Our goal is to create a platform that makes microscope use in a K-12 environment cheaper, safer, and more accessible. It allows a single microscope to be used by an entire class, with each student getting a virtual "front-row seat."
+The architecture is centered around a phone (using the Android APK from DigiScope V2) mounted to the microscope, which streams its camera feed to a custom website. The website is split into two roles: Teacher (Host) and Student. To gain host privileges, the teacher enters a unique code displayed on the phone's app. From there, they can create a session and allow students to join.
+Our brainstorming and user requirements phase mapped out a rich feature set:
+* Core Stream: Phone captures and sends the live video feed to the website.
+* Teacher Controls:
+   * Host a session with a unique code/link for students.
+   * Manage Student Permissions: Control which features (e.g., annotations, screenshots) students can access, making the platform scalable for different age groups and learning objectives.
+   * Control brightness, RGB color filters, and digital pan/zoom.
+   * Draw/annotate on the live feed, with the ability to show/hide annotations for the class.
+   * Take high-quality screenshots and recordings.
+   * End the session.
+* Student Access:
+   * Join a session via the teacher's link.
+   * View the live, annotated feed.
+   * Make their own private annotations on their screen (if permitted by the teacher).
+   * Take their own screenshots (if permitted by the teacher).
+* Future Goals: We hope to integrate AI features, such as object identification for common specimens.
+This project is a major undertaking for our club's competition and design teams, blending mobile development, web development, and real-time video streaming.
+Skills Utilized
+Project Management, Team Leadership, System Architecture, Web Development (HTML, CSS, JS), Backend Development (e.g., Node.js, Python), Android Development (Java), Video Streaming (WebRTC/WebSockets), UI/UX Design, CAD, Team Collaboration
+Project Role
+Project Lead / Club President
+Difficulty Level
+Advanced
+Collaborators
+WHHS Programming Club (Competition & Design Teams)
+Link to Media Folder
+(Please paste the link to your Google Drive folder with any project photos/videos here.)
+
+
+Whiteboard Robot (Vertical Rail Concept)
+Project Documentation Template
+Project Title
+Whiteboard Robot (Vertical Rail Concept)
+Date Completed
+September 2025 (Initial Concept Phase)
+Short Description
+The initial design concept for an advanced programming course project, detailing a whiteboard-drawing robot based on a vertical rail and wheel-driven system.
+Long Description
+This document outlines the initial brainstorming, design, and planning phase for our Quarter 1 advanced computer programming project. The goal was to create a robot that could automatically draw on a classroom whiteboard based on a user's digital input.
+Working with Edwin Tenney, our first major concept was a "Vertical Rail Robot." The design envisioned a tall, pole-like robot that spanned the height of the board and would drive horizontally along the whiteboard's top and bottom rails using wheels. A marker-holding "head" would then travel up and down this vertical pole.
+We developed a comprehensive set of documentation for this concept (linked below), which included:
+* Detailed User Requirements: Covering both the robot's physical attributes (e.g., using standard Expo markers, an automatic erasing mechanism, magnetic board contact) and the web UI's features (e.g., free-draw, text input, import/export of designs, coordinate grid presets).
+* Essential Features: We also incorporated specific requests from our teacher, Mr. Kerkhoff, focusing on speed, low noise operation, precision, and battery life.
+* A Full Test Plan: This outlined potential failure cases (like obstacles on the rail, calibration errors, UI spamming) and their corresponding success criteria, ensuring a robust design.
+This initial concept was ultimately scrapped due to a lack of necessary parts to build the vertical rail system effectively, which led us to pivot to other designs and finally to the successful Polargraph. This document serves as a record of our initial engineering process, problem analysis, and system design.
+Skills Utilized
+System Design, Requirements Gathering, Test Planning, Mechanical Design (Conceptual), Problem-Solving, Iterative Design, Robotics (Conceptual)
+Project Role
+Co-Developer / Designer
+Difficulty Level
+Advanced (Conceptual)
+Collaborators
+Edwin Tenney
+Link to Media Folder
+Project Documentation (Test Planning, User Req, etc.): https://docs.google.com/document/d/1P7SFSlMLZeY1qmnHkW8rsUjouKWmcIM69sK55mbuzNc/edit?usp=sharing
+(Note: The link above contains the original planning document for this concept.)
+
+
+Whiteboard Robot (Polargraph)
+Project Documentation Template
+Project Title
+Whiteboard Robot (Polargraph)
+Date Completed
+September - October 24, 2025
+Short Description
+A successful polargraph-style whiteboard drawing robot built from scratch for an advanced programming course. It receives drawings from a custom web UI hosted on an ESP32 and draws them on a 1m x 1m surface.
+Long Description
+This was our Quarter 1 project for a new, open-ended Advanced Computer Programming course. Working with my friend Edwin Tenney, our goal was to create a robot that could draw on a classroom whiteboard. This project was defined by rapid iteration and overcoming significant design failures.
+Our initial ideas included:
+1. Magnetic Robot: Quickly scrapped due to complexity.
+2. Vertical Rail Robot: A detailed concept (documented separately) that was scrapped due to a lack of necessary parts.
+3. Sprocket/Bead Chain Robot: Scrapped under time pressure after we failed to CAD a functional sprocket for a non-standard bead chain.
+Facing a deadline, we made a time-based decision and pivoted to a Polargraph design. This successful iteration used string spools and cables, precisely controlled by gobilda motors with encoders, hanging from the top of the whiteboard to control the marker's position.
+The system's architecture was a custom integration of two microcontrollers:
+* Main Brain: An FTC Control Hub running Java handled the robot's movement logic.
+* Web UI: An external ESP32, connected to the Control Hub, hosted a Wi-Fi access point and a virtual drawing UI.
+A user could connect a tablet to the ESP32's Wi-Fi, navigate to its IP address, create a drawing, and hit "Export." The drawing data was sent to the Control Hub, which waited for a human (us) to confirm the print by clicking a button on a game controller.
+We earned a 100% A+ on the project and continued to improve it for a week while it was at school. Key improvements included:
+* Bug Fix: We discovered we had mistakenly input diameter into a radius variable, which was halving our drawing area. Fixing this unlocked the robot's full 1m x 1m drawing field.
+* Optimization: We meticulously tuned the movement delays and added weighting to the marker head, which stabilized the motion and produced continuous, non-choppy lines.
+Skills Utilized
+Java, C++ (for ESP32), Web Development (HTML/JS), ESP32, FTC Control Hub, Robotics, gobilda motors, encoders, Mechanical Design, Problem-Solving, Iterative Design, Rapid Prototyping, Debugging, Systems Integration
+Project Role
+Co-Developer / Programmer / Designer
+Difficulty Level
+Advanced
+Collaborators
+Edwin Tenney
+Link to Media Folder
+(Main Google Drive Folder: Please paste the link to your Google Drive folder with any project photos/videos here.)
+Project Documentation (Original Concept): https://docs.google.com/document/d/1P7SFSlMLZeY1qmnHkW8rsUjouKWmcIM69sK55mbuzNc/edit?usp=sharing
+ESP32 Code: https://docs.google.com/document/d/1DDy4b4YX3SL9TIzlfysglanKVdULMmEcc89eFOvBwsc/edit?usp=sharing

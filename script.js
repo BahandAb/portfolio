@@ -104,6 +104,16 @@ let currentProjectMedia = [];
 let currentMediaIndex = 0;
 
 /**
+ * Resolve media source to include local assets prefix when needed.
+ */
+function resolveMediaSrc(src) {
+    if (!src) return 'assets/placeholder.png';
+    const isAbsolute = /^https?:\/\//i.test(src) || src.startsWith('data:');
+    const alreadyAssets = src.startsWith('assets/');
+    return isAbsolute || alreadyAssets ? src : `assets/E-Portfolio/${src}`;
+}
+
+/**
  * Main function to build the project grid on page load.
  */
 function initProjectsPage() {
@@ -118,15 +128,36 @@ function initProjectsPage() {
         card.tabIndex = 0;
         card.setAttribute('data-id', project.id); // Set a data-id
         
-        // Use the first image as the thumbnail, or a placeholder
-        const thumbnailUrl = project.images.length > 0 ? project.images[0] : 'assets/placeholder.png';
+        // Use the first image as the thumbnail, or show emojis if no images
+        const hasImages = project.images && project.images.length > 0;
+        const hasVideos = (project.videos && project.videos.length > 0) || (project.youtubeEmbeds && project.youtubeEmbeds.length > 0);
+        const hasMedia = hasImages || hasVideos;
+        
+        let rawThumb;
+        if (hasImages) {
+            rawThumb = project.images[0];
+        } else if (hasVideos && !project.emojis) {
+            // Try to get YouTube thumbnail for first video if no emojis
+            const videoSrc = project.videos ? project.videos[0] : project.youtubeEmbeds[0];
+            let videoId = '';
+            if (videoSrc.includes('youtu.be/')) {
+                videoId = videoSrc.split('youtu.be/')[1].split('?')[0];
+            } else if (videoSrc.includes('youtube.com/watch?v=')) {
+                videoId = videoSrc.split('watch?v=')[1].split('&')[0];
+            }
+            rawThumb = videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : 'assets/placholders/tile_placeholder';
+        } else {
+            rawThumb = 'assets/placholders/tile_placeholder';
+        }
+        const thumbnailUrl = resolveMediaSrc(rawThumb);
 
         card.innerHTML = `
             <div class="project-media">
-                <img src="${thumbnailUrl}" alt="${project.title}" />
+                ${hasImages ? `<img src="${thumbnailUrl}" alt="${project.title}" onerror="this.src='assets/placholders/tile_placeholder'" />` : `<div class="project-emoji">${project.emojis ? project.emojis.join(' ') : '📋'}</div>`}
                 <div class="card-overlay">
                     <span class="overlay-title">${project.title}</span>
                     <span class="overlay-date">${project.date}</span>
+                    ${!hasMedia ? '<span class="overlay-badge no-media">Media Pending</span>' : ''}
                 </div>
             </div>
             <div class="project-info">
@@ -165,11 +196,12 @@ function openProjectModal(projectId) {
     currentMediaIndex = 0;
 
     // --- 1. Populate Header & Text ---
-    modalContent.querySelector('.modal-header').innerText = project.title;
+    const headerEl = modalContent.querySelector('.modal-header');
+    headerEl.innerHTML = `<div>${project.title}</div>${project.date ? `<div class="modal-subheader">${project.date}</div>` : ''}`;
     modalContent.querySelector('.modal-text').innerHTML = project.longDesc;
     
     // --- 2. Populate Skills ---
-    const skillsContainer = modalContent.querySelector('.modal-skills');
+        const skillsContainer = modalContent.querySelector('.modal-skills');
     if (project.skills) {
         const skillsList = project.skills.split(',').map(skill => `<span>${skill.trim()}</span>`).join('');
         skillsContainer.innerHTML = `<h3>Skills</h3><div class="skills-tags">${skillsList}</div>`;
@@ -177,26 +209,51 @@ function openProjectModal(projectId) {
         skillsContainer.innerHTML = '';
     }
 
+        // --- 2b. Populate Meta Badges (role / difficulty / collaborators) ---
+        const metaContainer = modalContent.querySelector('.modal-meta');
+        if (metaContainer) {
+            const badges = [];
+            if (project.role) badges.push(`<span class="badge role" title="Role"><strong>Role:</strong> ${project.role}</span>`);
+            if (project.difficulty) badges.push(`<span class="badge difficulty" title="Difficulty"><strong>Difficulty:</strong> ${project.difficulty}</span>`);
+            if (project.collaborators) {
+                const collabText = Array.isArray(project.collaborators) ? project.collaborators.join(', ') : project.collaborators;
+                badges.push(`<span class="badge collaborators" title="Collaborators"><strong>Collaborators:</strong> ${collabText}</span>`);
+            }
+            metaContainer.innerHTML = badges.length ? `<div class="info-badges">${badges.join('')}</div>` : '';
+        }
+
     // --- 3. Populate Media Gallery ---
     const mainMediaWrap = modalContent.querySelector('.modal-gallery-main-img-wrap');
     const thumbsContainer = modalContent.querySelector('.modal-gallery-thumbs');
     mainMediaWrap.innerHTML = ''; // Clear old media
     thumbsContainer.innerHTML = ''; // Clear old thumbs
 
-    // Combine images and videos into one media array
+    // Combine images, videos, and youtubeEmbeds into one media array
     currentProjectMedia = [
-        ...project.images.map(img => ({ type: 'image', src: img })),
-        ...project.videos.map(vid => ({ type: 'video', src: vid }))
+        ...(project.images || []).map(img => ({ type: 'image', src: resolveMediaSrc(img) })),
+        ...(project.videos || []).map(vid => ({ type: 'video', src: vid })),
+        ...(project.youtubeEmbeds || []).map(yt => ({ type: 'youtube', src: yt }))
     ];
 
     if (currentProjectMedia.length > 0) {
         // Create a thumbnail for each media item
         currentProjectMedia.forEach((media, index) => {
-            const thumb = document.createElement('img');
+                        const thumb = document.createElement('img');
             thumb.className = 'gallery-thumb';
-            // If it's a video, use a placeholder or a YouTube thumbnail
-            thumb.src = media.type === 'image' ? media.src : 'assets/video-placeholder.png'; // You'll need a video placeholder image
-            thumb.alt = `Thumbnail ${index + 1}`;
+                        // If it's a video, use a placeholder or a YouTube thumbnail
+                        if (media.type === 'image') {
+                            thumb.src = media.src;
+                        } else {
+                            // Try YouTube thumbnail if applicable, else fallback
+                            let videoId = '';
+                            if (media.src.includes('youtu.be/')) {
+                                videoId = media.src.split('youtu.be/')[1].split('?')[0];
+                            } else if (media.src.includes('youtube.com/watch?v=')) {
+                                videoId = media.src.split('watch?v=')[1].split('&')[0];
+                            }
+                            thumb.src = videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : 'assets/video-placeholder.png';
+                        }
+            thumb.alt = 'Gallery item';
             thumb.setAttribute('data-index', index);
             thumb.addEventListener('click', () => setModalMedia(index));
             thumbsContainer.appendChild(thumb);
@@ -251,8 +308,30 @@ function setModalMedia(index) {
         img.src = media.src;
         img.alt = 'Project main image';
         mainMediaWrap.appendChild(img);
+    } else if (media.type === 'youtube') {
+        // Handle YouTube embed links
+        let videoId = '';
+        if (media.src.includes('youtu.be/')) {
+            videoId = media.src.split('youtu.be/')[1].split('?')[0];
+        } else if (media.src.includes('youtube.com/watch?v=')) {
+            videoId = media.src.split('watch?v=')[1].split('&')[0];
+        } else if (media.src.includes('/embed/')) {
+            videoId = media.src.split('/embed/')[1].split('"')[0];
+        }
+
+        if (videoId) {
+            const iframe = document.createElement('iframe');
+            iframe.width = '560';
+            iframe.height = '315';
+            iframe.src = `https://www.youtube.com/embed/${videoId}`;
+            iframe.title = 'YouTube video player';
+            iframe.frameBorder = '0';
+            iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+            iframe.allowFullscreen = true;
+            mainMediaWrap.appendChild(iframe);
+        }
     } else if (media.type === 'video') {
-        // This handles YouTube links by extracting the video ID
+        // Handle local video files
         let videoId = '';
         if (media.src.includes('youtu.be/')) {
             videoId = media.src.split('youtu.be/')[1].split('?')[0];
@@ -273,7 +352,11 @@ function setModalMedia(index) {
             iframe.allowFullscreen = true;
             mainMediaWrap.appendChild(iframe);
         } else {
-             mainMediaWrap.innerHTML = `<p>Video source not supported: ${media.src}</p>`;
+            const videoEl = document.createElement('video');
+            videoEl.controls = true;
+            videoEl.className = 'modal-video';
+            videoEl.src = resolveMediaSrc(media.src);
+            mainMediaWrap.appendChild(videoEl);
         }
     }
 

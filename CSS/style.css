@@ -266,6 +266,19 @@ article.project-card:hover h3 {
   box-shadow: none;
 }
 
+.project-emoji {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  font-size: clamp(2rem, 10vw, 3.5rem);
+  white-space: nowrap;
+  background: linear-gradient(135deg, #1e283c 0%, #2d3e50 100%);
+  color: #fff;
+}
+
 /* INFO SECTION */
 
 .project-info {
@@ -341,6 +354,20 @@ footer {
   border-radius: 6px;
   letter-spacing: 0.02em;
   font-family: inherit;
+}
+.overlay-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 68, 0, 0.95);
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+.overlay-badge.no-media {
+  background: rgba(100, 102, 110, 0.9);
 }
 .project-card:focus .card-overlay .overlay-title,
 .project-card:focus .card-overlay .overlay-date,
@@ -502,6 +529,12 @@ footer {
   font-weight: 700;
   margin-bottom: 0.5rem;
   color: #0e1c2f;
+}
+.modal-subheader {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #666;
+  margin-top: 0.2rem;
 }
 
 .modal-gallery {
@@ -723,6 +756,29 @@ footer {
   line-height: 1.7;
   margin-top: 0.5rem;
 }
+
+/* --- Modal Meta Badges --- */
+.modal-meta {
+  margin-top: 0.25rem;
+}
+.info-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: #f3f4f6;
+  color: #333;
+  border: 1px solid #e0e0e0;
+}
+.badge.role { background: #eafff6; border-color: #b6f3de; }
+.badge.difficulty { background: #fff4ea; border-color: #ffd7b8; }
+.badge.collaborators { background: #eef2ff; border-color: #c7d2fe; }
 
 @media (max-width: 700px) {
   .modal-content {
