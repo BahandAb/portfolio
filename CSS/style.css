@@ -1,37 +1,53 @@
 /* Color variables for easy theme changes */
 :root {
-  --color-bg: #fff;
-  --color-dark: #222;
-  --color-light: #eee;
-  --color-mid: #888;
-  --color-accent: #ffcc00;
-  --color-accent-hover: #ffe066;
-  --color-blue: #27529a;
-  --color-shadow: #000a;
-  --color-frosted: rgba(255,255,255,0.95);
-  --color-frosted-dark: rgba(14,28,47,0.82);
-  --color-frosted-dark-hover: rgba(14,28,47,0.97);
-  --color-gradient-dark: linear-gradient(135deg, #222 60%, #444 100%);
-  --color-gradient-emoji: linear-gradient(135deg, #1e283c 0%, #2d3e50 100%);
-  --color-overlay-gradient: linear-gradient(180deg, rgba(30,40,60,0.0) 60%, rgba(30,40,60,0.85) 100%);
-  --color-footer-border: #ddd;
-  --color-footer: #888;
-  --color-modal-bg: rgba(10, 20, 40, 0.75);
-  --color-modal-content-bg: #fff;
-  --color-modal-shadow: rgba(0,0,0,0.25);
-  --color-modal-header: #0e1c2f;
-  --color-modal-link: #27529a;
-  --color-modal-link-hover: #ffcc00;
-  --color-badge-bg: #f3f4f6;
-  --color-badge-dark: #333;
-  --color-badge-role-bg: #eafff6;
-  --color-badge-role-border: #b6f3de;
-  --color-badge-difficulty-bg: #fff4ea;
-  --color-badge-difficulty-border: #ffd7b8;
-  --color-badge-collab-bg: #eef2ff;
-  --color-badge-collab-border: #c7d2fe;
-}
+  /* --- The "Medina Emerald" Theme --- */
+  
+  /* Backgrounds: Keeps cards light, but fits the Green theme */
+  --color-bg: #F0FDF4;          /* Very light Mint/White */
+  --color-dark: #064E3B;        /* Dark Green text (instead of black) */
+  --color-light: #ECFDF5;       /* Light Mint text (for dark backgrounds) */
+  --color-mid: #6EE7B7;         /* Soft Emerald for borders */
 
+  /* CHANGE THESE 3 LINES FOR GOLD BUTTONS */
+  --color-accent: #FFD700;       /* Bright Gold */
+  --color-accent-hover: #FDB931; /* Slightly deeper/metallic gold on hover */
+  --color-glow: rgba(255, 215, 0, 0.6); /* Translucent Gold Glow */
+
+  --color-blue: #2DD4BF;        /* Teal/Turquoise (Replaces the old Blue) */
+
+  /* Effects */
+  --color-shadow: rgba(0, 40, 20, 0.6);
+  --color-frosted: rgba(255, 255, 255, 0.95);
+  
+  /* The Header/Nav Backgrounds (CRITICAL FOR THEME) */
+  --color-frosted-dark: rgba(2, 34, 24, 0.92);       /* Slightly darker Jungle Green */
+  --color-frosted-dark-hover: rgba(6, 78, 59, 0.97); /* Slightly lighter green */
+
+  /* Gradients */
+  --color-gradient-dark: linear-gradient(135deg, #064E3B 60%, #10B981 100%);
+  --color-gradient-emoji: linear-gradient(135deg, #065F46 0%, #34D399 100%);
+  --color-overlay-gradient: linear-gradient(180deg, rgba(6, 78, 59, 0.0) 60%, rgba(2, 44, 34, 0.95) 100%);
+
+  /* Footer & Modals */
+  --color-footer-border: #065F46;
+  --color-footer: #6EE7B7;
+  --color-modal-bg: rgba(2, 44, 34, 0.85); /* Deep Green Overlay */
+  --color-modal-content-bg: #fff;
+  --color-modal-shadow: rgba(0,0,0,0.3);
+  --color-modal-header: #064E3B;
+  --color-modal-link: #059669;
+  --color-modal-link-hover: #10B981;
+
+  /* Badges */
+  --color-badge-bg: #ECFDF5;
+  --color-badge-dark: #064E3B;
+  --color-badge-role-bg: #F0FDF4;
+  --color-badge-role-border: #86EFAC;
+  --color-badge-difficulty-bg: #FEF3C7; /* Soft Gold (kept as nod) */
+  --color-badge-difficulty-border: #FDE68A;
+  --color-badge-collab-bg: #E0F2FE;
+  --color-badge-collab-border: #7DD3FC;
+}
 .tile-shortdesc {
   background: var(--color-bg);
   color: var(--color-dark);
@@ -158,10 +174,11 @@ header {
   z-index: 1000;
   background: var(--color-frosted-dark);
   padding: 1rem 2rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px var(--color-shadow); /* Updated shadow */
   color: var(--color-light);
   text-align: center;
   transition: background 0.25s;
+  backdrop-filter: blur(8px); /* Adds real frost effect if supported */
 }
 header:hover, header:focus-within {
   background: var(--color-frosted-dark-hover);
@@ -849,7 +866,8 @@ section.blurb {
   width: 100vw;
   height: 100vh;
   z-index: -1;
-  background-color: #0e1c2f;
+  background-color: #022C22; /* <-- CHANGED from Blue (#0e1c2f) to Deep Emerald */
+  background-image: radial-gradient(circle at center, #064E3B 0%, #022C22 100%); /* Optional: Adds depth */
   pointer-events: auto;
 }
 
@@ -900,22 +918,38 @@ footer * {
     flex: 1 1 0;
 }
 
-/* --- Primary Button (AND Secondary, all unified) --- */
+/* --- DARK BUTTONS WITH GOLD BACKLIGHT --- */
+
 .cta-button.primary,
 .cta-button.secondary {
-    color: var(--color-dark); /* Dark text */
-    background-color: var(--color-accent); /* Yellow background */
-    border: 2px solid var(--color-accent); /* Matching border */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* 1. Dark, semi-transparent background (instead of solid gold) */
+    background-color: rgba(2, 44, 34, 0.6); 
+    
+    /* 2. Gold Text & Border */
+    color: var(--color-accent); 
+    border: 2px solid var(--color-accent);
+    
+    /* 3. The "Backlight" (Soft gold glow) */
+    /* format: x-offset | y-offset | blur-radius | color */
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.15); 
+    
+    /* Keep your existing transition */
+    transition: all 0.3s ease;
 }
 
 .cta-button.primary:hover,
 .cta-button.secondary:hover {
-    transform: translateY(-4px);
-    background-color: var(--color-accent-hover); /* Lighter yellow */
-    border-color: var(--color-accent-hover); /* Lighter border */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    color: var(--color-dark); /* Keep dark text on hover */
+    /* 4. On Hover: faint gold tint inside */
+    background-color: rgba(255, 215, 0, 0.1); 
+    transform: translateY(-3px);
+    
+    /* 5. Intensify the glow (make it look "active") */
+    box-shadow: 0 0 25px var(--color-accent), inset 0 0 10px rgba(255, 215, 0, 0.2);
+    
+    /* 6. Make the text glow slightly too */
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.8);
+    color: #fff; /* Optional: Turns text white on hover for max contrast */
+    border-color: #fff; /* Optional: Turns border white/bright gold */
 }
 
 /* ========================================================================

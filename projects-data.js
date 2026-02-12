@@ -3,6 +3,41 @@
    ======================================================================== */
 const projects = [
   {
+    id: 'eaglevision',
+    title: 'EagleVision: Collaborative Microscopy Platform',
+    date: 'September 2025 - Present',
+    shortDesc: 'A patent-pending educational platform that broadcasts a single microscope feed to over 100 student devices simultaneously. Winner of a $10,000 Samsung Solve for Tomorrow prize.',
+    longDesc: `
+      <p><strong>The Mission:</strong> EagleVision (formerly "DigiScope") began with a simple observation in biology class: microscopes are 1:1 devices, creating a bottleneck for teachers. As the President of the WHHS Programming Club, I led the initiative to democratize this experience, turning every student's device into a real-time viewport.</p>
+      
+      <p><strong>Technical Evolution:</strong>
+        <ul>
+          <li><strong>Phase 1 (WebRTC P2P):</strong> The initial prototype used peer-to-peer mesh networking. While functional, it failed to scale beyond small groups due to bandwidth constraints.</li>
+          <li><strong>Phase 2 (LiveKit & Digital Ocean):</strong> To support full classrooms (30+ students), I architected a server-based solution using LiveKit on a Digital Ocean droplet. This reduced latency to sub-200ms and allowed scaling to over 100 simultaneous users.</li>
+        </ul>
+      </p>
+
+      <p><strong>Milestones & Recognition:</strong>
+        In early 2026, the project achieved massive success:
+        <ul>
+          <li><strong>Patent Approved:</strong> I successfully secured a Provisional Patent for the system's unique hardware-software architecture.</li>
+          <li><strong>$10,000 Winner:</strong> The project was selected as a state winner for the Samsung Solve for Tomorrow competition, earning $10k for Walnut Hills High School.</li>
+          <li><strong>Field Tested:</strong> We successfully deployed the system at Madeira Elementary, proving its viability in a real K-12 classroom.</li>
+        </ul>
+      </p>
+
+      <p><strong>Future Tech (AI):</strong> Most recently, I have begun integrating <strong>Google Gemini 3 Pro</strong> directly into the video pipeline. This allows the microscope to "see" and identify organisms in real-time, providing AI-driven educational context alongside the live feed.</p>
+    `,
+    skills: 'LiveKit, WebRTC, Digital Ocean, Google Gemini API, Python, JavaScript, Patent Law, Project Management, Public Speaking',
+    role: 'Lead Developer / Inventor (Club President)',
+    difficulty: 'Expert',
+    collaborators: 'Daiveion Greenwade, Sarah Hu, Richard Kerkhoff, WHHS Programming Club', 
+    emojis: ['🔬', '🦅', '📡'],
+    images: [],
+    videos: [],
+    links: {}
+  },
+  {
     id: 'whiteboard-polargraph',
     title: 'Whiteboard Robot (Polargraph)',
     date: 'September - October 24, 2025',
@@ -59,43 +94,6 @@ const projects = [
     links: {
       googleDoc: 'https://docs.google.com/document/d/1P7SFSlMLZeY1qmnHkW8rsUjouKWmcIM69sK55mbuzNc/edit?usp=sharing'
     }
-  },
-  {
-    id: 'eaglevision',
-    title: 'EagleVision: Collaborative Microscope Platform',
-    date: 'September 2025 - Present',
-    shortDesc: 'A collaborative web platform for the WHHS Programming Club (an INTERalliance chapter), allowing a teacher to stream a microscope\'s video feed from a phone to an entire class of students in real-time.',
-    longDesc: `
-      <p>This project is a massive continuation and scaling-up of my "DigiScope" prototype, now serving as the year-long competition project for the Walnut Hills High School Programming Club (an INTERalliance chapter) for the 2026 TechOlympics. To align with our school mascot (the Eagle) and the TechOlympics theme ("Envision"), the project was renamed EagleVision. Our goal is to create a platform that makes microscope use in a K-12 environment cheaper, safer, and more accessible. It allows a single microscope to be used by an entire class, with each student getting a virtual "front-row seat."</p>
-      <p>The architecture is centered around a phone as the video source (Teacher) and a web client (Student).</p>
-      <ul>
-        <li><strong>Teacher Access:</strong>
-          <ul>
-            <li>Draw/annotate on the live feed, with the ability to show/hide annotations for the class.</li>
-            <li>Take high-quality screenshots and recordings.</li>
-            <li>End the session.</li>
-          </ul>
-        </li>
-        <li><strong>Student Access:</strong>
-          <ul>
-            <li>Join a session via the teacher's link.</li>
-            <li>View the live, annotated feed.</li>
-            <li>Make their own private annotations on their screen (if permitted by the teacher).</li>
-            <li>Take their own screenshots (if permitted by the teacher).</li>
-          </ul>
-        </li>
-        <li><strong>Future Goals:</strong> We hope to integrate AI features, such as object identification for common specimens.</li>
-      </ul>
-      <p>This project is a major undertaking for our club's competition and design teams, blending mobile development, web development, and real-time video streaming.</p>
-    `,
-    skills: 'Project Management, Team Leadership, System Architecture, Web Development (HTML, CSS, JS), Backend Development (e.g., Node.js, Python), Android Development (Java), Video Streaming (WebRTC/WebSockets), UI/UX Design, CAD, Team Collaboration',
-    role: 'Project Lead / Club President',
-    difficulty: 'Advanced',
-    collaborators: 'WHHS Programming Club (Competition & Design Teams)',
-    emojis: ['🔬', '🦅', '📡'],
-    images: [],
-    videos: [],
-    links: {}
   },
   {
     id: 'limelight-guide-video',

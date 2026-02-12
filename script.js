@@ -6,18 +6,18 @@ function initCommon() {
   particlesJS('particles-js', {
     particles: {
       number: { value: 60, density: { enable: true, value_area: 800 } },
-      color: { value: '#ffffff' },
+      color: { value: '#FFD700' }, // Gold
       shape: { type: 'circle', stroke: { width: 0, color: '#000000' } },
       opacity: { value: 0.5, random: false },
       size: { value: 3, random: true },
-      line_linked: { enable: true, distance: 150, color: '#ffffff', opacity: 0.4, width: 1 },
+      line_linked: { enable: true, distance: 150, color: '#FFD700', opacity: 0.6, width: 1 }, // Gold, more opaque
       move: { enable: true, speed: 3, direction: 'none', random: false, straight: false, out_mode: 'bounce', bounce: true, attract: { enable: false } }
     },
     interactivity: {
       detect_on: 'canvas',
       events: {
-        onhover: { enable: true, mode: 'grab' },
-        onclick: { enable: true, mode: 'push' },
+        onhover: { enable: false }, // Disabled
+        onclick: { enable: false }, // Disabled
         resize: true
       },
       modes: {
@@ -153,7 +153,7 @@ function initProjectsPage() {
 
         card.innerHTML = `
             <div class="project-media">
-                ${hasImages ? `<img src="${thumbnailUrl}" alt="${project.title}" onerror="this.src='assets/placholders/tile_placeholder'" />` : `<div class="project-emoji">${project.emojis ? project.emojis.join(' ') : '📋'}</div>`}
+                ${hasImages ? `<img src="${thumbnailUrl}" alt="${project.title}" onerror="this.src='assets/placholders/tile_placeholder'" loading="lazy" style="width:100%;height:100%;object-fit:cover;max-width:100%;max-height:100%;" />` : `<div class="project-emoji">${project.emojis ? project.emojis.join(' ') : '📋'}</div>`}
                 <div class="card-overlay">
                     <span class="overlay-title">${project.title}</span>
                     <span class="overlay-date">${project.date}</span>
@@ -427,24 +427,21 @@ function setupModalListeners() {
    ======================================================================== */
 function initContactPage() {
     const copyBtn = document.getElementById('copy-email-btn');
-    const successMsg = document.getElementById('copy-success-msg');
 
     if (copyBtn) {
+        const originalContent = copyBtn.innerHTML;
         copyBtn.addEventListener('click', () => {
             const email = copyBtn.getAttribute('data-email');
-            
             // Use the modern Clipboard API
             navigator.clipboard.writeText(email).then(() => {
-                // Success!
-                successMsg.style.display = 'inline'; // Show "Copied!"
-                copyBtn.disabled = true; // Briefly disable button
-
-                // Hide message after 2.5 seconds
+                // Change button content to 'Copied!'
+                copyBtn.innerHTML = 'Copied!';
+                copyBtn.disabled = true;
+                // Restore original content after 2.5 seconds
                 setTimeout(() => {
-                    successMsg.style.display = 'none';
+                    copyBtn.innerHTML = originalContent;
                     copyBtn.disabled = false;
                 }, 2500);
-
             }).catch(err => {
                 // Log any errors
                 console.error('Failed to copy email: ', err);
@@ -456,22 +453,39 @@ function initContactPage() {
 }
 
 /* ========================================================================
-   INITIALIZATION
-   ======================================================================== */
+     INITIALIZATION
+     ======================================================================== */
 document.addEventListener('DOMContentLoaded', function () {
-  initCommon(); 
+    initCommon(); 
 
-  // Run page-specific logic
-  if (window.location.pathname.match(/projects\.html$/) || window.location.pathname === '/') {
-   
-  }
+    // Homepage copy button logic
+    if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname === '/portfolio-site/' ) {
+        const copyBtn = document.getElementById('copy-email-btn');
+        if (copyBtn) {
+            const originalContent = copyBtn.innerHTML;
+            copyBtn.addEventListener('click', () => {
+                const email = copyBtn.getAttribute('data-email');
+                navigator.clipboard.writeText(email).then(() => {
+                    copyBtn.innerHTML = 'Copied!';
+                    copyBtn.disabled = true;
+                    setTimeout(() => {
+                        copyBtn.innerHTML = originalContent;
+                        copyBtn.disabled = false;
+                    }, 2500);
+                }).catch(err => {
+                    console.error('Failed to copy email: ', err);
+                    alert('Failed to copy. Please manually copy: ' + email);
+                });
+            });
+        }
+    }
 
-  if (window.location.pathname.match(/projects\.html$/)) {
-    initProjectsPage();
-  }
+    if (window.location.pathname.match(/projects\.html$/)) {
+        initProjectsPage();
+    }
   
-  if (window.location.pathname.match(/contact\.html$/)) {
-    initContactPage();
-  }
+    if (window.location.pathname.match(/contact\.html$/)) {
+        initContactPage();
+    }
   
 });
