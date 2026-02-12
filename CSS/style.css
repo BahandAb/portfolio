@@ -1,6 +1,40 @@
+/* Color variables for easy theme changes */
+:root {
+  --color-bg: #fff;
+  --color-dark: #222;
+  --color-light: #eee;
+  --color-mid: #888;
+  --color-accent: #ffcc00;
+  --color-accent-hover: #ffe066;
+  --color-blue: #27529a;
+  --color-shadow: #000a;
+  --color-frosted: rgba(255,255,255,0.95);
+  --color-frosted-dark: rgba(14,28,47,0.82);
+  --color-frosted-dark-hover: rgba(14,28,47,0.97);
+  --color-gradient-dark: linear-gradient(135deg, #222 60%, #444 100%);
+  --color-gradient-emoji: linear-gradient(135deg, #1e283c 0%, #2d3e50 100%);
+  --color-overlay-gradient: linear-gradient(180deg, rgba(30,40,60,0.0) 60%, rgba(30,40,60,0.85) 100%);
+  --color-footer-border: #ddd;
+  --color-footer: #888;
+  --color-modal-bg: rgba(10, 20, 40, 0.75);
+  --color-modal-content-bg: #fff;
+  --color-modal-shadow: rgba(0,0,0,0.25);
+  --color-modal-header: #0e1c2f;
+  --color-modal-link: #27529a;
+  --color-modal-link-hover: #ffcc00;
+  --color-badge-bg: #f3f4f6;
+  --color-badge-dark: #333;
+  --color-badge-role-bg: #eafff6;
+  --color-badge-role-border: #b6f3de;
+  --color-badge-difficulty-bg: #fff4ea;
+  --color-badge-difficulty-border: #ffd7b8;
+  --color-badge-collab-bg: #eef2ff;
+  --color-badge-collab-border: #c7d2fe;
+}
+
 .tile-shortdesc {
-  background: #fff;
-  color: #222;
+  background: var(--color-bg);
+  color: var(--color-dark);
   font-size: 0.98em;
   padding: 0.7em 1em 0.7em 1em;
   border-bottom-left-radius: 0;
@@ -34,7 +68,7 @@
   margin: 0;
   padding: 0;
   position: relative;
-  background: #222;
+  background: var(--color-dark);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -42,10 +76,10 @@
 
 .overlay-shortdesc {
   font-size: 0.95em;
-  color: #fff;
+  color: var(--color-light);
   display: block;
   margin-top: 0.1em;
-  text-shadow: 0 1px 4px #000a;
+  text-shadow: 0 1px 4px var(--color-shadow);
   font-weight: 400;
 }
 html, body, .modal-content {
@@ -57,7 +91,7 @@ html, body, .modal-content {
   bottom: 12px;
   right: 12px;
   background: rgba(30,40,60,0.85);
-  color: #fff;
+  color: var(--color-light);
   border: none;
   border-radius: 50%;
   width: 38px;
@@ -73,8 +107,8 @@ html, body, .modal-content {
   opacity: 0.85;
 }
 .fullscreen-btn:hover {
-  background: #ffcc00;
-  color: #222;
+  background: var(--color-accent);
+  color: var(--color-dark);
   opacity: 1;
 }
 /* Lightbox button style */
@@ -82,8 +116,8 @@ html, body, .modal-content {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  background: linear-gradient(135deg, #222 60%, #444 100%);
-  color: #fff;
+  background: var(--color-gradient-dark);
+  color: var(--color-light);
   border: none;
   border-radius: 50%;
   width: 48px;
@@ -98,7 +132,8 @@ html, body, .modal-content {
   transition: background 0.2s, box-shadow 0.2s;
 }
 .lightbox-btn:hover {
-  background: linear-gradient(135deg, #444 60%, #222 100%);
+  background: var(--color-gradient-dark);
+  color: var(--color-accent);
   box-shadow: 0 4px 16px #000c, 0 0 0 2px #ffcc00;
   color: #ffcc00;
 }
@@ -112,7 +147,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background: transparent; /* particles.js background is visible */
-  color: #eee;             /* light text for contrast */
+  color: var(--color-light);             /* light text for contrast */
   line-height: 1.6;
 }
 
@@ -121,15 +156,15 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(14,28,47,0.82);
+  background: var(--color-frosted-dark);
   padding: 1rem 2rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  color: white;
+  color: var(--color-light);
   text-align: center;
   transition: background 0.25s;
 }
 header:hover, header:focus-within {
-  background: rgba(14,28,47,0.97);
+  background: var(--color-frosted-dark-hover);
 }
 
 nav ul {
@@ -152,12 +187,12 @@ nav a {
 }
 
 nav a:hover {
-  color: #ffcc00;
+  color: var(--color-accent);
   background-color: transparent; /* remove dark bg hover if any */
 }
 
 nav a.active {
-  background-color: #27529a;
+  background-color: var(--color-blue);
   box-shadow: inset 0 -3px 0 0 rgba(255,255,255,0.3);
 }
 
@@ -177,14 +212,14 @@ h1 {
 }
 
 h2, h3 {
-  color: #fff;
-  text-shadow: 0 0 5px rgba(0,0,0,0.7);
+  color: var(--color-light);
+  text-shadow: 0 0 5px var(--color-shadow);
 }
 
 p.lead {
   font-size: 1.25rem;
   color: #ddd;
-  text-shadow: 0 0 3px rgba(0,0,0,0.5);
+  text-shadow: 0 0 3px var(--color-shadow);
   text-align: center;
   margin-top: 0;
   margin-bottom: 2rem;
@@ -211,15 +246,14 @@ p.lead {
 
 /* PROJECT CARD */
 article.project-card {
-  background: rgba(255,255,255,0.95);
-  color: #222;
+  background: var(--color-frosted);
+  color: var(--color-dark);
   padding: 0;
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
   overflow: hidden;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-
+  box-shadow: 0 4px 10px var(--color-modal-shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 
@@ -233,7 +267,7 @@ article.project-card {
 
 article.project-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 12px 25px var(--color-modal-shadow);
 }
 
 article.project-card h3 {
@@ -275,8 +309,8 @@ article.project-card:hover h3 {
   gap: 0.3rem;
   font-size: clamp(2rem, 10vw, 3.5rem);
   white-space: nowrap;
-  background: linear-gradient(135deg, #1e283c 0%, #2d3e50 100%);
-  color: #fff;
+  background: var(--color-gradient-emoji);
+  color: var(--color-light);
 }
 
 /* INFO SECTION */
@@ -308,17 +342,17 @@ article.project-card:hover h3 {
 footer {
   text-align: center;
   padding: 1rem 0;
-  color: #888;
+  color: var(--color-footer);
   font-size: 0.9rem;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--color-footer-border);
   margin-top: 3rem;
 }
 /* --- Project Card Overlay --- */
 .card-overlay {
   position: absolute;
   left: 0; right: 0; bottom: 0; top: 0;
-  background: linear-gradient(180deg, rgba(30,40,60,0.0) 60%, rgba(30,40,60,0.85) 100%);
-  color: #fff;
+  background: var(--color-overlay-gradient);
+  color: var(--color-light);
   opacity: 0;
   display: flex;
   flex-direction: column;
@@ -382,7 +416,7 @@ footer {
 /* --- Modal Arrow Buttons --- */
 .modal-arrow {
   background: rgba(30,40,60,0.8);
-  color: #fff;
+  color: var(--color-light);
   border: none;
   border-radius: 50%;
   width: 40px;
@@ -406,8 +440,8 @@ footer {
   right: 10px;
 }
 .modal-arrow:hover {
-  background: #ffcc00;
-  color: #222;
+  background: var(--color-accent);
+  color: var(--color-dark);
 }
 .modal-gallery {
   position: relative;
@@ -420,15 +454,13 @@ footer {
   gap: 1.2rem;
 }
 .modal-link {
-  color: #27529a;
-  font-weight: 600;
-  text-decoration: none;
-  border-bottom: 2px solid #ffcc00;
+  color: var(--color-modal-link);
+  border-bottom: 2px solid var(--color-modal-link-hover);
   transition: color 0.2s, border-color 0.2s;
 }
 .modal-link:hover {
-  color: #ffcc00;
-  border-color: #27529a;
+  color: var(--color-modal-link-hover);
+  border-color: var(--color-modal-link);
 }
 /* MODAL (Popup) Styles - Redesigned */
 
@@ -454,7 +486,7 @@ footer {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(10, 20, 40, 0.75);
+  background: var(--color-modal-bg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -464,7 +496,7 @@ footer {
 }
 
 .modal-content {
-  background: #fff;
+  background: var(--color-modal-content-bg);
   padding: 2rem 2rem 1.5rem 2rem;
   width: 96vw;
   max-width: 1400px;
@@ -473,7 +505,7 @@ footer {
   min-height: 0;
   border-radius: 18px;
   position: relative;
-  box-shadow: 0 8px 40px rgba(0,0,0,0.25);
+  box-shadow: 0 8px 40px var(--color-modal-shadow);
   overflow-y: auto;
   overflow-x: hidden;
   display: flex;
@@ -513,7 +545,7 @@ footer {
   top: 1.2rem;
   right: 1.7rem;
   font-size: 2.2rem;
-  color: #888;
+  color: var(--color-footer);
   cursor: pointer;
   background: none;
   border: none;
@@ -521,14 +553,14 @@ footer {
   transition: color 0.2s;
 }
 .close-btn:hover {
-  color: #0e1c2f;
+  color: var(--color-modal-header);
 }
 
 .modal-header {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: #0e1c2f;
+  color: var(--color-modal-header);
 }
 .modal-subheader {
   font-size: 1rem;
@@ -772,13 +804,13 @@ footer {
   border-radius: 12px;
   font-size: 0.85rem;
   font-weight: 600;
-  background: #f3f4f6;
-  color: #333;
-  border: 1px solid #e0e0e0;
+  background: var(--color-badge-bg);
+  color: var(--color-badge-dark);
+  border: 1px solid var(--color-footer-border);
 }
-.badge.role { background: #eafff6; border-color: #b6f3de; }
-.badge.difficulty { background: #fff4ea; border-color: #ffd7b8; }
-.badge.collaborators { background: #eef2ff; border-color: #c7d2fe; }
+.badge.role { background: var(--color-badge-role-bg); border-color: var(--color-badge-role-border); }
+.badge.difficulty { background: var(--color-badge-difficulty-bg); border-color: var(--color-badge-difficulty-border); }
+.badge.collaborators { background: var(--color-badge-collab-bg); border-color: var(--color-badge-collab-border); }
 
 @media (max-width: 700px) {
   .modal-content {
@@ -848,35 +880,42 @@ footer * {
 
 /* --- Base styles for ALL CTA buttons --- */
 .cta-button {
-    display: inline-block;
-    padding: 1rem 2.5rem;
-    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 180px;
+    max-width: 260px;
+    padding: 1rem 1.2rem;
+    font-size: 1.15rem;
     font-weight: 600;
     border-radius: 8px;
     text-decoration: none;
     transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
     cursor: pointer;
     font-family: inherit;
-    line-height: 1.6;
+    line-height: 1.4;
     text-align: center;
+    white-space: normal;
+    word-break: break-word;
+    flex: 1 1 0;
 }
 
 /* --- Primary Button (AND Secondary, all unified) --- */
 .cta-button.primary,
 .cta-button.secondary {
-    color: #0e1c2f; /* Dark text */
-    background-color: #ffcc00; /* Yellow background */
-    border: 2px solid #ffcc00; /* Matching border */
+    color: var(--color-dark); /* Dark text */
+    background-color: var(--color-accent); /* Yellow background */
+    border: 2px solid var(--color-accent); /* Matching border */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .cta-button.primary:hover,
 .cta-button.secondary:hover {
     transform: translateY(-4px);
-    background-color: #ffe066; /* Lighter yellow */
-    border-color: #ffe066; /* Lighter border */
+    background-color: var(--color-accent-hover); /* Lighter yellow */
+    border-color: var(--color-accent-hover); /* Lighter border */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    color: #0e1c2f; /* Keep dark text on hover */
+    color: var(--color-dark); /* Keep dark text on hover */
 }
 
 /* ========================================================================
@@ -927,9 +966,9 @@ main .description {
         justify-content: flex-start;
     }
 
-    /* HIDE the "View Resume" button... */
-    .home-content-wrapper .cta-button.secondary {
-        display: none;
+    /* Ensure homepage CTA buttons are always visible */
+    .home-content-wrapper .cta-section .cta-button.secondary {
+      display: inline-block !important;
     }
 
     /* ...and SHOW the resume embed instead */
@@ -962,7 +1001,7 @@ main .description {
 
 .about-section {
     padding: 1.5rem 1rem;
-    color: #eee; /* Light text */
+    color: var(--color-light); /* Light text */
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -972,7 +1011,7 @@ main .description {
 
 .page-content-wrapper h2 {
     font-size: 1.75rem;
-    color: #ffcc00; /* Yellow accent for headers */
+    color: var(--color-accent); /* Yellow accent for headers */
     margin-top: 0;
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
@@ -1002,7 +1041,7 @@ main .description {
 
 .skill-category h3 {
     font-size: 1.2rem;
-    color: #fff;
+    color: var(--color-light);
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 1rem;
@@ -1036,7 +1075,7 @@ main .description {
 .contact-form label {
     font-size: 1rem;
     font-weight: 600;
-    color: #eee;
+    color: var(--color-light);
     margin-bottom: 0.5rem;
 }
 
@@ -1047,15 +1086,15 @@ main .description {
     padding: 0.75rem 1rem;
     border-radius: 6px;
     border: 1px solid #555;
-    background: #222;
-    color: #fff;
+    background: var(--color-dark);
+    color: var(--color-light);
     transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
-    border-color: #ffcc00;
+    border-color: var(--color-accent);
     box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.3);
 }
 
@@ -1075,10 +1114,10 @@ main .description {
 /* --- Modal Skills Tags --- */
 .modal-skills h3 {
     font-size: 1.5rem;
-    color: #222;
+    color: var(--color-dark);
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px solid var(--color-light);
     padding-bottom: 0.5rem;
 }
 
@@ -1090,8 +1129,8 @@ main .description {
 
 .skills-tags span {
     display: inline-block;
-    background: #eee;
-    color: #333;
+    background: var(--color-light);
+    color: var(--color-dark);
     padding: 0.25rem 0.75rem;
     border-radius: 15px;
     font-size: 0.9rem;
