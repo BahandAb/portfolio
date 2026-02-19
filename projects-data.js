@@ -33,7 +33,9 @@ const projects = [
     difficulty: 'Expert',
     collaborators: 'Daiveion Greenwade, Sarah Hu, Richard Kerkhoff, WHHS Programming Club', 
     emojis: ['🔬', '🦅', '📡'],
-    images: [],
+    images: [
+      'EagleVision/VolvoxSession.png'
+    ],
     videos: [],
     links: {}
   },

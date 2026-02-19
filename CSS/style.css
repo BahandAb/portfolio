@@ -1005,6 +1005,11 @@ main .description {
       display: inline-block !important;
     }
 
+    /* Hide the button link since the embed is visible */
+    .home-content-wrapper .cta-section .cta-button.secondary.resume-view-btn {
+        display: none !important;
+    }
+
     /* ...and SHOW the resume embed instead */
     .resume-embed-wrapper {
         display: block;
@@ -1013,7 +1018,11 @@ main .description {
         height: 770px; /* Adjust as needed for your PDF */
         border-radius: 8px;
         overflow: hidden;
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 215, 0, 0.15);
+    }
+
+    .resume-embed-wrapper iframe {
+        border: 2px solid var(--color-accent);
     }
 }
 
