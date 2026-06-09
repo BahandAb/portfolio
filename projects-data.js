@@ -6,7 +6,7 @@ const projects = [
     id: 'eaglevision',
     title: 'EagleVision: Collaborative Microscopy Platform',
     date: 'September 2025 - Present',
-    shortDesc: 'A patent-pending educational platform that broadcasts a single microscope feed to over 100 student devices simultaneously. Winner of a $10,000 Samsung Solve for Tomorrow prize.',
+    shortDesc: 'A patent-pending educational platform that broadcasts a single microscope feed to over 100 student devices simultaneously. Winner of a $10,000 Samsung Solve for Tomorrow prize and Best of the Best at the UC IT Expo.',
     longDesc: `
       <p><strong>The Mission:</strong> EagleVision (formerly "DigiScope") began with a simple observation in biology class: microscopes are 1:1 devices, creating a bottleneck for teachers. As the President of the WHHS Programming Club, I led the initiative to democratize this experience, turning every student's device into a real-time viewport.</p>
       
@@ -23,8 +23,11 @@ const projects = [
           <li><strong>Patent Approved:</strong> I successfully secured a Provisional Patent for the system's unique hardware-software architecture.</li>
           <li><strong>$10,000 Winner:</strong> The project was selected as a state winner for the Samsung Solve for Tomorrow competition, earning $10k for Walnut Hills High School.</li>
           <li><strong>Field Tested:</strong> We successfully deployed the system at Madeira Elementary, proving its viability in a real K-12 classroom.</li>
+          <li><strong>UC IT Expo — Best of the Best:</strong> EagleVision won the top overall award and 1st place in Software & Web Development at the University of Cincinnati IT Expo (April 2026).</li>
         </ul>
       </p>
+
+      <p><strong>Website Revamp:</strong> The project now has a dedicated home at <a href="https://eaglevision.dev" target="_blank" rel="noopener noreferrer">eaglevision.dev</a>, featuring a fully revamped site to showcase the platform, team, and research.</p>
 
       <p><strong>Future Tech (AI):</strong> Most recently, I have begun integrating <strong>Google Gemini 3 Pro</strong> directly into the video pipeline. This allows the microscope to "see" and identify organisms in real-time, providing AI-driven educational context alongside the live feed.</p>
     `,
@@ -37,7 +40,66 @@ const projects = [
       'EagleVision/VolvoxSession.png'
     ],
     videos: [],
+    links: { 'Website': 'https://eaglevision.dev' }
+  },
+  {
+    id: 'gemmy',
+    title: 'Gemmy — AI-Navigated Mecanum Robot',
+    date: '2025 - Present',
+    shortDesc: 'An autonomous mecanum-wheeled robot with Raspberry Pi, real-time Gemini API navigation, a Flask/WebSocket dashboard, ultrasonic sensors, IMU, and a live SVG radar display.',
+    longDesc: `
+      <p><strong>Overview:</strong> Gemmy is a custom-built mecanum-drive robot powered by a Raspberry Pi and navigated by Google's <strong>Gemini API</strong>. The robot perceives its environment through ultrasonic sensors and an IMU, and uses Gemini to make real-time navigation decisions, enabling intelligent obstacle avoidance and path planning without traditional hard-coded rules.</p>
+
+      <p><strong>Hardware:</strong>
+        <ul>
+          <li><strong>Drivetrain:</strong> Four mecanum wheels enabling holonomic movement in any direction.</li>
+          <li><strong>Sensing:</strong> Multiple ultrasonic sensors for distance detection and an IMU for orientation tracking.</li>
+          <li><strong>Compute:</strong> Raspberry Pi running Python for all control logic and AI inference.</li>
+        </ul>
+      </p>
+
+      <p><strong>Software & Dashboard:</strong>
+        <ul>
+          <li><strong>AI Navigation:</strong> Sensor data is fed to the Gemini API, which returns navigation commands interpreted by the robot's drive controller.</li>
+          <li><strong>Flask/WebSocket Backend:</strong> A lightweight Flask server streams live telemetry over WebSockets to a browser dashboard.</li>
+          <li><strong>SVG Radar Display:</strong> The dashboard renders a live animated SVG radar showing detected obstacles in real time, giving a bird's-eye view of the robot's sensor field.</li>
+        </ul>
+      </p>
+    `,
+    skills: 'Raspberry Pi, Python, Flask, WebSockets, Google Gemini API, Mecanum Drive, Ultrasonic Sensors, IMU, SVG, JavaScript',
+    role: 'Lead Developer / Builder',
+    difficulty: 'Advanced',
+    collaborators: '',
+    emojis: ['🤖', '🧠', '📡'],
+    images: [],
+    videos: [],
     links: {}
+  },
+  {
+    id: 'ia-career-finder',
+    title: 'IA Career Finder',
+    date: '2025 - Present',
+    shortDesc: 'A React web app for INTERalliance that helps students explore tech career paths using Gemini 2.5 Flash-Lite via a Cloudflare Worker, with an admin panel for managing content.',
+    longDesc: `
+      <p><strong>Overview:</strong> IA Career Finder is a career exploration tool built for <strong>INTERalliance</strong>, designed to help high school students discover tech careers that match their interests and skills. The app is live at <a href="https://ia-career-finder.bahandab.com" target="_blank" rel="noopener noreferrer">ia-career-finder.bahandab.com</a>.</p>
+
+      <p><strong>Tech Stack:</strong>
+        <ul>
+          <li><strong>Frontend:</strong> React app with a clean, student-friendly UI.</li>
+          <li><strong>AI:</strong> Powered by <strong>Gemini 2.5 Flash-Lite</strong> for fast, low-cost career matching and recommendations.</li>
+          <li><strong>Backend:</strong> API calls are proxied through a <strong>Cloudflare Worker</strong>, keeping API keys secure and enabling edge deployment.</li>
+          <li><strong>Admin Panel:</strong> A built-in admin interface allows INTERalliance coordinators to manage career listings and content without touching code.</li>
+        </ul>
+      </p>
+    `,
+    skills: 'React, JavaScript, Google Gemini API, Cloudflare Workers, HTML/CSS',
+    role: 'Lead Developer',
+    difficulty: 'Intermediate',
+    collaborators: 'INTERalliance',
+    emojis: ['💼', '🎓', '🤖'],
+    images: [],
+    videos: [],
+    links: { 'Live App': 'https://ia-career-finder.bahandab.com' }
   },
   {
     id: 'whiteboard-polargraph',
