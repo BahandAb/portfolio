@@ -114,6 +114,34 @@ function resolveMediaSrc(src) {
 }
 
 /**
+ * Map a resolved full-resolution local image path to its pre-generated,
+ * compressed thumbnail (see tools/generate_thumbnails.py). Anything that
+ * isn't a local E-Portfolio image (external URLs, placeholders) is
+ * returned unchanged since there's no thumbnail to look up.
+ */
+function toThumbPath(fullSrc) {
+    const prefix = 'assets/E-Portfolio/';
+    if (!fullSrc || !fullSrc.startsWith(prefix)) return fullSrc;
+    const rel = fullSrc.slice(prefix.length).replace(/\.[^./]+$/, '.jpg');
+    return `assets/E-Portfolio-thumbs/${rel}`;
+}
+
+/**
+ * onerror handler for thumbnail <img> elements: first try the full-res
+ * original (in case a thumbnail is missing/not yet generated), then fall
+ * back to the placeholder graphic.
+ */
+function handleThumbError(imgEl, fullSrc) {
+    if (imgEl.dataset.fallback !== 'full') {
+        imgEl.dataset.fallback = 'full';
+        imgEl.src = fullSrc;
+    } else {
+        imgEl.onerror = null;
+        imgEl.src = 'assets/placeholder.png';
+    }
+}
+
+/**
  * Main function to build the project grid on page load.
  */
 function initProjectsPage() {
@@ -145,15 +173,16 @@ function initProjectsPage() {
             } else if (videoSrc.includes('youtube.com/watch?v=')) {
                 videoId = videoSrc.split('watch?v=')[1].split('&')[0];
             }
-            rawThumb = videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : 'assets/placholders/tile_placeholder';
+            rawThumb = videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : 'assets/placeholder.png';
         } else {
-            rawThumb = 'assets/placholders/tile_placeholder';
+            rawThumb = 'assets/placeholder.png';
         }
-        const thumbnailUrl = resolveMediaSrc(rawThumb);
+        const fullThumbnailUrl = resolveMediaSrc(rawThumb);
+        const thumbnailUrl = toThumbPath(fullThumbnailUrl);
 
         card.innerHTML = `
             <div class="project-media">
-                ${hasImages ? `<img src="${thumbnailUrl}" alt="${project.title}" onerror="this.src='assets/placholders/tile_placeholder'" loading="lazy" style="width:100%;height:100%;object-fit:cover;max-width:100%;max-height:100%;" />` : `<div class="project-emoji">${project.emojis ? project.emojis.join(' ') : '📋'}</div>`}
+                ${hasImages ? `<img src="${thumbnailUrl}" alt="${project.title}" onerror="handleThumbError(this, '${fullThumbnailUrl}')" loading="lazy" style="width:100%;height:100%;object-fit:cover;max-width:100%;max-height:100%;" />` : `<div class="project-emoji">${project.emojis ? project.emojis.join(' ') : '📋'}</div>`}
                 <div class="card-overlay">
                     <span class="overlay-title">${project.title}</span>
                     <span class="overlay-date">${project.date}</span>
@@ -242,7 +271,8 @@ function openProjectModal(projectId) {
             thumb.className = 'gallery-thumb';
                         // If it's a video, use a placeholder or a YouTube thumbnail
                         if (media.type === 'image') {
-                            thumb.src = media.src;
+                            thumb.src = toThumbPath(media.src);
+                            thumb.onerror = () => handleThumbError(thumb, media.src);
                         } else {
                             // Try YouTube thumbnail if applicable, else fallback
                             let videoId = '';
@@ -456,7 +486,12 @@ function initContactPage() {
      INITIALIZATION
      ======================================================================== */
 document.addEventListener('DOMContentLoaded', function () {
-    initCommon(); 
+    try {
+        initCommon();
+    } catch (err) {
+        // Don't let a particles.js/CDN failure block the rest of the page (project grid, etc.)
+        console.error('initCommon failed:', err);
+    }
 
     // Homepage copy button logic
     if (window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname === '/portfolio-site/' ) {
