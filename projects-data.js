@@ -153,7 +153,7 @@ const projects = [
     difficulty: 'Advanced (Conceptual)',
     collaborators: 'Edwin Tenney',
     emojis: ['🤖', '⚙️', '✏️'],
-    images: [],
+    images: ['BoardBot/Original Concept/Original Board Bot Concept.png'],
     videos: [],
     links: {
       googleDoc: 'https://docs.google.com/document/d/1P7SFSlMLZeY1qmnHkW8rsUjouKWmcIM69sK55mbuzNc/edit?usp=sharing'
