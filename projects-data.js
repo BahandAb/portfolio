@@ -97,7 +97,7 @@ const projects = [
     difficulty: 'Intermediate',
     collaborators: 'INTERalliance',
     emojis: ['💼', '🎓', '🤖'],
-    images: [],
+    images: ['IA Career Finder/iaCareerFinder.png'],
     videos: [],
     links: { 'Live App': 'https://ia-career-finder.bahandab.com' }
   },
