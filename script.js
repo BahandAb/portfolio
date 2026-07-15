@@ -127,6 +127,27 @@ function toThumbPath(fullSrc) {
 }
 
 /**
+ * Trim a card's description word-by-word until it actually fits its
+ * rendered box (measured via scrollHeight vs the CSS max-height clamp),
+ * appending an ellipsis if trimmed. Used instead of CSS line-clamp:
+ * multi-line -webkit-line-clamp/line-clamp proved unreliable across
+ * browsers (a 4th line would sometimes render and get abruptly,
+ * mid-glyph clipped instead of being hidden). A fixed character budget
+ * isn't reliable either, since it depends on card width and font
+ * metrics; measuring the actual laid-out box adapts to both.
+ */
+function fitClampedText(el) {
+    const fullText = el.textContent;
+    if (el.scrollHeight <= el.clientHeight + 1) return;
+    const words = fullText.split(' ');
+    while (words.length > 1) {
+        words.pop();
+        el.textContent = words.join(' ') + '…';
+        if (el.scrollHeight <= el.clientHeight + 1) return;
+    }
+}
+
+/**
  * onerror handler for thumbnail <img> elements: first try the full-res
  * original (in case a thumbnail is missing/not yet generated), then fall
  * back to the placeholder graphic.
@@ -208,7 +229,10 @@ function initProjectsPage() {
         grid.appendChild(card);
     });
 
-    // 5. Add event listeners for the modal (close button, etc.)
+    // 5. Now that every card is laid out, trim descriptions that overflow
+    document.querySelectorAll('.project-info p').forEach(fitClampedText);
+
+    // 6. Add event listeners for the modal (close button, etc.)
     setupModalListeners();
 }
 
@@ -316,6 +340,12 @@ function openProjectModal(projectId) {
     // --- 5. Show Modal ---
     modal.classList.remove('hidden');
     setTimeout(() => modal.classList.add('showing'), 10);
+    // Always open at the top, even if the last project was scrolled down.
+    // Bypass scroll-behavior: smooth for this reset so it's instant, not an
+    // animated scroll-up as the new content appears.
+    modalContent.style.scrollBehavior = 'auto';
+    modalContent.scrollTop = 0;
+    modalContent.style.scrollBehavior = '';
     modalContent.focus(); // Focus for accessibility
 }
 
