@@ -71,7 +71,7 @@ const projects = [
     difficulty: 'Advanced',
     collaborators: '',
     emojis: ['🤖', '🧠', '📡'],
-    images: [],
+    images: ['Gemmy/GemmyCAD.jpg'],
     videos: [],
     links: {}
   },

@@ -336,15 +336,12 @@ article.project-card:hover h3 {
 .project-info {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  min-height: 0;
   overflow: hidden;
 }
 
 .project-info h3 {
   margin: 0 0 0.5rem 0;
   padding: 0.5em 1.5em 0.2em 1.5em;
-  flex-shrink: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -360,8 +357,6 @@ article.project-card:hover h3 {
   line-clamp: 3;
   -webkit-box-orient: vertical;
   padding: 0.5em 1.5em 1em 1.5em;
-  flex: 1;
-  min-height: 0;
 }
 
 /* FOOTER */
