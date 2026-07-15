@@ -354,7 +354,7 @@ article.project-card:hover h3 {
   overflow: hidden;
   padding: 0.5em 1.5em 1em 1.5em;
   /* The text itself is pre-trimmed in JS (see fitClampedText in
-     script.js) — multi-line CSS clamping (-webkit-line-clamp/line-clamp)
+     script.js) - multi-line CSS clamping (-webkit-line-clamp/line-clamp)
      proved unreliable across browsers, intermittently letting a 4th line
      partially render with an ugly mid-glyph cut instead of being hidden.
      This max-height is just a defensive backstop; it's also what

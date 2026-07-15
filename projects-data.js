@@ -23,7 +23,7 @@ const projects = [
           <li><strong>Patent Approved:</strong> I successfully secured a Provisional Patent for the system's unique hardware-software architecture.</li>
           <li><strong>$10,000 Winner:</strong> The project was selected as a state winner for the Samsung Solve for Tomorrow competition, earning $10k for Walnut Hills High School.</li>
           <li><strong>Field Tested:</strong> We successfully deployed the system at Madeira Elementary, proving its viability in a real K-12 classroom.</li>
-          <li><strong>UC IT Expo — Best of the Best:</strong> EagleVision won the top overall award and 1st place in Software & Web Development at the University of Cincinnati IT Expo (April 2026).</li>
+          <li><strong>UC IT Expo - Best of the Best:</strong> EagleVision won the top overall award and 1st place in Software & Web Development at the University of Cincinnati IT Expo (April 2026).</li>
         </ul>
       </p>
 
@@ -44,7 +44,7 @@ const projects = [
   },
   {
     id: 'gemmy',
-    title: 'Gemmy — AI-Navigated Mecanum Robot',
+    title: 'Gemmy: AI-Navigated Mecanum Robot',
     date: '2025 - Present',
     shortDesc: 'An autonomous mecanum-wheeled robot with Raspberry Pi, real-time Gemini API navigation, a Flask/WebSocket dashboard, ultrasonic sensors, IMU, and a live SVG radar display.',
     longDesc: `
@@ -277,7 +277,7 @@ const projects = [
     date: 'July 2025',
     shortDesc: 'Acquired, diagnosed, and upgraded a discarded Dell Precision 7520 laptop, transforming it into a powerful modern system by maximizing RAM and uncovering a hidden NVMe SSD.',
     longDesc: `
-      <p>This project began with a surprising discovery during cleanup at our Xavier IT workbench. We came across a bulky Dell laptop, seemingly from 2010, and initially relegated it to the e-waste pile. However, a closer look in the warehouse revealed a USB-C Thunderbolt port and an Intel i7 7th Gen processor—unusual for its apparent age. Further investigation of its serial number confirmed it was a Dell Precision 7520 from 2016, once touted as the "Most Powerful Laptop in the World." This machine boasted four SODIMM RAM slots, an NVMe M.2 SSD slot, Thunderbolt 3, and an NVIDIA Quadro M1200 GPU, indicating immense upgrade potential.</p>
+      <p>This project began with a surprising discovery during cleanup at our Xavier IT workbench. We came across a bulky Dell laptop, seemingly from 2010, and initially relegated it to the e-waste pile. However, a closer look in the warehouse revealed a USB-C Thunderbolt port and an Intel i7 7th Gen processor - unusual for its apparent age. Further investigation of its serial number confirmed it was a Dell Precision 7520 from 2016, once touted as the "Most Powerful Laptop in the World." This machine boasted four SODIMM RAM slots, an NVMe M.2 SSD slot, Thunderbolt 3, and an NVIDIA Quadro M1200 GPU, indicating immense upgrade potential.</p>
       <p>After receiving permission to upgrade it with available parts and keep it, I immediately imaged it to Windows 11 at work. Upon setting it up at home, I was astonished by its inherent speed and modern feel. A peculiar mystery arose: the system reported two NVMe M.2 SSDs despite only one visible port and no apparent HDD, even though I'd seen a SATA drive shell.</p>
       <p>Upon returning to work, I proceeded with a RAM upgrade to 32GB. This wasn't entirely smooth; one SODIMM stick was faulty, requiring debugging assistance from Doug Hanson to identify and replace it. The ultimate solution to the SSD mystery was revealed during further disassembly to access the additional RAM slots under the keyboard. The "SATA drive" I'd seen was surprisingly light; flipping it over, I discovered it was actually an NVMe SSD adapter, with the HDD shell merely an empty case concealing a second NVMe SSD! This was a stock feature from Dell, a "hot-swappable" slot designed to accommodate both SATA drives and NVMe SSDs via an adapter during a transitional period in 2016.</p>
       <p>This Dell Precision 7520, with its robust build and powerful features, has since replaced my 2019 Windows 10 HP Pavilion laptop. The Thunderbolt 3 port, absent on my HP, was a particularly welcome addition. It was hardly a fair fight, comparing a top-of-the-line workstation from 2016 to a budget office laptop from 2019, but the Dell's remarkable performance after its restoration truly showcased the value of smart upgrades and thorough diagnostics.</p>
