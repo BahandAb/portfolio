@@ -1059,6 +1059,10 @@ main .description {
     border-bottom: none;
 }
 
+.about-section a {
+    color: var(--color-accent);
+}
+
 .page-content-wrapper h2 {
     font-size: 1.75rem;
     color: var(--color-accent); /* Yellow accent for headers */
