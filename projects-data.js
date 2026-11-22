@@ -56,7 +56,7 @@ const projects = [
 
       <p><strong>What I built:</strong> I'm the only freshman mentee on the team. I designed the aluminum extrusion test rig and enclosure in CAD, where the drone is fixed to the base rails while it runs. I also designed the drone mounts, which keep the drone electrically isolated, and the microphone holder (now on its fourth version). I helped solder and wire the sensors, and built the first version of the data-collection system: two ESP32 boards (one for 4 microphones, one for 4 accelerometers) and a Python live viewer and recorder that turned a manual, error-prone process into one script. A teammate later expanded it and added a dashboard.</p>
 
-      <p><strong>Result:</strong> The first round of data collection finished in early November 2026. I co-presented with the senior team to lab director Dr. Manish Kumar and visiting researchers, presenting the enclosure and mounts I designed.</p>
+      <p><strong>Result:</strong> The first round of data collection finished in early November 2026.</p>
 
     `,
     skills: 'CAD, ESP32, Python, Sensor Wiring, Data Collection, Prototyping',
