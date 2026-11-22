@@ -221,20 +221,7 @@ const projects = [
     role: 'Sole Developer',
     difficulty: 'Advanced',
     collaborators: '',
-    images: [
-      'Arduino Leo and ESP32 LoRa modules/20250804_094437.jpg',
-      'Arduino Leo and ESP32 LoRa modules/IMG_20250805_102257.jpg',
-      'Arduino Leo and ESP32 LoRa modules/20250805_164634.jpg',
-      'Arduino Leo and ESP32 LoRa modules/IMG_20250805_172658.jpg',
-      'Arduino Leo and ESP32 LoRa modules/884e3199-21e7-4ff3-a0e4-05b017d57b9f.jpg',
-      'Arduino Leo and ESP32 LoRa modules/IMG_20250805_102131.jpg',
-      'Arduino Leo and ESP32 LoRa modules/IMG_20250805_102257 (1).jpg',
-      'Arduino Leo and ESP32 LoRa modules/IMG_20250805_101231.jpg',
-      'Arduino Leo and ESP32 LoRa modules/20250805_101110.jpg',
-      'Arduino Leo and ESP32 LoRa modules/20250812_120604.jpg',
-      'Arduino Leo and ESP32 LoRa modules/20250812_120603.jpg',
-      'Arduino Leo and ESP32 LoRa modules/20250812_120602.jpg'
-    ],
+    images: [],
     videos: [],
     youtubeEmbeds: [],
     links: {}
