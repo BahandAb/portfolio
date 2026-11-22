@@ -1020,7 +1020,15 @@ const projects = [
     difficulty: 'Intermediate',
     collaborators: 'Karna Gajjar, Wyatt Childress (Soundtrack)',
     emojis: ['🎮', '🧠', '🏆'],
-    images: [],
+    images: [
+      'AP Seminar Game/ap-seminar-title-screen.png',
+      'AP Seminar Game/ap-seminar-fallacy-quadrants.png'
+    ],
+    alt: [
+      'The title screen of AP Seminar: The Game, with a retro sunset background',
+      'Four colored squares, each naming and explaining a logical fallacy from the game'
+    ],
+    cardPosition: 'center top',
     videos: [],
     links: {}
   },
@@ -1116,7 +1124,8 @@ const projects = [
     difficulty: 'Beginner',
     collaborators: 'Dad',
     emojis: ['🚗', '📺', '⚡'],
-    images: [],
+    images: ['Corolla Screen Upgrade/corolla.jpg'],
+    alt: ['The black Toyota Corolla that got the infotainment screen upgrade'],
     videos: [],
     links: {}
   },
