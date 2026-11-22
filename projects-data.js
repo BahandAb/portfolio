@@ -46,29 +46,6 @@ const projects = [
     links: { 'Website': 'https://eaglevision.dev' }
   },
   {
-    id: 'acoustic-quadcopter-diagnostics',
-    title: 'Acoustic Quadcopter Diagnostics: Drone Fault Detection Test Rig',
-    date: 'Aug 2026 to present',
-    status: 'Active',
-    shortDesc: 'A test rig that records sound and vibration from a running drone, so a UC senior design team can train AI to detect faults.',
-    longDesc: `
-      <p><strong>Problem:</strong> A UC senior design team in the Applied Autonomy Lab is training AI to detect drone faults from sound and vibration. To do that, they need clean, repeatable recordings from a drone running its motors and propellers, with the microphones in the right places.</p>
-
-      <p><strong>What I built:</strong> I'm the only freshman mentee on the team. I designed the aluminum extrusion test rig and enclosure in CAD, where the drone is fixed to the base rails while it runs. I also designed the drone mounts, which keep the drone electrically isolated, and the microphone holder (now on its fourth version). I helped solder and wire the sensors, and built the first version of the data-collection system: two ESP32 boards (one for 4 microphones, one for 4 accelerometers) and a Python live viewer and recorder that turned a manual, error-prone process into one script. A teammate later expanded it and added a dashboard.</p>
-
-      <p><strong>Result:</strong> The first round of data collection finished in early November 2026.</p>
-
-    `,
-    skills: 'CAD, ESP32, Python, Sensor Wiring, Data Collection, Prototyping',
-    role: 'Mentee',
-    difficulty: 'Advanced',
-    collaborators: 'UC Applied Autonomy Lab senior design team; primary advisor Prissha Chawla',
-    emojis: ['🚁', '🎙️', '📈'],
-    images: [],
-    videos: [],
-    links: {}
-  },
-  {
     id: 'gemmy',
     title: 'Gemmy: AI-Navigated Mecanum Robot',
     date: 'Jan 2026 to May 2026',
