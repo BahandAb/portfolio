@@ -152,6 +152,17 @@ function fitClampedText(el) {
  * original (in case a thumbnail is missing/not yet generated), then fall
  * back to the placeholder graphic.
  */
+/**
+ * Google Drive video helpers. A project lists Drive file IDs in
+ * `driveVideos`; each file must be shared as "anyone with the link can view".
+ */
+function driveThumb(fileId) {
+    return `https://drive.google.com/thumbnail?id=${fileId}&sz=w640`;
+}
+function drivePreview(fileId) {
+    return `https://drive.google.com/file/d/${fileId}/preview`;
+}
+
 function handleThumbError(imgEl, fullSrc) {
     if (imgEl.dataset.fallback !== 'full') {
         imgEl.dataset.fallback = 'full';
@@ -179,12 +190,17 @@ function initProjectsPage() {
         
         // Use the first image as the thumbnail, or show emojis if no images
         const hasImages = project.images && project.images.length > 0;
-        const hasVideos = (project.videos && project.videos.length > 0) || (project.youtubeEmbeds && project.youtubeEmbeds.length > 0);
+        const hasDriveVideos = project.driveVideos && project.driveVideos.length > 0;
+        const hasVideos = (project.videos && project.videos.length > 0) || (project.youtubeEmbeds && project.youtubeEmbeds.length > 0) || hasDriveVideos;
         const hasMedia = hasImages || hasVideos;
+        // A Drive video's frame can stand in as the card picture
+        const hasCardImage = hasImages || hasDriveVideos;
         
         let rawThumb;
         if (hasImages) {
             rawThumb = project.images[0];
+        } else if (hasDriveVideos) {
+            rawThumb = driveThumb(project.driveVideos[0]);
         } else if (hasVideos && !project.emojis) {
             // Try to get YouTube thumbnail for first video if no emojis
             const videoSrc = project.videos ? project.videos[0] : project.youtubeEmbeds[0];
@@ -203,7 +219,7 @@ function initProjectsPage() {
 
         card.innerHTML = `
             <div class="project-media">
-                ${hasImages ? `<img src="${thumbnailUrl}" alt="${project.title}" onerror="handleThumbError(this, '${fullThumbnailUrl}')" loading="lazy" style="width:100%;height:100%;object-fit:cover;max-width:100%;max-height:100%;" />` : `<div class="project-emoji">${project.emojis ? project.emojis.join(' ') : '📋'}</div>`}
+                ${hasCardImage ? `<img src="${thumbnailUrl}" alt="${project.title}" onerror="handleThumbError(this, '${fullThumbnailUrl}')" loading="lazy" style="width:100%;height:100%;object-fit:cover;max-width:100%;max-height:100%;" />` : `<div class="project-emoji">${project.emojis ? project.emojis.join(' ') : '📋'}</div>`}
                 <div class="card-overlay">
                     <span class="overlay-title">${project.title}</span>
                     <span class="overlay-date">${project.date}</span>
@@ -285,7 +301,8 @@ function openProjectModal(projectId) {
     currentProjectMedia = [
         ...(project.images || []).map(img => ({ type: 'image', src: resolveMediaSrc(img) })),
         ...(project.videos || []).map(vid => ({ type: 'video', src: vid })),
-        ...(project.youtubeEmbeds || []).map(yt => ({ type: 'youtube', src: yt }))
+        ...(project.youtubeEmbeds || []).map(yt => ({ type: 'youtube', src: yt })),
+        ...(project.driveVideos || []).map(id => ({ type: 'drive', src: id }))
     ];
 
     if (currentProjectMedia.length > 0) {
@@ -297,6 +314,9 @@ function openProjectModal(projectId) {
                         if (media.type === 'image') {
                             thumb.src = toThumbPath(media.src);
                             thumb.onerror = () => handleThumbError(thumb, media.src);
+                        } else if (media.type === 'drive') {
+                            thumb.src = driveThumb(media.src);
+                            thumb.onerror = () => { thumb.onerror = null; thumb.src = 'assets/video-placeholder.png'; };
                         } else {
                             // Try YouTube thumbnail if applicable, else fallback
                             let videoId = '';
@@ -390,6 +410,16 @@ function setModalMedia(index) {
             iframe.allowFullscreen = true;
             mainMediaWrap.appendChild(iframe);
         }
+    } else if (media.type === 'drive') {
+        // Google Drive video player (file shared as anyone-with-link viewer)
+        const iframe = document.createElement('iframe');
+        iframe.className = 'drive-video';
+        iframe.src = drivePreview(media.src);
+        iframe.title = 'Project video';
+        iframe.allow = 'autoplay; fullscreen';
+        iframe.allowFullscreen = true;
+        iframe.loading = 'lazy';
+        mainMediaWrap.appendChild(iframe);
     } else if (media.type === 'video') {
         // Handle local video files
         let videoId = '';

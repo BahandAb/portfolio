@@ -452,6 +452,7 @@ const projects = [
     emojis: ['⭐', '📊', '🧮'],
     youtubeEmbeds: [],
     images: [],
+    driveVideos: ['1OZnXkg1QiNDTMSEYxXCWyAX_VtCmn_xb'],
     videos: [],
     youtubeEmbeds: [],
     links: {}
@@ -588,6 +589,7 @@ const projects = [
     emojis: ['🧠', '🤖', '📈'],
     youtubeEmbeds: [],
     images: [],
+    driveVideos: ['12VP_ZP6yiGD8ey6M69RYxzLspB5xad_1', '1pBaautXhWUhXH01e0T_2FTcBBcAoPYcT'],
     videos: [],
     links: {}
   },
@@ -669,6 +671,7 @@ const projects = [
     emojis: ['👁️', '🐍', '🤖'],
     youtubeEmbeds: [],
     images: [],
+    driveVideos: ['1ee0_Mt6WIRq4nn06uZ6z6JOJQY2SR_yU'],
     videos: [],
     youtubeEmbeds: [],
     links: {}
@@ -873,6 +876,7 @@ const projects = [
     difficulty: 'Intermediate',
     collaborators: 'FTC Team 6133',
     images: [],
+    driveVideos: ['1WfWNu7s0f0h_XBMFnYCb5ZXfy_1HZs-S'],
     videos: [],
     youtubeEmbeds: [],
     emojis: ['🤖', '🪛', '🔧'],
@@ -893,6 +897,7 @@ const projects = [
     emojis: ['🏷️', '📍', '🤖'],
     youtubeEmbeds: [],
     images: [],
+    driveVideos: ['1f0fwuzu3pV70keqY_nEp6hwjFO-YtWn6'],
     videos: [],
     links: {}
   },
@@ -988,6 +993,7 @@ const projects = [
     difficulty: 'Beginner',
     collaborators: '',
     images: [],
+    driveVideos: ['1VlrxNh1oIdyf_4VgcAcNqCINGkpGTa-m', '1qQKv95QatMRd7TOLtA5Myasdj_SQD-uw', '14SLoXD1qrLslM2E1r7xfeS-KqM3RvPSp'],
     videos: [],
     youtubeEmbeds: [],
     emojis: ['🔊', '🎵', '🔌'],
