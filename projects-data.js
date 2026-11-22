@@ -221,7 +221,8 @@ const projects = [
     role: 'Sole Developer',
     difficulty: 'Advanced',
     collaborators: '',
-    images: [],
+    images: ['LoRa Messaging/lora-box.png'],
+    alt: ['The black 3D-printed LoRa base station box with an antenna and a small screen'],
     videos: [],
     youtubeEmbeds: [],
     links: {}
