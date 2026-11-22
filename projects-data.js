@@ -5,69 +5,131 @@ const projects = [
   {
     id: 'eaglevision',
     title: 'EagleVision: Collaborative Microscopy Platform',
-    date: 'September 2025 - Present',
-    shortDesc: 'A patent-pending educational platform that broadcasts a single microscope feed to over 100 student devices simultaneously. Winner of a $10,000 Samsung Solve for Tomorrow prize and Best of the Best at the UC IT Expo.',
+    date: 'Apr 2025 to present',
+    status: 'Active',
+    shortDesc: 'A phone mount and web app that streams one microscope to every student\'s device, so a whole class can see the same sample at once.',
     longDesc: `
-      <p><strong>The Mission:</strong> EagleVision (formerly "DigiScope") began with a simple observation in biology class: microscopes are 1:1 devices, creating a bottleneck for teachers. As the President of the WHHS Programming Club, I led the initiative to democratize this experience, turning every student's device into a real-time viewport.</p>
-      
-      <p><strong>Technical Evolution:</strong>
+      <p><strong>Problem:</strong> Most classrooms share one microscope, so each student gets a few seconds at the eyepiece while everyone else waits. A teacher at Madeira Elementary told us that with one microscope and 25 students, getting every child a look takes about 40 minutes. I dealt with the same problem all through school, and that is why I started EagleVision in April 2025.</p>
+
+      <p><strong>What I built:</strong> A phone attaches to the microscope eyepiece with a 3D-printed mount, and the teacher starts a session in the browser. Students join with a code on their own laptops or tablets and see the live view, with tools to annotate, zoom, adjust the image and take snapshots. I built all of the software myself. The first version used peer-to-peer WebRTC (video sent directly between devices), which couldn't keep up with a full class, so I moved it to a LiveKit server (an open-source video streaming service). The phone mount is the open-source OpenOcular design, which I 3D printed and assembled. It costs under $3 to make. Eagle AI, a beta feature built on Google Gemini, lets users ask questions about what is on screen. EagleVision grew out of my DigiScope prototypes from May 2025.</p>
+
+      <p><strong>Result:</strong>
         <ul>
-          <li><strong>Phase 1 (WebRTC P2P):</strong> The initial prototype used peer-to-peer mesh networking. While functional, it failed to scale beyond small groups due to bandwidth constraints.</li>
-          <li><strong>Phase 2 (LiveKit & Digital Ocean):</strong> To support full classrooms (30+ students), I architected a server-based solution using LiveKit on a Digital Ocean droplet. This reduced latency to sub-200ms and allowed scaling to over 100 simultaneous users.</li>
+          <li><strong>Classroom test:</strong> tested at Madeira Elementary on January 22, 2026 with 80+ students across 4 classes. The special education class used a microscope for the first time.</li>
+          <li><strong>Patent:</strong> provisional patent filed with the USPTO in January 2026.</li>
+          <li><strong>Samsung Solve for Tomorrow:</strong> semi-finalist (November 2025), which brought $10,000 in classroom technology to the WHHS Programming Club.</li>
+          <li><strong>UC IT Expo:</strong> Best of the Best and 1st place in Software &amp; Web Development, high school division (April 2026).</li>
+          <li><strong>UC Startup Weekend:</strong> Daiveion Greenwade and I pitched EagleVision in November 2026. With help from the mentors there, we narrowed the pitch to one problem (one microscope for a whole class) and chose to build EagleVision as a social venture (a company where the mission comes first), so schools that can pay help cover schools that can't.</li>
         </ul>
       </p>
 
-      <p><strong>Milestones & Recognition:</strong>
-        In early 2026, the project achieved massive success:
-        <ul>
-          <li><strong>Patent Approved:</strong> I successfully secured a Provisional Patent for the system's unique hardware-software architecture.</li>
-          <li><strong>$10,000 Winner:</strong> The project was selected as a state winner for the Samsung Solve for Tomorrow competition, earning $10k for Walnut Hills High School.</li>
-          <li><strong>Field Tested:</strong> We successfully deployed the system at Madeira Elementary, proving its viability in a real K-12 classroom.</li>
-          <li><strong>UC IT Expo - Best of the Best:</strong> EagleVision won the top overall award and 1st place in Software & Web Development at the University of Cincinnati IT Expo (April 2026).</li>
-        </ul>
-      </p>
-
-      <p><strong>Website Revamp:</strong> The project now has a dedicated home at <a href="https://eaglevision.dev" target="_blank" rel="noopener noreferrer">eaglevision.dev</a>, featuring a fully revamped site to showcase the platform, team, and research.</p>
-
-      <p><strong>Future Tech (AI):</strong> Most recently, I have begun integrating <strong>Google Gemini 3 Pro</strong> directly into the video pipeline. This allows the microscope to "see" and identify organisms in real-time, providing AI-driven educational context alongside the live feed.</p>
+      <p><strong>Next steps:</strong> EagleVision is now an independent venture, no longer a school club project. I run it with co-founders Daiveion Greenwade and Sarah Hu, with mentors Rick Kerkhoff and Dr. Rajni Harsh, and we work with UC Venture Lab. We're planning a new classroom pilot for January 2027. The project's own site is <a href="https://eaglevision.dev" target="_blank" rel="noopener noreferrer">eaglevision.dev</a>.</p>
     `,
-    skills: 'LiveKit, WebRTC, Digital Ocean, Google Gemini API, Python, JavaScript, Patent Law, Project Management, Public Speaking',
-    role: 'Lead Developer / Inventor (Club President)',
-    difficulty: 'Expert',
-    collaborators: 'Daiveion Greenwade, Sarah Hu, Richard Kerkhoff, WHHS Programming Club', 
+    skills: 'JavaScript, HTML/CSS, WebRTC, LiveKit, Google Gemini API, 3D Printing',
+    role: 'Founder',
+    difficulty: 'Advanced',
+    collaborators: 'Daiveion Greenwade and Sarah Hu (co-founders), Rick Kerkhoff and Dr. Rajni Harsh (mentors), OpenOcular (open-source phone mount design)',
     emojis: ['🔬', '🦅', '📡'],
     images: [
+      'EagleVision/eaglevision-on-microscope.jpg',
+      'EagleVision/eaglevision-app-screenshot.jpg',
+      'EagleVision/eaglevision-volvox-slide.jpg',
       'EagleVision/VolvoxSession.png'
+    ],
+    alt: [
+      'A phone mounted on a microscope eyepiece, showing the EagleVision app with a Volvox sample',
+      'The EagleVision app showing a live microscope view',
+      'A Volvox slide under the microscope',
+      'An EagleVision session showing a Volvox sample'
     ],
     videos: [],
     links: { 'Website': 'https://eaglevision.dev' }
   },
   {
+    id: 'acoustic-quadcopter-diagnostics',
+    title: 'Acoustic Quadcopter Diagnostics: Drone Fault Detection Test Rig',
+    date: 'Aug 2026 to present',
+    status: 'Active',
+    shortDesc: 'A test rig that records sound and vibration from a running drone, so a UC senior design team can train AI to detect faults.',
+    longDesc: `
+      <p><strong>Problem:</strong> A UC senior design team in the Applied Autonomy Lab is training AI to detect drone faults from sound and vibration. To do that, they need clean, repeatable recordings from a drone running its motors and propellers, with the microphones in the right places.</p>
+
+      <p><strong>What I built:</strong> I'm the only freshman mentee on the team. I designed the aluminum extrusion test rig and enclosure in CAD, where the drone is fixed to the base rails while it runs. I also designed the drone mounts, which keep the drone electrically isolated, and the microphone holder (now on its fourth version). I helped solder and wire the sensors, and built the first version of the data-collection system: two ESP32 boards (one for 4 microphones, one for 4 accelerometers) and a Python live viewer and recorder that turned a manual, error-prone process into one script. A teammate later expanded it and added a dashboard.</p>
+
+      <p><strong>Result:</strong> The first round of data collection finished in early November 2026. I co-presented with the senior team to lab director Dr. Manish Kumar and visiting researchers, presenting the enclosure and mounts I designed.</p>
+
+    `,
+    skills: 'CAD, ESP32, Python, Sensor Wiring, Data Collection, Prototyping',
+    role: 'Mentee',
+    difficulty: 'Advanced',
+    collaborators: 'UC Applied Autonomy Lab senior design team; primary advisor Prissha Chawla',
+    emojis: ['🚁', '🎙️', '📈'],
+    images: [],
+    videos: [],
+    links: {}
+  },
+  {
+    id: 'khidmah',
+    title: 'Khidmah: Volunteer System for the Clifton Mosque',
+    date: 'Oct 2026 to present',
+    status: 'Active',
+    shortDesc: 'A volunteer website for the Islamic Association of Cincinnati with registration, a shared calendar, check-in and hour tracking.',
+    longDesc: `
+      <p><strong>Problem:</strong> I've volunteered at the Islamic Association of Cincinnati (Clifton Mosque) since 2023. Volunteering there was split across separate WhatsApp groups, with no onboarding and no record of hours.</p>
+
+      <p><strong>What I built:</strong> I proposed and built Khidmah, a central volunteer system. It covers registration and onboarding, a shared calendar with RSVPs, volunteer requests, QR code check-in and hour tracking. I worked out what it needed by sharing drafts with the mosque's volunteer leaders and building in their feedback.</p>
+
+      <p><strong>Result:</strong> I showed it to the volunteer leadership team on October 23, 2026, and it is live at <a href="https://khidmah.bahandab.com" target="_blank" rel="noopener noreferrer">khidmah.bahandab.com</a>.</p>
+
+    `,
+    skills: 'UI Design, Web Design, Requirements Gathering',
+    role: 'Lead',
+    difficulty: 'Advanced',
+    collaborators: 'Islamic Association of Cincinnati volunteer leadership team',
+    emojis: ['🤝', '📅', '🕌'],
+    images: [],
+    videos: [],
+    links: { 'Website': 'https://khidmah.bahandab.com' }
+  },
+  {
+    id: 'paywandi',
+    title: 'Paywandi: Group Video Calls for a Kurdish Community Network',
+    date: 'Oct 2026 to present',
+    status: 'Active',
+    shortDesc: 'A group video-call web app that a network of Kurdish families across the US, Canada and Kurdistan uses for its weekly meetings.',
+    longDesc: `
+      <p><strong>Problem:</strong> A network of Kurdish families across the US, Canada and Kurdistan meets online every week, with one member teaching a lesson each time. A family friend, Zana, started a video-call app for these meetings, but his first prototype only handled 4 or 5 people.</p>
+
+      <p><strong>What I built:</strong> I took it over and made it reliable and usable for the whole group. Video runs on LiveKit (an open-source video-call service). I'm a member of the group, so I attend the meetings and fix the bugs and feature requests members send between them.</p>
+
+      <p><strong>Result:</strong> The group uses it for its weekly meetings.</p>
+
+      <p><strong>Next steps:</strong> A Kurdish-language version of the whole interface.</p>
+    `,
+    skills: 'LiveKit, WebRTC, Debugging, User Support',
+    role: 'Developer',
+    difficulty: 'Advanced',
+    collaborators: 'Zana (original prototype)',
+    emojis: ['📹', '🌍', '💬'],
+    images: [],
+    videos: [],
+    links: {}
+  },
+  {
     id: 'gemmy',
     title: 'Gemmy: AI-Navigated Mecanum Robot',
-    date: '2025 - Present',
-    shortDesc: 'An autonomous mecanum-wheeled robot with Raspberry Pi, real-time Gemini API navigation, a Flask/WebSocket dashboard, ultrasonic sensors, IMU, and a live SVG radar display.',
+    date: 'Jan 2026 to May 2026',
+    status: 'Retired',
+    shortDesc: 'A mecanum-wheel robot where an AI on a Raspberry Pi decided how to move and told an Arduino which motor commands to send.',
     longDesc: `
-      <p><strong>Overview:</strong> Gemmy is a custom-built mecanum-drive robot powered by a Raspberry Pi and navigated by Google's <strong>Gemini API</strong>. The robot perceives its environment through ultrasonic sensors and an IMU, and uses Gemini to make real-time navigation decisions, enabling intelligent obstacle avoidance and path planning without traditional hard-coded rules.</p>
+      <p><strong>Problem:</strong> Gemmy was a project for my Advanced Computer Programming class: a robot that steers itself from live sensor readings using an AI model instead of hard-coded rules.</p>
 
-      <p><strong>Hardware:</strong>
-        <ul>
-          <li><strong>Drivetrain:</strong> Four mecanum wheels enabling holonomic movement in any direction.</li>
-          <li><strong>Sensing:</strong> Multiple ultrasonic sensors for distance detection and an IMU for orientation tracking.</li>
-          <li><strong>Compute:</strong> Raspberry Pi running Python for all control logic and AI inference.</li>
-        </ul>
-      </p>
+      <p><strong>What I built:</strong> Gemmy is a four-wheel mecanum robot (wheels that let it move in any direction). A Raspberry Pi running Python read ultrasonic distance sensors and a GY-521 IMU (a motion and orientation sensor), sent the readings to the Google Gemini API, and passed the returned movement commands to an Arduino that drove the motors. A Flask web dashboard streamed live data over WebSockets, including an animated radar view of nearby obstacles.</p>
 
-      <p><strong>Software & Dashboard:</strong>
-        <ul>
-          <li><strong>AI Navigation:</strong> Sensor data is fed to the Gemini API, which returns navigation commands interpreted by the robot's drive controller.</li>
-          <li><strong>Flask/WebSocket Backend:</strong> A lightweight Flask server streams live telemetry over WebSockets to a browser dashboard.</li>
-          <li><strong>SVG Radar Display:</strong> The dashboard renders a live animated SVG radar showing detected obstacles in real time, giving a bird's-eye view of the robot's sensor field.</li>
-        </ul>
-      </p>
+      <p><strong>Result:</strong> Gemmy ran from January to May 2026 and was the longest and most involved of my three projects for the class, alongside BoardBot and Archer AI. It has since been taken apart.</p>
     `,
-    skills: 'Raspberry Pi, Python, Flask, WebSockets, Google Gemini API, Mecanum Drive, Ultrasonic Sensors, IMU, SVG, JavaScript',
-    role: 'Lead Developer / Builder',
+    skills: 'Python, Raspberry Pi, Arduino, Google Gemini API, Flask, JavaScript',
+    role: 'Developer / Builder',
     difficulty: 'Advanced',
     collaborators: '',
     emojis: ['🤖', '🧠', '📡'],
@@ -78,10 +140,10 @@ const projects = [
   {
     id: 'ia-career-finder',
     title: 'IA Career Finder',
-    date: '2025 - Present',
+    date: 'Mar 2026',
     shortDesc: 'A React web app for INTERalliance that helps students explore tech career paths using Gemini 2.5 Flash-Lite via a Cloudflare Worker, with an admin panel for managing content.',
     longDesc: `
-      <p><strong>Overview:</strong> IA Career Finder is a career exploration tool built for <strong>INTERalliance</strong>, designed to help high school students discover tech careers that match their interests and skills. The app is live at <a href="https://ia-career-finder.bahandab.com" target="_blank" rel="noopener noreferrer">ia-career-finder.bahandab.com</a>.</p>
+      <p><strong>Overview:</strong> IA Career Finder is a career exploration tool built for <strong>INTERalliance</strong>, designed to help high school students discover tech careers that match their interests and skills.</p>
 
       <p><strong>Tech Stack:</strong>
         <ul>
@@ -99,12 +161,30 @@ const projects = [
     emojis: ['💼', '🎓', '🤖'],
     images: ['IA Career Finder/iaCareerFinder.png'],
     videos: [],
-    links: { 'Live App': 'https://ia-career-finder.bahandab.com' }
+    links: {}
+  },
+  {
+    id: 'archer-ai',
+    title: 'Archer AI: Reinforcement Learning Archery Game',
+    date: 'Dec 2025',
+    status: 'Complete',
+    shortDesc: 'An archery game built with Pygame as a reinforcement learning environment, for an AI agent to learn by trial and error.',
+    longDesc: `
+      <p>One of my three projects for Advanced Computer Programming, alongside BoardBot and Gemmy. I built an archery game with Pygame and set it up as a Gymnasium environment (a standard format for reinforcement learning, where an AI agent learns by trial and error from rewards).</p>
+    `,
+    skills: 'Python, Pygame, Gymnasium, Reinforcement Learning',
+    role: 'Developer',
+    difficulty: 'Intermediate',
+    collaborators: 'Edwin Tenney',
+    emojis: ['🏹', '🎯', '🧠'],
+    images: [],
+    videos: [],
+    links: {}
   },
   {
     id: 'whiteboard-polargraph',
     title: 'Whiteboard Robot (Polargraph)',
-    date: 'September - October 24, 2025',
+    date: 'Sep 2025 to Oct 2025',
     shortDesc: 'A successful polargraph-style whiteboard drawing robot built from scratch for an advanced programming course. It receives drawings from a custom web UI hosted on an ESP32 and draws them on a 1m x 1m surface.',
     longDesc: `
       <p>This was our Quarter 1 project for a new, open-ended Advanced Computer Programming course. Working with my friend Edwin Tenney, our goal was to create a robot that could draw on a classroom whiteboard. This project was defined by rapid iteration and overcoming significant design failures.</p>
@@ -143,14 +223,14 @@ const projects = [
   {
     id: 'whiteboard-rail',
     title: 'Whiteboard Robot (Vertical Rail Concept)',
-    date: 'September 2025 (Initial Concept Phase)',
+    date: 'Sep 2025',
     shortDesc: 'The initial design concept for an advanced programming course project, detailing a whiteboard-drawing robot based on a vertical rail and wheel-driven system.',
     longDesc: `
       <p>This document outlines the initial brainstorming, design, and planning phase for our Quarter 1 advanced computer programming project. The goal was to create a robot that could automatically draw on a classroom whiteboard based on a user's digital input. Working with Edwin Tenney, our first major concept was a "Vertical Rail Robot." The design envisioned a tall, pole-like robot that spanned the height of the board and would drive horizontally along the whiteboard's top and bottom rails using wheels. A marker-holding "head" would then travel up and down this vertical pole. We developed a comprehensive set of documentation for this concept (linked below), which included system requirements, user requirements, and test planning, before it was ultimately scrapped due to a lack of necessary parts, leading us to the Polargraph. This document serves as a record of our initial engineering process, problem analysis, and system design.</p>
     `,
     skills: 'System Design, Requirements Gathering, Test Planning, Mechanical Design (Conceptual), Problem-Solving, Iterative Design, Robotics (Conceptual)',
     role: 'Co-Developer / Designer',
-    difficulty: 'Advanced (Conceptual)',
+    difficulty: 'Advanced',
     collaborators: 'Edwin Tenney',
     emojis: ['🤖', '⚙️', '✏️'],
     images: ['BoardBot/Original Concept/Original Board Bot Concept.png'],
@@ -162,7 +242,7 @@ const projects = [
   {
     id: 'limelight-guide-video',
     title: 'FTC Limelight 3A Guide Video Tutorial',
-    date: 'August 13, 2025',
+    date: 'Aug 2025',
     shortDesc: 'A comprehensive, 7-minute video tutorial created for the FTC community, guiding beginners through the setup, documentation, and basic integration of the Limelight 3A vision camera.',
     longDesc: `
       <p>This project involved the creation, editing, and finalization of a detailed video tutorial aimed at teaching new robotics teams and programmers how to effectively use the Limelight 3A vision camera. The tutorial was produced by Team 6133, "The NUTS!", and hosted on YouTube, serving as an educational resource for the wider FIRST Tech Challenge (FTC) community.</p>
@@ -189,7 +269,7 @@ const projects = [
   {
     id: 'lora-messaging-system',
     title: 'LoRa Off-the-Grid Messaging System',
-    date: 'August 12, 2025',
+    date: 'Aug 2025',
     shortDesc: 'An off-grid, long-range messaging system using LoRa. A laptop running a Python app messages a portable ESP32 "hotspot" that hosts a modern web UI for multiple devices to connect and reply.',
     longDesc: `
       <p>This project was a direct and significant evolution of my previous LoRa thermometer. I created a two-way, off-the-grid messaging system capable of operating with no Wi-Fi or cellular data, leveraging the long-range capabilities of LoRa.</p>
@@ -200,7 +280,7 @@ const projects = [
     skills: 'LoRa, ESP32, Arduino Leonardo, Python, Web UI Design, Wireless Communication, Networking (Access Point Mode), Serial Communication, Systems Integration, Embedded Systems, Problem-Solving',
     role: 'Sole Developer',
     difficulty: 'Advanced',
-    collaborators: 'N/A',
+    collaborators: '',
     images: [
       'Arduino Leo and ESP32 LoRa modules/20250804_094437.jpg',
       'Arduino Leo and ESP32 LoRa modules/IMG_20250805_102257.jpg',
@@ -222,7 +302,7 @@ const projects = [
   {
     id: 'lora-thermometer',
     title: 'LoRa Digital Thermometer & Receiver',
-    date: 'August 2025',
+    date: 'Aug 2025',
     shortDesc: 'Developed a digital thermometer system using ESP32 and LoRa to transmit environmental data wirelessly to an Arduino-based receiver with an OLED display and custom 3D-printed case.',
     longDesc: `
       <p>This project marked my first venture into the world of LoRa (Long Range) Modules, a low-power wide-area network technology. My goal was to create a digital thermometer that transmitted its data wirelessly over LoRa.</p>
@@ -254,10 +334,10 @@ const projects = [
   {
     id: 'lenovo-e14-deployment',
     title: 'Lenovo E14 Laptop Acquisition & Deployment',
-    date: 'July 2025',
+    date: 'Jul 2025',
     shortDesc: 'Secured, upgraded, and deployed 10 Lenovo E14 business-class laptops from Xavier University for educational initiatives and personal use, leveraging salvaged components.',
     longDesc: `
-      <p>This project involved a significant effort in resource acquisition and deployment of computing resources. Through my summer internship at Xavier University's IT Department, I was able to secure 10 Lenovo E14 business-class laptops from 2021 as a one off agreement. These machines were earmarked for various impactful uses: the majority will support the beginner teaching program of the Walnut Hills High School Programming Club (of which I am president), while others were provided to my siblings who lacked personal computers. A particularly meaningful deployment is for my cousin in Kurdistan, who shares my passion for STEM and Arduino but has limited access to technology. This initiative required hardware diagnostics, salvaging components like RAM and SSDs from other units to upgrade these laptops, and systematic deployment, showcasing skills in IT asset management and community outreach.</p>
+      <p>This project involved a significant effort in resource acquisition and deployment of computing resources. Through my summer internship at Xavier University's IT Department, I was able to secure 10 Lenovo E14 business-class laptops from 2021 as a one off agreement. I lent some to members of FTC Team 6133 and to the beginner teaching program of the Walnut Hills High School Programming Club (of which I was president), and let the students who really needed one keep theirs. The rest went to family who lacked personal computers, including my cousins in Kurdistan, who share my interest in STEM and Arduino but have limited access to technology. This initiative required hardware diagnostics, salvaging components like RAM and SSDs from other units to upgrade these laptops, and systematic deployment, showcasing skills in IT asset management and community outreach.</p>
     `,
     skills: 'IT Asset Management, Hardware Diagnostics, Component Salvage, Laptop Upgrades, System Deployment, Community Outreach, Resourcefulness, Problem-Solving, Teamwork',
     role: 'Project Lead / IT Asset Manager',
@@ -274,12 +354,12 @@ const projects = [
   {
     id: 'dell-7520-restore',
     title: 'Dell Precision 7520 Restoration & Upgrade',
-    date: 'July 2025',
+    date: 'Jul 2025',
     shortDesc: 'Acquired, diagnosed, and upgraded a discarded Dell Precision 7520 laptop, transforming it into a powerful modern system by maximizing RAM and uncovering a hidden NVMe SSD.',
     longDesc: `
       <p>This project began with a surprising discovery during cleanup at our Xavier IT workbench. We came across a bulky Dell laptop, seemingly from 2010, and initially relegated it to the e-waste pile. However, a closer look in the warehouse revealed a USB-C Thunderbolt port and an Intel i7 7th Gen processor - unusual for its apparent age. Further investigation of its serial number confirmed it was a Dell Precision 7520 from 2016, once touted as the "Most Powerful Laptop in the World." This machine boasted four SODIMM RAM slots, an NVMe M.2 SSD slot, Thunderbolt 3, and an NVIDIA Quadro M1200 GPU, indicating immense upgrade potential.</p>
       <p>After receiving permission to upgrade it with available parts and keep it, I immediately imaged it to Windows 11 at work. Upon setting it up at home, I was astonished by its inherent speed and modern feel. A peculiar mystery arose: the system reported two NVMe M.2 SSDs despite only one visible port and no apparent HDD, even though I'd seen a SATA drive shell.</p>
-      <p>Upon returning to work, I proceeded with a RAM upgrade to 32GB. This wasn't entirely smooth; one SODIMM stick was faulty, requiring debugging assistance from Doug Hanson to identify and replace it. The ultimate solution to the SSD mystery was revealed during further disassembly to access the additional RAM slots under the keyboard. The "SATA drive" I'd seen was surprisingly light; flipping it over, I discovered it was actually an NVMe SSD adapter, with the HDD shell merely an empty case concealing a second NVMe SSD! This was a stock feature from Dell, a "hot-swappable" slot designed to accommodate both SATA drives and NVMe SSDs via an adapter during a transitional period in 2016.</p>
+      <p>Upon returning to work, I proceeded with a RAM upgrade to 32GB. This wasn't entirely smooth; one SODIMM stick was faulty, requiring debugging assistance from Doug Hanson to identify and replace it. The ultimate solution to the SSD mystery was revealed during further disassembly to access the additional RAM slots under the keyboard. The "SATA drive" I'd seen was surprisingly light; flipping it over, I discovered it was actually an NVMe SSD adapter, with the HDD shell merely an empty case concealing a second NVMe SSD. This was a stock feature from Dell, a "hot-swappable" slot designed to accommodate both SATA drives and NVMe SSDs via an adapter during a transitional period in 2016.</p>
       <p>This Dell Precision 7520, with its robust build and powerful features, has since replaced my 2019 Windows 10 HP Pavilion laptop. The Thunderbolt 3 port, absent on my HP, was a particularly welcome addition. It was hardly a fair fight, comparing a top-of-the-line workstation from 2016 to a budget office laptop from 2019, but the Dell's remarkable performance after its restoration truly showcased the value of smart upgrades and thorough diagnostics.</p>
     `,
     skills: 'Hardware Diagnostics, Laptop Disassembly & Assembly, RAM Upgrade, SSD Installation, Operating System Imaging, Windows 11 Setup, BIOS Configuration, Advanced Troubleshooting, Problem-Solving, Research, Resourcefulness, Teamwork (for debugging)',
@@ -300,7 +380,7 @@ const projects = [
   {
     id: 'xavier-it-internship',
     title: 'Laptop Mass Imaging & Deployment',
-    date: '(Summer 2025)',
+    date: 'Summer 2025',
     shortDesc: 'Participated in a summer internship at Xavier University\'s IT Department, responsible for unboxing, imaging, and deploying 25% of all university computers.',
     longDesc: `
       <p>This project was a core component of my summer internship through the INTERalliance of Greater Cincinnati, specifically within the IT Department at Xavier University. My primary responsibility, as part of a dedicated team, was the mass imaging and deployment of a significant portion of the university's computer fleet. This involved a comprehensive process: unpackaging brand new computers, performing system imaging to load the university's standardized operating system and software configurations, and finally, deploying these machines across various departments and offices. Our team was tasked with handling approximately 25% of all university computers, providing me with extensive hands-on experience in large-scale IT operations and enterprise deployment procedures.</p>
@@ -330,7 +410,7 @@ const projects = [
     skills: 'Android Development, Java, Android Studio, Mobile App Development, Wireless Debugging, CAD (for adapter design), 3D Printing, Microscopy, System Integration, Prototyping, Educational Technology, UI/UX Design',
     role: 'Sole Developer / Designer',
     difficulty: 'Advanced',
-    collaborators: 'N/A',
+    collaborators: '',
     images: [
       'Digiscope v2/Screenshot_20250529_223353_One UI Home.jpg',
       'Digiscope v2/20250529_231530.jpg',
@@ -343,7 +423,7 @@ const projects = [
   },
   {
     id: 'digiscope-v1',
-    title: 'DigiScopeV1: MicroscopeDigitization Prototype',
+    title: 'DigiScope V1: Microscope Digitization Prototype',
     date: 'May 2025',
     shortDesc: 'Developed the first prototype of "DigiScope," a system to digitize a microscope\'s view using a Raspberry Pi and Pi Camera, with a custom 3D-printed adapter and a Qt Creator app.',
     longDesc: `
@@ -352,7 +432,7 @@ const projects = [
     skills: 'Raspberry Pi, Raspberry Pi Camera, Qt Creator, C++ (for Qt), Python, CAD (for adapter design), 3D Printing, Microscopy, System Integration, Prototyping, Educational Technology',
     role: 'Sole Developer / Designer',
     difficulty: 'Advanced',
-    collaborators: 'N/A',
+    collaborators: '',
     images: [
       'Digiscope V1/20250526_202522(1).gif',
       'Digiscope V1/20250526_202303.jpg',
@@ -367,7 +447,7 @@ const projects = [
   {
     id: 'limelight-proxy-v5',
     title: 'Limelight 3A: Wireless Proxy & Live Debugging (v5)',
-    date: '(May 2025)',
+    date: 'May 2025',
     shortDesc: 'Successfully implemented a wireless Limelight proxy on Leviathan, enabling live neural detector testing and diagnosing a critical wire fault, significantly streamlining vision system debugging.',
     longDesc: `
       <p>This mini-project was a crucial step in refining Leviathan's vision system, especially as the robot had been handed off to the rookies for preparation for the Michiana Premier Event, the last competition of the season. After a challenging week of debugging, we successfully got a wireless Limelight proxy working on the robot. This wireless proxy was the first step in addressing persistent issues with the Limelight randomly disconnecting. Its implementation immediately clarified the problem: a faulty wire that would disconnect every time the robot moved, something incredibly difficult to diagnose while tethered. This allowed us to fix the hardware issue and provided a robust method for live, untethered debugging of our neural detector.</p>
@@ -377,8 +457,10 @@ const projects = [
     difficulty: 'Advanced',
     collaborators: 'Aditya Singh, Edwin Tenney',
     emojis: ['📋', '🔗', '🤖'],
-    youtubeEmbeds: [],
-    images: [],
+    images: [
+      'Limelight Proxy/limelight-proxy-v5-robot.jpg',
+      'Limelight Proxy/limelight-proxy-v5-detections.jpg'
+    ],
     videos: [],
     youtubeEmbeds: [],
     links: {}
@@ -389,12 +471,12 @@ const projects = [
     date: 'May 2025',
     shortDesc: 'Conducted microscopic examination of insect samples, discovering intricate details like the scales on butterfly wings and even observing their cellular structure using an oil immersion lens.',
     longDesc: `
-      <p>This project was a captivating dive into the microscopic world of insects. Using my microscope, I examined various insect samples, uncovering a wealth of cool details that aren't visible to the naked eye. One of the most fascinating discoveries was observing that butterfly wings are made up of tiny scales. What was even more incredible was that I was able to use the oil immersion lens to achieve such high magnification that the individual cells of these scales became visible! This mini-project was a wonderful exercise in scientific observation, precision microscopy, and satisfying my natural curiosity about the intricate structures of the natural world.</p>
+      <p>This project was a captivating dive into the microscopic world of insects. Using my microscope, I examined various insect samples, uncovering a wealth of cool details that aren't visible to the naked eye. One of the most fascinating discoveries was observing that butterfly wings are made up of tiny scales. What was even more incredible was that I was able to use the oil immersion lens to achieve such high magnification that the individual cells of these scales became visible. This mini-project was a wonderful exercise in scientific observation, precision microscopy, and satisfying my natural curiosity about the intricate structures of the natural world.</p>
     `,
     skills: 'Microscopy, Oil Immersion, Scientific Observation, Biology',
     role: 'Sole Observer / Researcher',
     difficulty: 'Intermediate',
-    collaborators: 'N/A',
+    collaborators: '',
     images: [
       'Insect exploration/Screenshot_20250806_191449_Gallery.jpg',
       'Insect exploration/Screenshot_20250806_191505_Gallery.jpg'
@@ -413,7 +495,7 @@ const projects = [
     skills: 'Arduino Leonardo, C++, OLED Display, UI/UX Design, Rotary Encoder, Electronics, Prototyping',
     role: 'Sole Developer / Prototyper',
     difficulty: 'Intermediate',
-    collaborators: 'N/A',
+    collaborators: '',
     emojis: ['⭐', '📊', '🧮'],
     youtubeEmbeds: [],
     images: [],
@@ -424,7 +506,7 @@ const projects = [
   {
     id: 'protein-pedestal',
     title: 'Protein Pedestal',
-    date: '(May 2025)',
+    date: 'May 2025',
     shortDesc: 'Designed and 3D-printed an intricate nameplate for an AP Biology teacher, featuring a unique protein model behind each letter of her name, reflecting her passion for biology.',
     longDesc: `
       <p>This project was an intricate and highly personalized gift designed for my AP Biology teacher, Dr. Harsh, upon her retirement. My goal was to create a custom nameplate where each letter of her name was accompanied by a 3D-printed protein model whose name began with the same letter, placed on a pedestal behind it. This required extensive research to find suitable protein models that were both scientifically accurate and visually appealing. I used Onshape to CAD the baseplate and pedestals, ensuring a sturdy and aesthetically pleasing foundation. The protein models themselves presented a unique challenge. Initially, I attempted to use molecular viewers to export models, but this proved difficult. I ultimately found success by sourcing the models from the NIH 3D Print Exchange, which provided high-quality, pre-formatted files suitable for 3D printing.</p>
@@ -432,7 +514,7 @@ const projects = [
     skills: '3D Design (Onshape), 3D Printing, CAD, Research, Prototyping',
     role: 'Sole Designer / Maker',
     difficulty: 'Intermediate',
-    collaborators: 'N/A',
+    collaborators: '',
     images: [
       'Protein Pedestal/20250425_213107.jpg',
       'Protein Pedestal/20250425_204730.jpg',
@@ -454,7 +536,7 @@ const projects = [
   {
     id: 'cooky-v2',
     title: 'Cooky V2',
-    date: 'April 2025',
+    date: 'Apr 2025',
     shortDesc: 'A ground-up redesign of the FTC robot, Cooky V2, featuring an entirely new drivetrain, custom extendo slides, and a pivoting intake, all controlled by a completely reworked, modular Java codebase.',
     longDesc: `
       <p>This project marked a complete departure and total redesign from the original "Rooky" bot. Cooky V2 was built from the ground up, with no similar design choices to its predecessor. It featured an entirely different drivetrain design and a new type of mecanum wheel. The primary purpose of this rendition was for Edwin and me to gain comprehensive experience in constructing, designing, and coding complex linear slides. We successfully integrated a set of extendo slides as well as a pivoting intake mechanism onto Cooky V2. We did the initial designs with help from our mentor Itzha Lopez who was a mechanical engineer at P&G and a former FIRST Robotics Competition Member in Texas.</p>
@@ -464,7 +546,7 @@ const projects = [
     skills: 'Robotics, Onshape, 3D Design, Mechanical Design, Java, Android Studio, Modular Programming, Object-Oriented Programming, Linear Slide Systems, Intake Mechanism Design, Teamwork, Problem-Solving, Iterative Design',
     role: 'Co-Developer',
     difficulty: 'Advanced',
-    collaborators: 'Edwin Tenney, Aditya, Itzha Lopez (Mentor)',
+    collaborators: 'Edwin Tenney, Aditya Singh, Itzha Lopez (mentor)',
     images: [
       'Cooky V2 initial build/image-6.png',
       'Cooky V2 initial build/image-7.png',
@@ -479,7 +561,7 @@ const projects = [
   {
     id: 'fume-extractor',
     title: 'Custom Soldering Fume Extractor',
-    date: 'March 2025',
+    date: 'Mar 2025',
     shortDesc: 'Designed and fabricated a custom fume extractor for soldering by repurposing a salvaged fan, designing a 3D-printable mount, and building a power circuit with a rechargeable battery.',
     longDesc: `
       <p>As my interest in soldering grew, I quickly realized the importance of proper ventilation to safely deal with the resulting fumes. Instead of purchasing a pre-made unit, I opted to design a custom solution. The project centered around a powerful fan that I had salvaged from a tabletop air hockey game. Using CAD software, I designed a specialized mount for the fan. This mount not only housed the fan securely but was also engineered to be held by my existing "helping hands" tool, allowing for versatile positioning and hands-free operation. The design was then brought to life using a 3D printer. The project also involved electronics and soldering. I designed and assembled a power circuit that included a rechargeable battery pack, a charging port, and a switch, making the fume extractor completely portable and self-contained.</p>
@@ -487,7 +569,7 @@ const projects = [
     skills: '3D Design (CAD), 3D Printing, Electronics, Soldering, Circuit Design, Upcycling, Problem-Solving',
     role: 'Sole Maker',
     difficulty: 'Intermediate',
-    collaborators: 'N/A',
+    collaborators: '',
     images: [
       'Fume Extractor/IMG_20250330_113813.jpg',
       'Fume Extractor/IMG_20250330_113941.jpg'
@@ -499,7 +581,7 @@ const projects = [
   {
     id: 'hp-pavilion-ssd-upgrade',
     title: 'HP Pavilion SSD Upgrade and System Optimization',
-    date: 'March 2025',
+    date: 'Mar 2025',
     shortDesc: 'Replaced a proprietary HDD/Intel Optane setup with a single NVMe SSD, successfully migrating the operating system and dramatically improving the laptop\'s performance and battery efficiency.',
     longDesc: `
       <p>My HP Pavilion laptop, despite having a relatively new battery, was plagued with inconsistent performance and poor battery life. Boot times were often frustratingly slow, occasionally taking up to 40 minutes, which was especially problematic during robotics team meetings. The root of the issue appeared to be the original proprietary hard disk drive (HDD), which was consistently running at over 80% disk usage, causing overheating and power inefficiency. The system used an NVMe M.2 Intel Optane memory module to "accelerate" the HDD. Recognizing an opportunity for a significant upgrade, I decided to disable the Intel Optane module and replace it with a true 1TB NVMe SSD. This involved cloning the operating system from the old HDD to the new SSD, which was a complex process that required several attempts to get right. The result was a night-and-day difference: boot times dropped to mere seconds, and the laptop's overall responsiveness and battery life improved dramatically.</p>
@@ -507,7 +589,7 @@ const projects = [
     skills: 'Hardware Upgrade, SSD Installation, OS Migration, BIOS Configuration, System Optimization, Troubleshooting',
     role: 'Sole Technician',
     difficulty: 'Intermediate',
-    collaborators: 'N/A',
+    collaborators: '',
     images: [
       'HP SSD Upgrade/20250329_073448.jpg',
       'HP SSD Upgrade/20250329_072725.jpg'
@@ -518,7 +600,7 @@ const projects = [
   {
     id: '3d-printer-tuning',
     title: '3D Printer First-Layer Tuning',
-    date: 'March 2025',
+    date: 'Mar 2025',
     shortDesc: 'Successfully tuned and leveled a 3D printer\'s print bed to achieve strong, consistent, and reliable first-layer adhesion.',
     longDesc: `
       <p>As a newcomer to the world of 3D printing, I spent the first month of owning my printer unaware that the "stringy, weak" first layers I was getting were not a normal part of the process. This was a critical point in my learning journey, as I learned to identify and solve a fundamental issue with the help of a friend, Owen Wasson.</p>
@@ -526,7 +608,7 @@ const projects = [
     `,
     skills: '3D Printing, Calibration, Bed Leveling, Z-Offset Tuning, Troubleshooting, Problem-Solving',
     role: 'Learner / Sole Maker',
-    difficulty: 'Beginner-Intermediate',
+    difficulty: 'Beginner',
     collaborators: 'Owen Wasson',
     images: [
       'Tuning 3d printer/20250303_132906.jpg',
@@ -540,7 +622,7 @@ const projects = [
   {
     id: 'leviathan-nn-v2',
     title: 'Leviathan: Neural Network Training (v2)',
-    date: 'February 2025',
+    date: 'Feb 2025',
     shortDesc: 'Successfully retrained a neural network model for the Limelight camera, creating a driver-assist feature that autonomously aligns the drivetrain for specific "Sample" game pieces.',
     longDesc: `
       <p>This project was a pivotal return to our neural network approach after encountering a roadblock with our previous computer vision methods. While Aditya, Edwin, and I had been struggling to find a way to reliably separate two touching "Samples," our team member Alex Montello took the initiative to revisit our initial neural network training attempt. We had previously abandoned this path when the Google Colab notebook provided by Limelight stopped working and subsequent training attempts failed.</p>
@@ -549,7 +631,7 @@ const projects = [
     skills: 'Neural Network Training, Machine Learning, Google Colab, Limelight 3A, Computer Vision, Model Deployment, Debugging, Iterative Development, Robotics, Teamwork, Budgeting, Problem-Solving',
     role: 'Team Member / Co-Developer',
     difficulty: 'Intermediate',
-    collaborators: 'Alex Montello, Aditya, Edwin',
+    collaborators: 'Alex Montello, Aditya Singh, Edwin Tenney',
     emojis: ['🧠', '🤖', '📈'],
     youtubeEmbeds: [],
     images: [],
@@ -559,7 +641,7 @@ const projects = [
   {
     id: 'limelight-snapscript-v3',
     title: 'Limelight 3A: Python SnapScript (v3) with minAreaRect',
-    date: 'February 2025',
+    date: 'Feb 2025',
     shortDesc: 'Developed a third version of the Python SnapScript using minAreaRect to generate precise polygon bounding boxes from color thresholding and edge detection, with guidance from an Oracle mentor.',
     longDesc: `
       <p>This project represented a significant evolution of our Python SnapScript, moving from a simple aspect ratio analysis to a more sophisticated, geometric approach. With invaluable guidance from Will Reed, a Principal Machine Learning Engineer at Oracle, our team was able to leverage a key computer vision function: minAreaRect().</p>
@@ -568,7 +650,7 @@ const projects = [
     skills: 'Python, OpenCV, Limelight 3A, Python SnapScripts, Computer Vision, Mentorship, Teamwork',
     role: 'Team Developer',
     difficulty: 'Advanced',
-    collaborators: 'Will Reed (Mentor), Team',
+    collaborators: 'Will Reed (mentor), FTC Team 6133',
     images: [
       'Python snapscripts v.3/20250219_161320.jpg',
       'Python snapscripts v.3/20250221_183113.jpg',
@@ -581,7 +663,7 @@ const projects = [
   {
     id: 'budget-pc-build',
     title: 'Budget PC Build',
-    date: '(Feb 2025)',
+    date: 'Feb 2025',
     shortDesc: 'Successfully built a custom PC for under $600 by strategically sourcing parts, which resulted in a machine that outperformed pre-built computers costing over $1000.',
     longDesc: `
       <p>This project was my first venture into building a custom PC from the ground up. My goal was to create a powerful yet affordable machine by meticulously researching and finding the best deals on components. With valuable assistance from my friend Owen Wasson, I was able to navigate the process of selecting hardware and assembling the computer. We found a lot of the parts from a local Micro Center, which was key to staying under budget. The final build was a huge success, as the PC's performance exceeded that of many commercially available systems priced at over $1000. This project was a fantastic hands-on lesson in hardware selection, budget management, and system assembly.</p>
@@ -610,8 +692,8 @@ const projects = [
     `,
     skills: 'Video Editing, Marketing, Public Relations, Sponsorship Outreach, Teamwork',
     role: 'Team Member',
-    difficulty: 'Beginner-Intermediate',
-    collaborators: 'Team',
+    difficulty: 'Beginner',
+    collaborators: 'FTC Team 6133',
     emojis: ['🎥', '💼', '🏆'],
     youtubeEmbeds: [],
     images: [],
@@ -630,7 +712,7 @@ const projects = [
     skills: 'Python, OpenCV, Limelight 3A, Python SnapScripts, Computer Vision, Aspect Ratio Analysis, Autonomous Robotics, Advanced Debugging, Hardware Integration, Video Editing, Teamwork, Problem-Solving',
     role: 'Team Developer',
     difficulty: 'Advanced',
-    collaborators: 'Team',
+    collaborators: 'FTC Team 6133',
     emojis: ['👁️', '🐍', '🤖'],
     youtubeEmbeds: [],
     images: [],
@@ -650,7 +732,7 @@ const projects = [
     skills: 'Python, OpenCV, Limelight 3A, Python SnapScripts, Computer Vision, Teamwork',
     role: 'Team Developer',
     difficulty: 'Intermediate',
-    collaborators: 'Team',
+    collaborators: 'FTC Team 6133',
     images: [
       'Python snapscripts/20250205_181344_1.gif',
       'Python snapscripts/20250207_225825.jpg',
@@ -663,7 +745,7 @@ const projects = [
   {
     id: 'nn-dataset-v1',
     title: 'Making a Dataset',
-    date: 'January 2025',
+    date: 'Jan 2025',
     shortDesc: 'The first attempt at training a neural network for Leviathan using a Limelight-provided Google Colab notebook and a tflite model, aimed at improving autonomous "Sample" detection.',
     longDesc: `
       <p>Following the extensive work on creating our custom dataset, this project marked the crucial next step: training the Neural Network for our competition robot, Leviathan. We utilized a Google Colab notebook specifically provided by Limelight, which streamlined the training process. This notebook leveraged a pre-existing model in the tflite format, a unique and optimized format for Limelight's vision processing capabilities.</p>
@@ -673,7 +755,7 @@ const projects = [
     skills: 'Neural Network Training, Machine Learning, Google Colab, Limelight 3A, Model Deployment, Data Analysis, Debugging, Iterative Development, Robotics, Java (for integration), Teamwork',
     role: 'Team Member',
     difficulty: 'Intermediate',
-    collaborators: 'Team',
+    collaborators: 'FTC Team 6133',
     images: [
       'Creating a Dataset/Screenshot_20250106_001357_Chrome.jpg',
       'Creating a Dataset/20250115_183320.jpg',
@@ -695,7 +777,7 @@ const projects = [
     skills: 'ESP32, Bluetooth, Dualshock 4 Controller Integration, RC Car Mechanics, Motor Control, PID Control, Debugging, Raspberry Pi 4, FPV Systems, Electronics, Problem-Solving, C++ (for ESP32 programming)',
     role: 'Sole Developer',
     difficulty: 'Intermediate',
-    collaborators: 'N/A',
+    collaborators: '',
     images: [
       'Esp32 RC Car/20250103_165514.jpg',
       'Esp32 RC Car/4230bd69-02de-48af-a4a1-7af90d47d357.jpg',
@@ -713,30 +795,22 @@ const projects = [
       'Esp32 RC Car/20250119_190905.jpg',
       'Esp32 RC Car/20250119_190908.jpg'
     ],
-    videos: [
-      'Esp32 RC Car/20250104_011220.mp4',
-      'Esp32 RC Car/20250104_200108.mp4',
-      'Esp32 RC Car/20250104_232118.mp4',
-      'Esp32 RC Car/20250107_204916.mp4',
-      'Esp32 RC Car/20250107_204924.mp4',
-      'Esp32 RC Car/20250108_142722.mp4',
-      'Esp32 RC Car/20250108_142738.mp4'
-    ],
+    videos: [],
     links: {}
   },
   {
     id: 'rpi4-fan-adapter',
     title: 'Raspberry Pi 4 Custom Fan Adapter',
-    date: 'Dec 24',
+    date: 'Dec 2024',
     shortDesc: 'Designed and 3D-printed a custom adapter to mount a large, upcycled fan from an air hockey game onto a Raspberry Pi 4 case for powerful cooling, involving creative 3D pen repairs.',
     longDesc: `
       <p>This project involved creating an unconventional yet highly effective cooling solution for my Raspberry Pi 4. I began by harvesting a large, oversized fan from an old desktop air hockey game. Having already 3D-printed a case for my Raspberry Pi 4 (which I was just learning to use), the challenge was to integrate this powerful fan. Using Onshape, along with precise measurements and reference photos, I designed a custom adapter that would allow the large fan to slot directly into an opening on the RPi case.</p>
-      <p>While the design perfectly attached to the fan, the adapter unfortunately warped during printing, preventing it from fitting correctly into the RPi case's slot. This led to some 3D pen magic: I used my 3D pen to directly attach the mouth of the fan adapter to the opening on the top of the RPi case. It was an extremely inefficient method, but the result was a very powerful cooling system. The fan required an external battery/power source to operate, which luckily I had salvaged from the air hockey game, complete with its original power switch. This project is a testament to creative problem-solving and functionality over aesthetics!</p>
+      <p>While the design perfectly attached to the fan, the adapter unfortunately warped during printing, preventing it from fitting correctly into the RPi case's slot. This led to some 3D pen magic: I used my 3D pen to directly attach the mouth of the fan adapter to the opening on the top of the RPi case. It was an extremely inefficient method, but the result was a very powerful cooling system. The fan required an external battery/power source to operate, which luckily I had salvaged from the air hockey game, complete with its original power switch. This project is a testament to creative problem-solving and functionality over aesthetics.</p>
     `,
     skills: '3D Design (Onshape), 3D Printing, Upcycling, Raspberry Pi, Electronics, Hardware Integration, Problem-Solving, Post-Processing (3D pen mending), Measurement',
     role: 'Sole Maker',
-    difficulty: 'Beginner-Intermediate',
-    collaborators: 'N/A',
+    difficulty: 'Beginner',
+    collaborators: '',
     images: [
       'RPI4 Fan/20241231_184426.jpg'
     ],
@@ -746,16 +820,16 @@ const projects = [
   {
     id: 'webcam-mount-repair',
     title: 'Custom 3D-Printed Webcam Mount & Repair',
-    date: '(Dec 2024)',
+    date: 'Dec 2024',
     shortDesc: 'Designed and 3D-printed a custom, cage-like clamping mechanism with an adjustable ball joint for a USB webcam to mount on a large desk monitor, including an unexpected and creative repair process.',
     longDesc: `
       <p>This project involved creating a new mount for our USB webcam after its original mechanism broke beyond repair. This was a completely separate task from the dashcam project and was specifically for my dad's desk. I started with an existing online design for an M6 screw-on camera, but our webcam no longer had the M6 threading since it had broken off with the original clamp. This required me to redesign the M6 mount into a custom, cage-like contraption that securely clasped the webcam. The design also included an adjustable angle using a ball joint for flexible positioning, crucial for a larger-than-usual monitor clamp.</p>
-      <p>However, during the redesign, I accidentally made it incompatible with the original ball joint, forcing me to use glue. In a classic "measure twice, cut once" moment, I then realized I had glued the camera holder base upside down! To fix this, I had to cut off the entire camera holder base and ball joint using heated X-Acto knives, and then reattach it the right way up using my 3D pen. It was surprisingly fun to mend a 3D print with a 3D pen, even if it left some hidden soot marks and gold filament. Luckily, my dad only needed it to work, not look perfect, and it's still in use on his desk monitor to this day, proving its functionality despite the mishaps! This project was a great lesson in iterative design, real-world problem-solving, and creative repair techniques.</p>
+      <p>However, during the redesign, I accidentally made it incompatible with the original ball joint, forcing me to use glue. In a classic "measure twice, cut once" moment, I then realized I had glued the camera holder base upside down. To fix this, I had to cut off the entire camera holder base and ball joint using heated X-Acto knives, and then reattach it the right way up using my 3D pen. It was surprisingly fun to mend a 3D print with a 3D pen, even if it left some hidden soot marks and gold filament. Luckily, my dad only needed it to work, not look perfect, and it's still in use on his desk monitor to this day, proving its functionality despite the mishaps. This project was a great lesson in iterative design, real-world problem-solving, and creative repair techniques.</p>
     `,
     skills: '3D Design (Onshape), 3D Printing, Mechanical Design, Problem-Solving, Custom Fabrication, Precision Measurement, Hardware Repair, Iterative Design, Post-Processing (cutting, 3D pen mending)',
     role: 'Sole Maker',
-    difficulty: 'Beginner-Intermediate',
-    collaborators: 'N/A',
+    difficulty: 'Beginner',
+    collaborators: '',
     images: [
       'Webcam Mount/20241215_161541.jpg',
       'Webcam Mount/20241215_161605.jpg',
@@ -775,7 +849,7 @@ const projects = [
     skills: '3D Design (Onshape), 3D Printing, Calipers, Mechanical Design, Problem-Solving, Custom Fabrication, Precision Measurement',
     role: 'Sole Maker',
     difficulty: 'Beginner',
-    collaborators: 'N/A',
+    collaborators: '',
     images: [
       'DashCam Ball joint/20241208_175116.jpg',
       'DashCam Ball joint/IMG_20241208_180545.jpg'
@@ -786,7 +860,7 @@ const projects = [
   {
     id: 'limelight-color-threshold',
     title: 'Limelight 3A: Color Thresholding',
-    date: 'December 2024',
+    date: 'Dec 2024',
     shortDesc: 'Integrated a Limelight 3A camera for autonomous detection and slow approach of yellow "Sample" game pieces using color thresholding.',
     longDesc: `
       <p>This phase marked the beginning of our Limelight 3A journey, and it was a pivotal moment as we shifted our focus from the "Rooky" robot to developing for our actual competition robot, Leviathan. The "Rooky" bot became a crucial test vessel for this advanced vision system. The Limelight 3A is a specialized, easy-to-use vision processing camera commonly used in competitive robotics, particularly in FIRST Tech Challenge (FTC) and FIRST Robotics Competition (FRC). It's designed to quickly and accurately identify and track targets, such as April Tags, game pieces, or other objects, using built-in image processing features. This allows robots to "see" and react to their environment autonomously. Beyond basic color thresholding, the Limelight 3A also supports more advanced applications like Python SnapScripts and neural networks for more sophisticated object recognition and analysis.</p>
@@ -795,7 +869,7 @@ const projects = [
     skills: 'Robotics, Java, Android Studio, Computer Vision, Limelight 3A, Color Thresholding, Autonomous Robotics, Sensor Integration, Object Detection, Iterative Development, Debugging, Teamwork, Problem-Solving',
     role: 'Team Developer',
     difficulty: 'Intermediate',
-    collaborators: 'Team',
+    collaborators: 'FTC Team 6133',
     images: [
       'Limelight mount/20241204_165755.jpg',
       'Limelight mount/20241204_165758.jpg',
@@ -808,7 +882,7 @@ const projects = [
   {
     id: 'car-dealership-plaque',
     title: 'Custom 3D-Printed Car Dealership Name Plaque',
-    date: 'November 2024',
+    date: 'Nov 2024',
     shortDesc: 'Designed and 3D-printed a custom name plaque for a car dealership owner, incorporating pen holders and a Dodge Challenger design, finished with metallic accents.',
     longDesc: `
       <p>This project involved the design and fabrication of a personalized name plaque for my mom's cousin, Hardy Nalasw, who owns a car dealership. The design was carefully crafted to reflect his business, featuring integrated pen holders and a prominent Dodge Challenger model to match the automotive theme. To give it a high-quality, metallic look, I used a metallic marker to highlight his name and the car details. The design process was conducted using Tinkercad for initial modeling and OrcaSlicer for preparing the print, as I had not yet learned Onshape. This project was particularly significant as it was one of my very first endeavors with my new 3D printer, which I had acquired only a week prior. Despite being new to both 3D design and printing, I successfully brought the concept to life, showcasing early skills in digital fabrication and creative problem-solving.</p>
@@ -816,7 +890,7 @@ const projects = [
     skills: '3D Design (Tinkercad, OrcaSlicer), 3D Printing, Custom Fabrication, Creative Design, Prototyping, Attention to Detail',
     role: 'Sole Designer',
     difficulty: 'Beginner',
-    collaborators: 'N/A',
+    collaborators: '',
     images: [
       'Hardy Nameplate/IMG_20241127_131706.jpg',
       'Hardy Nameplate/20241127_195929.jpg'
@@ -832,7 +906,7 @@ const projects = [
     shortDesc: 'A redesigned and improved robot claw, 3D-printed in Navy PLA, featuring enhanced ground clearance, a stable U-channel mount, and improved block acquisition for two-driver operation.',
     longDesc: `
       <p>This project focused on a critical redesign of the "Rooky" robot's claw mechanism, addressing significant issues encountered with the initial version. The first claw often broke and scraped against the ground, hindering the robot's performance. The new iteration, 3D-printed in durable Navy PLA, was engineered to resolve these problems.</p>
-      <p>Key improvements in this Claw Redesign (v2) include:
+      <p>Key improvements in this redesigned claw include:
         <ul>
           <li>Enhanced Ground Clearance: The new design ensured the claw no longer came into contact with the ground, preventing damage and improving maneuverability.</li>
           <li>Stable U-Channel Mount: A special U-channel was integrated into the design, providing a firm and consistent mounting point that held the claw at the optimal height.</li>
@@ -844,7 +918,7 @@ const projects = [
     skills: 'Robotics, 3D Design (CAD), 3D Printing (PLA), Mechanism Design, Iterative Design, Mechanical Engineering, Teamwork, Problem-Solving, Java (for control integration)',
     role: 'Team Developer',
     difficulty: 'Intermediate',
-    collaborators: 'Team',
+    collaborators: 'FTC Team 6133',
     images: [],
     videos: [],
     youtubeEmbeds: [],
@@ -862,7 +936,7 @@ const projects = [
     skills: 'Robotics, Java, Android Studio, Computer Vision, April Tag Detection, Autonomous Robotics, Sensor Integration, Distance Sensing, Collision Avoidance, Robust Autonomous Navigation, Iterative Development, Debugging, Teamwork, Problem-Solving',
     role: 'Team Developer',
     difficulty: 'Advanced',
-    collaborators: 'Team',
+    collaborators: 'FTC Team 6133',
     emojis: ['🏷️', '📍', '🤖'],
     youtubeEmbeds: [],
     images: [],
@@ -875,7 +949,7 @@ const projects = [
     date: 'Nov 2024',
     shortDesc: 'Integrated a USB webcam for April Tag detection and developed an autonomous program for the "Rooky" robot to detect, approach, and cycle through a sequence of April Tags (12, 13, 14, 15).',
     longDesc: `
-      <p>Building significantly on the "Rooky" robot's capabilities, this phase introduced computer vision for autonomous operation. We integrated a USB Logitech webcam onto the robot and began programming its ability to detect and approach specific April Tags. The development involved multiple iterations, starting with a simpler program to approach any visible April Tag (which, as documented by a cool compilation video, initially had some amusing failures!). By the end of this weekend-long effort, we achieved a functional autonomous cycler.</p>
+      <p>Building significantly on the "Rooky" robot's capabilities, this phase introduced computer vision for autonomous operation. We integrated a USB Logitech webcam onto the robot and began programming its ability to detect and approach specific April Tags. The development involved multiple iterations, starting with a simpler program to approach any visible April Tag (which, as documented by a cool compilation video, initially had some amusing failures). By the end of this weekend-long effort, we achieved a functional autonomous cycler.</p>
       <p>The final program allowed the robot to:
         <ol>
           <li>Detect April Tag 12 and approach it, stopping approximately 20cm in front and aligning itself straight.</li>
@@ -889,7 +963,7 @@ const projects = [
     skills: 'Robotics, Java, Android Studio, Computer Vision, April Tag Detection, Autonomous Robotics, Sensor Integration, Iterative Development, Debugging, Teamwork, Problem-Solving',
     role: 'Team Developer',
     difficulty: 'Intermediate',
-    collaborators: 'Team',
+    collaborators: 'FTC Team 6133',
     images: [
       'Cooky April Tags v.1/20241030_174619.jpg'
     ],
@@ -900,7 +974,7 @@ const projects = [
   {
     id: 'rooky-bot-claw-v1',
     title: 'FTC "Rooky" Bot: Claw & Turtle Mode (v1)',
-    date: '(Oct 2024)',
+    date: 'Oct 2024',
     shortDesc: 'Designed and tested a 3D-printed claw to score colored targets and implemented a "Turtle mode" for the drivetrain, allowing speed toggling with haptic feedback.',
     longDesc: `
       <p>Building upon the foundational drivetrain, this phase of the 'Rooky' robot project focused on enhancing its scoring capabilities and driver control. We designed and fabricated a small claw mechanism from gold silk PLA (a type of 3D printer filament). However, this initial claw often broke easily and scraped on the floor, which was a real pain. It also made it tough to maneuver the robot to pick up blocks because the claw would collide with them.</p>
@@ -909,24 +983,21 @@ const projects = [
     skills: 'Robotics, Java, Android Studio, 3D Design (CAD), 3D Printing (PLA), Mechanism Design, Haptic Feedback Programming, Teamwork, Problem-Solving',
     role: 'Team Developer',
     difficulty: 'Intermediate',
-    collaborators: 'Team',
+    collaborators: 'FTC Team 6133',
     images: [
       'Cooky Bot Claw/20241025_182036.jpg',
       'Cooky Bot Claw/20241025_182040.jpg',
       'Cooky Bot Claw/20241025_182047.jpg',
       'Cooky Bot Claw/20241025_182320.jpg',
-      'Cooky Bot Claw/20250119_190858.jpg',
-      'Cooky Bot Claw/20250119_190901.jpg',
-      'Cooky Bot Claw/20250119_190905.jpg',
-      'Cooky Bot Claw/20250119_190908.jpg'
-    ],
-    videos: [
-      'Cooky Bot Claw/20241025_182349.mp4',
-      'Cooky Bot Claw/20241026_133727.mp4',
-      'Cooky Bot Claw/20241026_145926.mp4',
-      'Cooky Bot Claw/20241026_154625.mp4',
-      'Cooky Bot Claw/20241026_164054.mp4',
-      'Cooky Bot Claw/20241026_164124.mp4'
+      'Cooky Bot Claw/20241025_182321.jpg',
+      'Cooky Bot Claw/20241025_182336.jpg',
+      'Cooky Bot Claw/20241025_191435.jpg',
+      'Cooky Bot Claw/20241025_192930.jpg',
+      'Cooky Bot Claw/20241025_192934.jpg',
+      'Cooky Bot Claw/20241026_164226.jpg',
+      'Cooky Bot Claw/20241026_164231.jpg',
+      'Cooky Bot Claw/20241026_154625_1.gif',
+      'Cooky Bot Claw/20241026_164124_1.gif'
     ],
     videos: [],
     youtubeEmbeds: [],
@@ -935,7 +1006,7 @@ const projects = [
   {
     id: 'rooky-bot-drivetrain',
     title: 'FTC "Rooky" Robot Drivetrain (Team 6133)',
-    date: 'October 10-19, 2024',
+    date: 'Oct 2024',
     shortDesc: 'Developed the foundational drivable mecanum drivetrain for the first "Rooky" robot as part of FTC Team 6133 "The NUTS!", programmed in Java using Android Studio.',
     longDesc: `
       <p>As a rookie member of FTC Team 6133 "The NUTS!", my first major task was contributing to the development of the "Rooky" robot's drivetrain. This initial iteration focused on creating a fully functional and drivable mecanum drivetrain. The programming was done in Java using Android Studio, which was a significant learning experience for applying software concepts to control physical hardware. My role, alongside Aditya Singh and Edwin Tenney, was in the programming aspect, bringing the robot to life. Owen Wasson and Mario Ynga Orellana handled the build and CAD (Computer-Aided Design) for the physical structure. This project was crucial for understanding fundamental robotics principles, collaborative team dynamics, and the practical application of programming in a competitive robotics environment.</p>
@@ -954,15 +1025,15 @@ const projects = [
   {
     id: 'buzzer-music-player',
     title: 'Simple Buzzer Music Player',
-    date: 'October 3, 2024',
+    date: 'Oct 2024',
     shortDesc: 'A basic electronics project where I assembled a buzzer circuit and used pre-made code to play musical tunes.',
     longDesc: `
-      <p>This project was an introduction to simple electronics and microcontroller interaction. I assembled a basic circuit involving a buzzer, which is an output device that produces sound. The core of the project involved using pre-made code files sourced from a GitHub repository (https://github.com/hibit-dev/buzzer) to program a microcontroller (likely an Arduino or similar board) to play various musical sequences through the buzzer. This project focused on following circuit diagrams, connecting components correctly, and understanding how external code can control hardware, providing a tangible output in the form of sound.</p>
+      <p>This project was an introduction to simple electronics and microcontroller interaction. I assembled a basic circuit involving a buzzer, which is an output device that produces sound. The core of the project involved using pre-made code files sourced from a GitHub repository (https://github.com/hibit-dev/buzzer) to program a microcontroller to play various musical sequences through the buzzer. This project focused on following circuit diagrams, connecting components correctly, and understanding how external code can control hardware, providing a tangible output in the form of sound.</p>
     `,
     skills: 'Electronics Assembly, Circuit Building, Following Instructions, Basic Microcontroller Concepts, Hardware Implementation',
     role: 'Learner',
     difficulty: 'Beginner',
-    collaborators: 'N/A',
+    collaborators: '',
     images: [],
     videos: [],
     youtubeEmbeds: [],
@@ -980,7 +1051,7 @@ const projects = [
     skills: 'Mobile Photography, Astrophotography, Low-Light Photography, Composition, Observation, Problem-Solving',
     role: 'Sole Photographer',
     difficulty: 'Beginner',
-    collaborators: 'N/A',
+    collaborators: '',
     images: [
       'Astrophotos/20240712_202707.jpg',
       'Astrophotos/20240712_203932.jpg',
@@ -1009,7 +1080,7 @@ const projects = [
   {
     id: 'arduino-button-deck',
     title: 'Arduino Leonardo Button Deck',
-    date: 'January 31, 2024',
+    date: 'Jan 2024',
     shortDesc: 'A custom Arduino Leonardo-based button deck featuring a rotary encoder for cycling through four distinct keyboard command profiles, indicated by LEDs, and four programmable snap buttons for versatile input.',
     longDesc: `
       <p>This project involved the design and construction of a highly versatile Arduino Leonardo-based button deck, intended to serve as a custom input device for various applications, similar to a streaming or gaming macro pad. The core functionality revolves around its ability to emulate keyboard strokes directly, thanks to the Arduino Leonardo's native USB HID capabilities.</p>
@@ -1018,7 +1089,7 @@ const projects = [
     skills: 'Arduino, C++ (for Arduino programming), Electronics, USB HID Emulation, Custom Hardware Design, Circuit Design, Microcontroller Programming, Problem-Solving, Input Device Design',
     role: 'Sole Developer',
     difficulty: 'Intermediate',
-    collaborators: 'N/A',
+    collaborators: '',
     images: [
       'Button Deck/20240131_212946.jpg'
     ],
@@ -1033,18 +1104,16 @@ const projects = [
     date: 'Dec 2023',
     shortDesc: 'Learned the art of making lattes from scratch, using simple household items like a mason jar for frothing milk and instant coffee for the base.',
     longDesc: `
-      <p>This project was a delicious dive into the world of coffee! I taught myself how to make lattes using surprisingly simple methods. The key was mastering the milk frothing technique, which I achieved by using a mason jar as a shaker - no fancy espresso machine needed! For the coffee base, I experimented with instant coffee and cold water to create a dark, rich foundation. This project was all about trial and error, learning the right ratios, and getting that perfect frothy texture. It's a fun skill that combines a bit of chemistry, a dash of creativity, and a whole lot of deliciousness!</p>
+      <p>This project was a delicious dive into the world of coffee. I taught myself how to make lattes using surprisingly simple methods. The key was mastering the milk frothing technique, which I achieved by using a mason jar as a shaker - no fancy espresso machine needed. For the coffee base, I experimented with instant coffee and cold water to create a dark, rich foundation. This project was all about trial and error, learning the right ratios, and getting that perfect frothy texture. It's a fun skill that combines a bit of chemistry, a dash of creativity, and a whole lot of deliciousness.</p>
     `,
     skills: 'Culinary Skills, Beverage Preparation, Experimentation, Problem-Solving, Creativity, Resourcefulness',
     role: 'Learner',
     difficulty: 'Beginner',
-    collaborators: 'N/A',
+    collaborators: '',
     images: [
       'Latte/20231201_195230.jpg',
       'Latte/20231201_195412.jpg',
-      'Latte/20231201_195412(0).jpg',
-      'Latte/20231201_204825.jpg',
-      'Latte/20231218_210447.jpg'
+      'Latte/20231201_195412(0).jpg'
     ],
     videos: [],
     links: {}
@@ -1060,7 +1129,7 @@ const projects = [
     skills: 'Hardware Installation, RAM Upgrade, Battery Replacement, Operating System Reimaging, Windows Troubleshooting, Data Backup & Recovery, Problem-Solving',
     role: 'Sole Technician',
     difficulty: 'Intermediate',
-    collaborators: 'N/A',
+    collaborators: '',
     images: [
       'HP Upgrade/20231201_204825.jpg',
       'HP Upgrade/20231218_210447.jpg'
@@ -1071,7 +1140,7 @@ const projects = [
   {
     id: 'msa-website',
     title: 'MSA Club Website Development',
-    date: 'January 2023 - May 2024',
+    date: 'Jan 2023 to May 2024',
     shortDesc: 'Developed and maintained the official MSA (Muslim Student Association) club website, initially in collaboration and later as a solo developer.',
     longDesc: `
       <p>This project involved the comprehensive development and ongoing maintenance of the official MSA (Muslim Student Association) club website for my school. The initiative began as a school project from January to May 2023, during which I collaborated with Arshya Maricar to establish the initial structure and content. Following this collaborative phase, I took over as the solo developer from May 2023 until May 2024, continuously expanding its features, managing content, and ensuring its functionality. The website was designed with multiple menus and sections to serve as a central hub for club information, events, and resources. This long-term project demonstrated my ability to manage a web development project independently, adapt to evolving needs, and maintain a live application over an extended period. Please note that the original live link for this Repl.it project is no longer operational as Repl.it discontinued its free deployment plan.</p>
@@ -1090,14 +1159,14 @@ const projects = [
   {
     id: 'corolla-screen-upgrade',
     title: 'Car Infotainment System Upgrade',
-    date: '(Fall 2023)',
+    date: 'Fall 2023',
     shortDesc: 'Upgraded our 2006 Corolla\'s radio to a modern infotainment screen, involving removal of the old unit, installation of the new screen, and wire crimping.',
     longDesc: `
       <p>This project was a hands-on automotive upgrade where my dad and I replaced the outdated radio in our 2006 Corolla with a modern infotainment screen. The process involved carefully removing the old radio unit, which required understanding the car's dashboard assembly. We then proceeded with the installation of the new infotainment screen, ensuring a secure fit. A critical part of the project was wire crimping to correctly connect the new system to the car's electrical wiring, ensuring all functions (power, speakers, etc.) operated correctly. The successful completion of this project resulted in a significant upgrade to the car's interior, providing modern navigation and entertainment capabilities.</p>
     `,
     skills: 'Automotive Repair, Electrical Wiring, Wire Crimping, Tool Usage, Problem-Solving, Teamwork',
     role: 'Team Member',
-    difficulty: 'Beginner-Intermediate',
+    difficulty: 'Beginner',
     collaborators: 'Dad',
     emojis: ['🚗', '📺', '⚡'],
     images: [],
@@ -1107,16 +1176,16 @@ const projects = [
   {
     id: 'arduino-steering-wheel',
     title: 'Arduino Leonardo Steering Wheel Dashboard',
-    date: '(Fall 2023)',
+    date: 'Fall 2023',
     shortDesc: 'A custom dashboard attachment for a steering wheel, built with an Arduino Leonardo, that emulates keyboard strokes and features a parking brake status LED.',
     longDesc: `
       <p>This project involved creating a practical dashboard attachment for a steering wheel, designed to replace the need for a physical keyboard during certain activities by emulating keyboard strokes. The core of the system was an Arduino Leonardo, chosen for its native USB HID (Human Interface Device) capabilities, allowing it to act directly as a keyboard. The dashboard included various buttons or inputs mapped to specific keyboard commands, making common actions more accessible from the steering wheel. A key feature was a red LED indicator for the parking brake status, providing immediate visual feedback.</p>
-      <p>A memorable (and slightly terrifying) debugging experience occurred during the initial testing phase. My first attempt at a simple one-wire keyboard setup kept failing. After many tries, when it finally did work, it launched into an unstoppable loop, relentlessly typing "I AM ALIVE" at lightning speed every time it was plugged into a computer (after a 2-second delay!). This made uploading code fixes incredibly difficult as the board would type over the IDE. After several frustrated attempts, I managed to use the board's physical reboot button to buy just enough time to initiate the upload and open a new notepad file to capture the "I AM ALIVE" manifesto. That file, AMALIVE.txt, still exists as a testament to the debugging struggle!</p>
+      <p>A memorable (and slightly terrifying) debugging experience occurred during the initial testing phase. My first attempt at a simple one-wire keyboard setup kept failing. After many tries, when it finally did work, it launched into an unstoppable loop, relentlessly typing "I AM ALIVE" at lightning speed every time it was plugged into a computer (after a 2-second delay). This made uploading code fixes incredibly difficult as the board would type over the IDE. After several frustrated attempts, I managed to use the board's physical reboot button to buy just enough time to initiate the upload and open a new notepad file to capture the "I AM ALIVE" manifesto. That file, AMALIVE.txt, still exists as a testament to the debugging struggle.</p>
     `,
     skills: 'Arduino, C++ (for Arduino programming), Electronics, USB HID Emulation, Problem-Solving, Debugging, Circuit Design',
     role: 'Sole Developer',
     difficulty: 'Intermediate',
-    collaborators: 'N/A',
+    collaborators: '',
     images: [
       'Dashboard/6258184b-fca5-4c2b-88dd-ab1bf29df177.jpg',
       'Dashboard/c21ca525-7e18-4bcc-bc93-6c7624b14e74.jpg'
@@ -1127,10 +1196,10 @@ const projects = [
   {
     id: 'tree-fence-project',
     title: 'Tree Removal & Fence Reconstruction',
-    date: '(Fall 2023)',
-    shortDesc: 'A wild adventure in the backyard involving tree-chopping, teamwork, and an unexpected fence demolition (and subsequent resurrection!).',
+    date: 'Fall 2023',
+    shortDesc: 'A wild adventure in the backyard involving tree-chopping, teamwork, and an unexpected fence demolition (and subsequent resurrection).',
     longDesc: `
-      <p>This project was less about coding and more about embracing the great outdoors... and a bit of accidental destruction. My dad and I teamed up to tackle two stubborn trees in the backyard. We were all about that teamwork and those trusty ratchet straps to guide the trees down. Things were going great until, oops, one of the trees decided to take out a section of our metal fence on its way down. So, what started as a tree-cutting mission quickly turned into an impromptu fence reconstruction project! It was a real crash course in problem-solving, using tools (and maybe a bit of duct tape, metaphorically speaking), and learning that sometimes, projects come with unexpected, hilarious detours. Definitely a memorable bonding experience!</p>
+      <p>This project was less about coding and more about embracing the great outdoors... and a bit of accidental destruction. My dad and I teamed up to tackle two stubborn trees in the backyard. We were all about that teamwork and those trusty ratchet straps to guide the trees down. Things were going great until, oops, one of the trees decided to take out a section of our metal fence on its way down. So, what started as a tree-cutting mission quickly turned into an impromptu fence reconstruction project. It was a real crash course in problem-solving, using tools (and maybe a bit of duct tape, metaphorically speaking), and learning that sometimes, projects come with unexpected, hilarious detours. Definitely a memorable bonding experience.</p>
     `,
     skills: 'Teamwork, Problem-Solving, Tool Usage (e.g., chainsaws, ratchet straps, construction tools), Fence Construction, Accident Response, Physical Labor',
     role: 'Team Member',
@@ -1143,75 +1212,38 @@ const projects = [
     links: {}
   },
   {
-    id: 'js-web-apps',
-    title: 'Interactive Web Apps with JavaScript',
-    date: 'January - May 2023',
-    shortDesc: 'A set of web apps I built using HTML, CSS, and JavaScript, including a Magic 8 Ball, a Rock Paper Scissors game, and a website for a school club.',
+    id: 'early-coursework',
+    title: 'Early Coursework: Intro Programming and Design',
+    date: 'Jan 2022 to May 2023',
+    status: 'Complete',
+    shortDesc: 'My first programming and design projects, from Python and Scratch to my first websites, JavaScript animations and photo editing.',
     longDesc: `
-      <p>This collection of projects showcases my initial work in building interactive websites using JavaScript, alongside HTML and CSS. The projects include a Magic 8 Ball web application that takes user input for a name and question, then provides a random response. I also developed a Rock, Paper, Scissors game where users can play against the computer, demonstrating basic game logic and user interaction. Furthermore, I collaborated with Arshya Maricar to create the official MSA club website for my school, which features multiple menus and sections, highlighting teamwork and more complex site structure. These projects were crucial for understanding how to handle user input, implement dynamic behaviors, and build more engaging web experiences.</p>
+      <p>These are the small projects I made while learning to code and design. They used to be seven separate entries.</p>
+      <ul>
+        <li><strong>Beginner Python (Jan to May 2022):</strong> a Python course with Dr. Hawzhin. I built a grade compiler, a two-player Guess My Number game, a clock angle calculator, a cash register that prints a receipt, and a calculator that combines several smaller ones.</li>
+        <li><strong>Scratch (2023):</strong> a snow safety PSA, a comedy animation called "Halal Burger", and two arcade games, "Donkey Feed" and "Snake Chase v.2".</li>
+        <li><strong>Khan Academy JavaScript (2023):</strong> drawing and animation projects, including a waving snowman, a shooting star and a penguin.</li>
+        <li><strong>Code.org App Lab (2023):</strong> a group app about world cuisines, a photo liker app and a museum ticket generator.</li>
+        <li><strong>HTML and CSS (2023):</strong> two versions of a school page about Mark Zuckerberg (one plain HTML, one styled with CSS) and animated buttons for the WHHS Programming Club.</li>
+        <li><strong>JavaScript web apps (2023):</strong> a Magic 8 Ball and a Rock Paper Scissors game. I also started the MSA club website with Arshya Maricar, which has its own entry.</li>
+        <li><strong>Photopea (2023):</strong> text effects, a lion and strawberry composite, and removing objects from photos (an umbrella from a beach, a plant from a desk, a person from a pyramid photo).</li>
+      </ul>
     `,
-    skills: 'HTML, CSS, JavaScript, UI/UX Design, Game Development, Collaboration',
-    role: 'Developer',
-    difficulty: 'Beginner-Intermediate',
-    collaborators: 'Arshya Maricar',
-    images: [
-      'Websites 9th/Screenshot 2025-08-05 131141.png',
-      'Websites 9th/Screenshot 2025-08-05 131304.png'
-    ],
-    videos: [],
-    links: {}
-  },
-  {
-    id: 'html-css-intro',
-    title: 'Intro to Web Development: HTML & CSS Projects',
-    date: 'January - May 2023',
-    shortDesc: 'A collection of my first web development projects, built using only HTML for structure and CSS for styling.',
-    longDesc: `
-      <p>This project documents my initial steps into web development. I focused on building web pages using HTML to create the structure and CSS to add visual styles. My work includes two versions of a school project about Mark Zuckerberg: an early version using only HTML, and a later one where I added CSS to make it look better with buttons and colored text. I also made a project for the WHHS Programming club where I learned to make animated buttons. These projects were important for learning how to build and style web pages without using JavaScript.</p>
-    `,
-    skills: 'HTML, CSS, Front-End Development, UI/UX Design, Problem-Solving',
+    skills: 'Python, JavaScript, HTML/CSS, Scratch, Photopea',
     role: 'Learner',
     difficulty: 'Beginner',
-    collaborators: 'N/A',
+    collaborators: 'Dr. Hawzhin (Python course), Arshya Maricar (club website)',
+    emojis: ['🐍', '📚', '💻'],
     images: [
       'Websites 9th/Screenshot 2025-08-05 131141.png',
-      'Websites 9th/Screenshot 2025-08-05 131304.png'
-    ],
-    videos: [],
-    links: {}
-  },
-  {
-    id: 'code-org-apps',
-    title: 'Web App Development with Code.org',
-    date: 'January - May 2023',
-    shortDesc: 'A series of introductory web applications built on Code.org\'s App Lab platform, focusing on user interface design and event-driven programming.',
-    longDesc: `
-      <p>This project documents my work in Code.org's App Lab environment during my Intro to Computer Programming course. The unit focused on building interactive web applications by utilizing a block-based coding interface. My projects included a collaborative app on world cuisines, a "photo liker" app where I had to replicate the code for a given example, and a museum ticket generator based on user input. These assignments provided hands-on experience with concepts such as button events, user input, and data handling, laying the groundwork for more complex front-end development.</p>
-    `,
-    skills: 'Code.org App Lab, JavaScript, UI/UX Design, Event Handling, Collaboration, Problem-Solving',
-    role: 'Learner',
-    difficulty: 'Beginner',
-    collaborators: 'N/A',
-    images: [
-      'Websites 9th/Screenshot 2025-08-05 131141.png',
-      'Websites 9th/Screenshot 2025-08-05 131304.png'
-    ],
-    videos: [],
-    links: {}
-  },
-  {
-    id: 'photopea-art',
-    title: 'Digital Art and Photo Editing with Photopea',
-    date: 'January - May 2023',
-    shortDesc: 'A series of digital art and photo manipulation projects created in Photopea, focusing on text effects, image compositing, and object removal.',
-    longDesc: `
-      <p>This portfolio entry documents a unit on digital design and photo editing using Photopea, an in-browser image editor. The projects served as an introduction to key photo manipulation techniques. The first project involved using special font effects to display a word. I then created a composite image by combining two unrelated objects a lion and a strawberry-into a single photo. The final assignments focused on advanced photo manipulation and object removal, where I successfully removed an umbrella from a beach scene, a potted plant from a desk, and a person from a photo of a pyramid, which required reconstructing the background.</p>
-    `,
-    skills: 'Photopea, Digital Art, Photo Manipulation, Image Editing, Problem-Solving',
-    role: 'Learner',
-    difficulty: 'Beginner',
-    collaborators: 'N/A',
-    images: [
+      'Websites 9th/Screenshot 2025-08-05 131304.png',
+      'Khan Academy/Images/Images/Scratch.png',
+      'Khan Academy/Images/Images/khanacademy.PNG',
+      'Khan Academy/Images/Images/JSSHOOTINGSTAR.PNG',
+      'Khan Academy/Images/Images/ll.PNG',
+      'Khan Academy/Images/Images/khanacedemny.PNG',
+      'Khan Academy/Images/Images/FoodKhan.PNG',
+      'Khan Academy/Images/Images/Pengu.PNG',
       'Khan Academy/Images/Images/photopea.svg',
       'Khan Academy/Images/Images/deskafter.PNG',
       'Khan Academy/Images/Images/Hello World.PNG',
@@ -1222,51 +1254,9 @@ const projects = [
     links: {}
   },
   {
-    id: 'khan-academy-js',
-    title: 'Intro to JavaScript with Khan Academy',
-    date: 'January - May 2023',
-    shortDesc: 'A series of introductory programming projects created in the Khan Academy environment, focused on learning JavaScript fundamentals through drawing and animation.',
-    longDesc: `
-      <p>As a part of my Intro to Computer Programming course, I completed a unit on Khan Academy to learn the basics of JavaScript. This involved using a visual, drawing-based environment to create a variety of small projects. These included a simple animation of a waving snowman, an assignment to design my own food creation, a shooting star animation, and a character-based animation of a penguin. These projects were a valuable introduction to programming syntax, variables, and functions within a creative context.</p>
-    `,
-    skills: 'JavaScript, Drawing, Animation, Problem-Solving, Creativity',
-    role: 'Learner',
-    difficulty: 'Beginner',
-    collaborators: 'N/A',
-    images: [
-      'Khan Academy/Images/Images/khanacademy.PNG',
-      'Khan Academy/Images/Images/JSSHOOTINGSTAR.PNG',
-      'Khan Academy/Images/Images/ll.PNG',
-      'Khan Academy/Images/Images/khanacedemny.PNG',
-      'Khan Academy/Images/Images/FoodKhan.PNG',
-      'Khan Academy/Images/Images/Pengu.PNG'
-    ],
-    videos: [],
-    links: {}
-  },
-  {
-    id: 'scratch-games',
-    title: 'Intro to Scratch Game & Animation Development',
-    date: 'January - May 2023',
-    shortDesc: 'A series of games and animations created in Scratch to learn fundamental programming concepts, including loops, events, and simple game logic.',
-    longDesc: `
-      <p>As part of an Intro to Computer Programming course, I completed a unit on Scratch, where I learned visual programming concepts through the creation of several games and animations. Projects included a public service announcement (PSA) on snow safety, a comedic animation titled "Halal Burger," and two arcade-style games: "Donkey Feed" and "Snake Chase v.2." These projects were instrumental in understanding core programming principles like event handling, conditionals, and game state management in a fun and accessible way.</p>
-    `,
-    skills: 'Scratch, Game Development, Animation, Storytelling, Problem-Solving',
-    role: 'Learner',
-    difficulty: 'Beginner',
-    collaborators: 'N/A',
-    images: [
-      'Khan Academy/Images/Images/Scratch.png'
-    ],
-    videos: [],
-    youtubeEmbeds: [],
-    links: {}
-  },
-  {
     id: 'nerf-rover',
     title: 'Custom Nerf Arduino/VEX Rover',
-    date: 'September 20-24, 2022',
+    date: 'Sep 2022',
     shortDesc: 'A VEX robotics spider kit was repurposed into a custom remote-controlled tank with a custom drivetrain, controlled by a VEX controller, and a triggered nerf gun mechanism, controlled by an IR remote.',
     longDesc: `
       <p>This project involved a significant re-engineering of a standard VEX robotics spider kit. Instead of building the default model, I designed and constructed a custom rover/tank chassis, which was driven using the original VEX controller. The most unique aspect of the project was the addition of a one-shot nerf gun. I integrated an Arduino and an IR remote to create a separate control system for the gun's trigger mechanism. This allowed for the independent control of the vehicle's movement and its payload. My testing process included a video showing the servo reacting to the IR remote, followed by a successful demonstration of the gun firing. This project was an excellent exercise in mechanical design, electrical wiring, and programming for multiple systems.</p>
@@ -1274,31 +1264,13 @@ const projects = [
     skills: 'Robotics, Arduino, Electronics, C++ (for Arduino), Mechanical Design, Problem-Solving',
     role: 'Sole Developer',
     difficulty: 'Intermediate',
-    collaborators: 'N/A',
-    images: [],
+    collaborators: '',
+    images: ['Nerf Rover/nerf-rover.jpg'],
     videos: [],
     youtubeEmbeds: [],
     emojis: ['🤖', '🔫', '🎮'],
     links: {
       googleDrive: 'https://drive.google.com/drive/u/0/folders/1f4tex-TEHatauHJ8mKsNbU71GJODFIn'
     }
-  },
-  {
-    id: 'beginner-python',
-    title: 'Beginner Python',
-    date: 'January - May 2022',
-    shortDesc: 'This project documents my first foundational steps in Python programming, covering a series of collaborative notebooks that introduced me to key concepts like variables, loops, and conditional logic.',
-    longDesc: `
-      <p>This portfolio entry details my work in a foundational Python programming course with Dr. Hawzhin, focusing on several key collaborative notebooks.</p>
-      <p>The Grade Compiler project taught me how to use loops and lists to handle and organize user-provided data, simulating a basic teacher's tool. The Guess My Number game was an exercise in building interactive applications, utilizing conditional statements and random number generation to create a fun, two-player game with clear game logic. The Clock Angler challenged my mathematical and logical reasoning by calculating the angle between a clock's hands at a user-defined or random time. The Cash Register project simulated a virtual market, using loops and conditional statements to create a running total and receipt. Finally, The MultiCalculator was a demonstration of code reusability and organization, combining several individual calculator functions into a single, user-friendly application. This entire course provided a solid base for future programming endeavors.</p>
-    `,
-    skills: 'Python, Variables, Data Types, Lists, User Input, Loops (while), Conditional Logic (if/elif/else), Random Number Generation, Problem-Solving, Mathematical Calculations, Collaboration',
-    role: 'Learner',
-    difficulty: 'Beginner',
-    collaborators: 'Dr. Hawzhin',
-    emojis: ['🐍', '📚', '💻'],
-    images: [],
-    videos: [],
-    links: {}
   }
 ];
