@@ -219,7 +219,7 @@ function initProjectsPage() {
 
         card.innerHTML = `
             <div class="project-media">
-                ${hasCardImage ? `<img src="${thumbnailUrl}" alt="${project.title}" onerror="handleThumbError(this, '${fullThumbnailUrl}')" loading="lazy" style="width:100%;height:100%;object-fit:cover;max-width:100%;max-height:100%;" />` : `<div class="project-emoji">${project.emojis ? project.emojis.join(' ') : '📋'}</div>`}
+                ${hasCardImage ? `<img src="${thumbnailUrl}" alt="${project.title}" onerror="handleThumbError(this, '${fullThumbnailUrl}')" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:${project.cardPosition || 'center'};max-width:100%;max-height:100%;" />` : `<div class="project-emoji">${project.emojis ? project.emojis.join(' ') : '📋'}</div>`}
                 <div class="card-overlay">
                     <span class="overlay-title">${project.title}</span>
                     <span class="overlay-date">${project.date}</span>

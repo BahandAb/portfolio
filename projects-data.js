@@ -107,7 +107,17 @@ const projects = [
     difficulty: 'Intermediate',
     collaborators: 'Edwin Tenney',
     emojis: ['🏹', '🎯', '🧠'],
-    images: [],
+    images: [
+      'Archer AI/archer-training-plateau.png',
+      'Archer AI/archer-training-metrics.png',
+      'Archer AI/archer-accuracy-loss.png'
+    ],
+    cardPosition: 'left center',
+    alt: [
+      'A training graph showing the Archer AI agent stopped improving much after about 1.2 million steps',
+      'TensorBoard charts of the Archer AI training metrics',
+      'TensorBoard charts of accuracy and loss over training'
+    ],
     videos: [],
     links: {}
   },
