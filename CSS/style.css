@@ -210,7 +210,13 @@ nav a:hover {
 
 nav a.active {
   background-color: var(--color-blue);
+  color: var(--color-dark);
   box-shadow: inset 0 -3px 0 0 rgba(255,255,255,0.3);
+}
+
+nav a.active:hover {
+  color: var(--color-dark);
+  background-color: var(--color-mid);
 }
 
 /* MAIN CONTENT */
@@ -291,10 +297,12 @@ article.project-card:hover {
 article.project-card h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  color: var(--color-dark);
+  text-shadow: none;
 }
 
 article.project-card:hover h3 {
-  color: #0e1c2f;
+  color: #022C22;
 }
 
 /* MEDIA SECTION INSIDE CARD */
@@ -1169,6 +1177,7 @@ main .description {
 .modal-skills h3 {
     font-size: 1.5rem;
     color: var(--color-dark);
+    text-shadow: none;
     margin-top: 1.5rem;
     margin-bottom: 0.75rem;
     border-bottom: 2px solid var(--color-light);

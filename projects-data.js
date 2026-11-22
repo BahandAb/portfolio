@@ -69,53 +69,6 @@ const projects = [
     links: {}
   },
   {
-    id: 'khidmah',
-    title: 'Khidmah: Volunteer System for the Clifton Mosque',
-    date: 'Oct 2026 to present',
-    status: 'Active',
-    shortDesc: 'A volunteer website for the Islamic Association of Cincinnati with registration, a shared calendar, check-in and hour tracking.',
-    longDesc: `
-      <p><strong>Problem:</strong> I've volunteered at the Islamic Association of Cincinnati (Clifton Mosque) since 2023. Volunteering there was split across separate WhatsApp groups, with no onboarding and no record of hours.</p>
-
-      <p><strong>What I built:</strong> I proposed and built Khidmah, a central volunteer system. It covers registration and onboarding, a shared calendar with RSVPs, volunteer requests, QR code check-in and hour tracking. I worked out what it needed by sharing drafts with the mosque's volunteer leaders and building in their feedback.</p>
-
-      <p><strong>Result:</strong> I showed it to the volunteer leadership team on October 23, 2026, and it is live at <a href="https://khidmah.bahandab.com" target="_blank" rel="noopener noreferrer">khidmah.bahandab.com</a>.</p>
-
-    `,
-    skills: 'UI Design, Web Design, Requirements Gathering',
-    role: 'Lead',
-    difficulty: 'Advanced',
-    collaborators: 'Islamic Association of Cincinnati volunteer leadership team',
-    emojis: ['🤝', '📅', '🕌'],
-    images: [],
-    videos: [],
-    links: { 'Website': 'https://khidmah.bahandab.com' }
-  },
-  {
-    id: 'paywandi',
-    title: 'Paywandi: Group Video Calls for a Kurdish Community Network',
-    date: 'Oct 2026 to present',
-    status: 'Active',
-    shortDesc: 'A group video-call web app that a network of Kurdish families across the US, Canada and Kurdistan uses for its weekly meetings.',
-    longDesc: `
-      <p><strong>Problem:</strong> A network of Kurdish families across the US, Canada and Kurdistan meets online every week, with one member teaching a lesson each time. A family friend, Zana, started a video-call app for these meetings, but his first prototype only handled 4 or 5 people.</p>
-
-      <p><strong>What I built:</strong> I took it over and made it reliable and usable for the whole group. Video runs on LiveKit (an open-source video-call service). I'm a member of the group, so I attend the meetings and fix the bugs and feature requests members send between them.</p>
-
-      <p><strong>Result:</strong> The group uses it for its weekly meetings.</p>
-
-      <p><strong>Next steps:</strong> A Kurdish-language version of the whole interface.</p>
-    `,
-    skills: 'LiveKit, WebRTC, Debugging, User Support',
-    role: 'Developer',
-    difficulty: 'Advanced',
-    collaborators: 'Zana (original prototype)',
-    emojis: ['📹', '🌍', '💬'],
-    images: [],
-    videos: [],
-    links: {}
-  },
-  {
     id: 'gemmy',
     title: 'Gemmy: AI-Navigated Mecanum Robot',
     date: 'Jan 2026 to May 2026',
